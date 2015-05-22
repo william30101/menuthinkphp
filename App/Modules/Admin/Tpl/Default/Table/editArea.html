@@ -1,0 +1,73 @@
+﻿<include file="Public:mainHeader" />
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+        <td class="xtgk1">添加区域</td>
+      </tr>
+    </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF">
+      <form id="form1" name="form1" method="post" action="{:U(GROUP_NAME.'/Table/editArea')}">
+	  <input name="targetid" id="targetid" value="{$info.id}" type="hidden" />
+      <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
+        <tr>
+          <td align="right" bgcolor="#f5ede6">区域名称</td>
+          <td bgcolor="#FFFFFF"><h1>
+            <input type="text" name="name" id="name" class="input1" value="{$info.name}" />
+          </h1></td>
+        </tr>
+        <tr>
+          <td align="right" bgcolor="#F5EDE6">所属区域</td>
+          <td bgcolor="#FFFFFF"><label for="select"></label>
+            <select name="floor" id="floor">
+              <option value="0">作为一级区域</option>
+                <foreach name="list" item="v">
+                    <option <if condition="$info['parentid'] eq $v['id']">selected</if> value="{$v.id}"><b>{$v.html}{$v.name}</b></option>
+                </foreach>
+
+
+            </select>（<font color="red" >只能创建2个一级区域</font>）</td>
+        </tr>
+		<tr>
+          <td align="right" bgcolor="#F5EDE6">分配操作员</td>
+          <td bgcolor="#FFFFFF"><label for="select"></label>
+            <select name="adminid" id="adminid">
+              <option value="0">请选择操作员</option>
+                <foreach name="adminList" item="v">
+                    <option <if condition="$info['adminid'] eq $v['id']">selected</if> value="{$v.id}"><b>(<font style=" margin-left:20px;"><if condition="$v['groupid'] eq 1">高级操作员<else />普通操作员</if></font>){$v.nickname}<if condition="$v['floor_id']">(已分配)</if></b></option>
+                </foreach>
+
+
+            </select><input type="hidden" name="adminidStatus" id="adminidStatus" value="1" /><if condition="$info['adminStr']"><span style="margin-left:10px;" id="adminStr"><font color="green">已分配：</font><font style="font-size:12px;">{$info.adminStr}</font></span><font color="red" style="margin-left:10px;">[</font><a href="javascript:void(0);" data-type='1' onclick="clearAdmin(this);">清空</a><font color="red">]</font></if></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" bgcolor="#FFFFFF" ><input type="submit" id="button" value="提交" class="input10" /></td>
+        </tr>
+      </table>
+    </form></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script>
+	function clearAdmin(that){
+		var type = $(that).attr('data-type');
+		if(type == 1){
+			$('#adminidStatus').val(0);
+			$('#adminStr').hide();
+			$(that).attr('data-type',2).html('还原');
+		}else{
+			$('#adminidStatus').val(1);
+			$('#adminStr').show();
+			$(that).attr('data-type',1).html('清空');
+		}
+	}
+</script>
+<include file="Public:mainFooter" />

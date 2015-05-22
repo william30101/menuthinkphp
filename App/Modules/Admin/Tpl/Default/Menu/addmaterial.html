@@ -1,0 +1,55 @@
+﻿<include file="Public:mainHeader" />
+<script type="text/javascript">
+    $(function(){
+        $('#button').click(function(){
+            if($('#imgTitle').val()==''){
+                $('#imgTitle').focus();
+                alert('菜的名字不能为空');
+                return false;
+            }
+
+        });
+        $('#add').click(function(){
+            $('.img').after('<tr><td align="right" bgcolor="#F5EDE6">上传图片</td> <td bgcolor="#FFFFFF" colspan="2"><input type="file" name="img[]"  class="addImg"/></td></tr>');
+        });
+    })
+</script>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+        <td class="xtgk1">添加素材</td>
+      </tr>
+    </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><form action="{:U(GROUP_NAME.'/Menu/addMaterial')}" method="post" enctype="multipart/form-data" name="form1" id="form1">
+      <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
+        <tr>
+          <td align="right" bgcolor="#f5ede6">菜品名称</td>
+          <td bgcolor="#FFFFFF" colspan="2"><h1>
+            <input type="text" name="title" id="imgTitle" class="input1" />
+          </h1></td>
+        </tr>
+        <tr class="img">
+          <td align="right" bgcolor="#F5EDE6">上传图片</td>
+          <td bgcolor="#FFFFFF">
+            <input type="file" name="img[]"  class="addImg"/></td>
+            <td bgcolor="#FFFFFF">
+            <input type="button"  id="add" value="在添加一张图片" /></td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center" bgcolor="#FFFFFF" ><input type="submit" id="button" value="提交" class="input10" /></td>
+        </tr>
+      </table>
+    </form></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<include file="Public:mainFooter" />

@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>已点菜单</title>
+    <script type="text/javascript" src="__JS_PATH__/jquery-1.8.3-all.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+            function PostMes (data,id){
+                $.post(
+                    'index.php?g=User&m=Index&a=addOrJ',
+                        {
+                            'amount':data,
+                            'id':id
+                        }
+                )
+            }
+            var num=$('#ly_list').children().length;
+            for(i=1;i < num;i++){
+                $(".delete"+i).click(function(){
+                    if(confirm('确认要删除么？')){
+
+
+                    var id=$(this).attr('imgee');
+                    $.post(
+                            'index.php?g=User&m=Index&a=myMuenList',
+                            {
+                                'id':id
+                            }
+
+                    )
+                    $(this).parents('.menudiancai').hide();
+                    var b=$('#menuNum', window.parent.document).text();
+                        b=Number(b);
+                    var aqqq=$(this).parents('.ly_cz').siblings('.ly_fs').eq(0).find('.shuliang').text();
+                        aqqq=Number(aqqq);
+                        b=b-aqqq;
+                        $('#menuNum', window.parent.document).text(b);
+                    var pricrrr=$(this).parents('.ly_cz').siblings('.ly_dj').eq(0).find('span').text();
+                    var allrr=$('#totalww').text();
+                        allrr=Number(allrr);
+                        pricrrr=Number(pricrrr);
+                        allrr=allrr-pricrrr;
+                        $('#totalww').text(allrr);
+
+                    var aqq=$('#amountt').text();
+                    aqq=Number(aqq);
+                    aqq-=1;
+                    $('#amountt').text(aqq);
+                    }
+                });
+                $('.jian'+i).click(function(){
+                       var n= $(this).parents('.ly_fs').find('.shuliang');
+                    var shu=n.text()
+                        if(shu>1){
+                            shu=shu-1;
+                            var pricrr=$(this).parents('.ly_fs').siblings('.ly_dj').eq(0).find('span').text();
+                            var allr=$('#totalww').text();
+                            allr=Number(allr);
+                            pricrr=Number(pricrr);
+                            allr=allr-pricrr;
+                            $('#totalww').text(allr);
+                            var aq=$('#amountt').text();
+                            aq=Number(aq);
+                            aq-=1;
+                            $('#amountt').text(aq);
+                            var menu=$(this).attr('menu');
+                            var b=$('#menuNum', window.parent.document).text();
+                            b=Number(b);
+                            b-=1;
+                            $('#menuNum', window.parent.document).text(b);
+                        }else{
+                            shu=1;
+                        }
+                    n.text(shu);
+
+
+                    PostMes(shu,menu);
+
+                });
+            $('.jia'+i).click(function(){
+                var Obj= $(this).parents('.ly_fs').find('.shuliang');
+                var num=Obj.text();
+                num= Number(num);
+                num+=1;
+                Obj.text(num);
+                var pricr=$(this).parents('.ly_fs').siblings('.ly_dj').eq(0).find('span').text();
+                var all=$('#totalww').text();
+                all=Number(all);
+                pricr=Number(pricr);
+                all=pricr+all;
+                $('#totalww').text(all);
+                var menur=$(this).attr('menu');
+                var am=$('#amountt').text();
+                am=Number(am);
+                am+=1;
+                $('#amountt').text(am);
+                var b=$('#menuNum', window.parent.document).text();
+                b=Number(b);
+                b+=1;
+                $('#menuNum', window.parent.document).text(b);
+                PostMes(num,menur);
+
+            });
+            }
+            $('#checkButton').click(function(){
+                for(m=1;m < num;m++){
+                    $(".delete"+m).hide();
+                }
+                var tabId=$('#tabId').val();
+                $.post(
+                        'index.php?g=User&m=Index&a=check',
+                        {
+                            'test':'test'
+                        },
+                        function(data){
+                            if(data==1){
+                                if(confirm('确认要下订单么？')){
+
+
+                                $.post(
+                                        'index.php?g=User&m=Index&a=check',
+                                        {
+                                            'id':tabId
+                                        },
+                                        function(da){
+                                            if(da==1){
+//                                                alert('下单成功');
+                                                window.location.href="/index.php?g=User&m=Index&a=myMuenList";
+                                            }else if(da==2){
+                                                alert('已提交过订单，请勿重复下单')
+                                            }else if(da==3){
+                                                alert('你还没有点菜，请先点菜')
+                                            }
+                                            else{
+                                                alert('下单失败，请联系服务员')
+                                            }
+                                        }
+
+
+                                )
+                                }
+                            }else{
+                                if(confirm('和您同时点菜的'+data+'位客人都点完菜了吗？确认提交订单，取消等其他客人点完菜')){
+                                    $.post(
+                                            'index.php?g=User&m=Index&a=check',
+                                            {
+                                                'id':tabId
+                                            },
+                                            function(d){
+                                                if(d==1){
+//                                                    alert('下单成功');
+                                                    window.location.href="/index.php?g=User&m=Index&a=myMuenList";
+                                                }else if(d==2){
+                                                    alert('已提交过订单，请勿重复下单')
+                                                }else if(d==3){
+                                                    alert('你还没有点菜，请先点菜')
+                                                }
+                                                else{
+                                                    alert('下单失败，请联系服务员')
+                                                }
+                                            }
+                                    )
+                                }
+                            }
+                        }
+                )
+
+
+            });
+            $('#checkOut').click(function(){
+                $.post(
+                        'index.php?g=User&m=Index&a=checkOut',
+                        {
+                            'test':'test'
+                        },
+                        function(data){
+                            if(data==1){
+                                if(confirm('确认要结账么？')){
+                                    $.post(
+                                            'index.php?g=User&m=Index&a=checkOut',
+                                            {},
+                                            function(d){
+                                                if(d==1){
+                                                    alert('请等待管理员，前来结账');
+                                                }else{
+                                                    alert('结账失败，请联系服务人员');
+                                                }
+                                            }
+                                    )
+                                }
+                            }else if(data==3){
+                                alert('您还没有下订单，请先下订单')
+                            }else if(data==4){
+                                alert('您还没有点菜，请点菜');
+                            }else if(data==6){
+                                alert('您已经点击了结账，请勿重复点击');
+                            } else if(data==7){
+                                alert('请等待管理员处理菜单');
+                            }
+
+                        }
+                )
+
+            });
+        })
+    </script>
+<style type="text/css">
+<!--
+* {
+	margin:0;
+	padding:0;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+img { border:none;}
+a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+#ly_top {
+	width:100%;
+	margin:20px auto 0;
+	text-align:center;
+}
+#ly_top img {
+	width:30%;
+}
+#ly_list {
+	width:90%;
+	border:1px solid #ccc;
+	margin:10px auto;
+	padding:20px 0;
+}
+#ly_list ul {
+	width:95%;
+	overflow:hidden;
+	margin:0 auto;
+	border-bottom:1px dotted #ccc;
+}
+#ly_list ul li {
+	float:left;
+	text-align:center;
+	padding:10px 0;
+	line-height:35px;
+}
+#ly_list ul li a img {
+	vertical-align:middle;
+}
+.ly_xh {
+	width:8%;
+}
+.ly_cm {
+	width:26%;
+}
+.ly_dj {
+	width:12%;
+	color:#FF7200;
+}
+.ly_zl {
+	width:8%;
+}
+.ly_fs {
+	width:13%;
+}
+.ly_fs a img {
+	width:20%;
+	margin:0 5px;
+}
+.ly_bz {
+	width:15%;
+}
+.ly_cz {
+	width:10%;
+}
+.ly_cz a img {
+	width:100%;
+}
+.ly_czzzz{
+    width:10%;
+}
+.ly_czzzz a img {
+    width:100%;
+}
+#ly_list .list_top {
+	border-bottom:1px solid #ccc;
+}
+.list_top li {
+	font-size:130%;
+	font-weight:bold;
+	line-height:35px;
+}
+#ly_bottom {
+	width:90%;
+	border-bottom:1px solid #ccc;
+	line-height:35px;
+	color:#FFA400;
+	margin:0 auto 20px;
+	font-size:120%;
+	font-family:"微软雅黑";
+	font-weight:bold;
+}
+
+#ljxd {
+	width:20%;
+	margin:0 auto 20px;
+}
+#ljxd a {
+	display:block;
+	width:100%;
+	height:35px;
+	line-height:35px;
+	background-color:#FF7E00;
+	text-align:center;
+	color:#fff;
+	font-size:120%;
+}
+
+-->
+</style>
+</head>
+
+<body>
+    <div id="ly_top"><img src="__IMG_USER_PATH__/tpic.png" /></div>
+    <div id="ly_list">
+        <ul class="list_top">
+            <li class="ly_xh">序号</li>
+            <li class="ly_cm">菜名</li>
+            <li class="ly_dj">单价</li>
+            <li class="ly_zl">种类</li>
+            <li class="ly_zl">追加</li>
+            <li class="ly_fs">份数</li>
+            <li class="ly_bz">备注</li>
+            <li id='caozuo' class="ly_cz">操作</li>
+        </ul>
+        <volist name="myList" id="v">
+        <ul class="menudiancai">
+            <input type="hidden" class="tempId{$i}" value="{$v.id}" />
+            <li class="ly_xh">{$i}、</li>
+            <li class="ly_cm">{$v.name}</li>
+            <li class="ly_dj">￥<span>{$v.price}</span></li>
+            <li class="ly_zl">{$v.dname}</li>
+            <li class="ly_zl">{$v.addto}</li>
+            <li class="ly_fs"><a onclick="return false;" class="shul"><img <if condition="isset($v['addVa'])"> style='display:none'</if> class="jian{$i}" menu="{$v.id}" src="__IMG_USER_PATH__/jian.png" /></a>&nbsp;<span  class="shuliang">{$v.amount}</span>&nbsp;<a onclick="return false;" class="shulj"><img <if condition="isset($v['addVa'])"> style='display:none'</if> class='jia{$i}' menu="{$v.id}" src="__IMG_USER_PATH__/jia.png" /></a></li>
+            <li class="ly_bz">{$v.uname}点的餐</li>
+            <li class="ly_cz"><a onclick="return false;" class="delAl"><img class="delete{$i}" <if condition="isset($v['addVa'])"> style='display:none'</if> src="__IMG_USER_PATH__/del.png" imgee="{$v.id}"/><if condition="isset($v['addVa'])"><span style="color: green">已下单</span></if></a></li>
+        </ul>
+        </volist>
+    </div>
+    <div id="ly_bottom">
+        <div style="float:left;">总计：</div><div style="float:right;">数量：<span id="amountt">{$amout}</span>&nbsp;&nbsp;&nbsp;&nbsp;总价：￥<span id="totalww">{$total}</span></div>
+        <div style="clear:both;"></div>
+    </div>
+    <div id="ljxd"><if condition="$addVa eq 1" ><a id="checkOut"  onclick="return false;">结账</a><else /><a id="checkButton"  onclick="return false;">立即下单</a></if></div>
+</body>
+</html>

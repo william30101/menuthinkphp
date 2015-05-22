@@ -1,0 +1,87 @@
+﻿<include file="Public:mainHeader" />
+<script type="text/javascript">
+    $('#seach1').click(function(){
+        $.post(
+                'index.php?g=Admin&m=Menu&a=hotMenu',
+                {
+                    'ss':$('.title').val(),
+                    'id':$('select[name=id]').val()
+                }
+        );
+        return false;
+    });
+</script>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+    <tr>
+        <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+        <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+                <td class="xtgk1">菜品列表</td>
+            </tr>
+        </table></td>
+        <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+    </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+    <tr>
+        <td bgcolor="#FFFFFF">
+            <form id="form1" name="form1" method="post" action="">
+                <table width="520" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+                    <tr>
+                        <td width="40">名称 :</td>
+                        <td width="80"><input type="text" name="ss" class="title" /></td>
+                        <td width="40">分类 :</td>
+                        <td width="110"><select name="id" >
+                            <option value="0">选择分类</option>
+                            <foreach name="list" item="v">
+                                <option value="{$v.id}"><b>{$v.name}</b></option>
+                            </foreach>
+                        </select></td>
+                        <td width="130"><input type="image" name="imageField" src="__IMG_ADMIN_PATH__/search.jpg"  id="seach1"/></td>
+                    </tr>
+                </table>
+            </form>
+            <form action="{:U(GROUP_NAME.'/Menu/delMenu')}" id="myform" name="myform" method="post">
+            <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
+                <tr>
+                    <td align="center" bgcolor="#f5ede6"><input type="checkbox" id="check_box" onclick="selectall('id[]');" class="checkall" /></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>序号</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>名称</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>推荐</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>所属分类</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>价格</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>操作</h1></td>
+                </tr>
+                    <foreach name="menu" item="a">
+                        <tr>
+                            <td align="center"><input type="checkbox" name="id[]" class="checkbox" value="{$a.id}" /></td>
+                            <td align="center">{$a.id}</td>
+                            <td align="center">{$a.name}</td>
+                            <td align="center"><if condition="$a['recommend'] eq 1"><font color="green">是</font><else /><font color="red">否</font></if></td>
+                            <td align="center">{$a.dname}</td>
+                            <td align="center">{$a.price}</td>
+
+                            <td align="center"><a href="{:U(GROUP_NAME.'/Menu/editMenu',array('id'=>$a['id']))}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/index.php?g=admin&m=Menu&a=delMenu&id={$a.id}','你确定要删除吗？');">删除</a></td>
+                        </tr>
+                    </foreach>
+            </table>
+			</form>
+            <table width="95%" border="0" align="center" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="104"><label onclick="selectall('id[]');" for="check_box">全选/取消</label></td>
+                    <td width="14"><img src="__IMG_ADMIN_PATH__/del.jpg" width="14" height="14" /></td>
+                    <td width="93"><a href="javascript:void(0);" onclick="myform.action='?g=admin&m=Menu&a=delMenu';return confirm_delete()">批量删除</a></td>
+                    <td width="19">&nbsp;</td>
+                    <td width="1112">&nbsp;</td>
+                </tr>
+            </table>
+            <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;">
+                {$page}
+            </div>
+        </td>
+    </tr>
+</table></td>
+</tr>
+</table>
+<include file="Public:mainFooter" />

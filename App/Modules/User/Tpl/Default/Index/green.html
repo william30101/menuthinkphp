@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="__JS_PATH__/jquery-1.8.3-all.js"></script>
+<title>无标题文档</title>
+    <script type="text/javascript">
+        $(function(){
+            function addMenu(){
+
+                    var a=$('#menuNum', window.parent.document).text();
+                    a=Number(a);
+                    a+=1;
+                    $('#menuNum', window.parent.document).text(a);
+
+
+                var name=$('.name').val();
+                var price=$('.price').val();
+                var id=$('.id').val();
+                var listId=$('.listId').val();
+                $.post(
+                        'index.php/User/Index/addGreens/',
+                        {
+                            'name':name,
+                            'price':price,
+                            'u_id':id,
+                            'listId':listId
+                        },
+                        function(data){
+                            if(data==1){
+                                alert('点菜成功');
+                                history.go(-1);
+                            }
+                        }
+                )
+            }
+            $('#button').click(function(){
+
+                addMenu();
+            })
+                   $('#dianCaiTu').click(function(){
+                addMenu();
+            })
+        })
+    </script>
+<style type="text/css">
+<!--
+* {
+	margin:0;
+	padding:0;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+img { border:none;}
+a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+#p_tou {
+	width:98%;
+	border-bottom:1px solid #ccc;
+	line-height:30px;
+	margin:5px auto 0;
+	font-size:110%;
+}
+#p_tou span {
+	display:block;
+}
+#p_tou .t_left {
+	float:left;
+}
+#p_tou .t_right {
+	float:right;
+}
+.zhnei {
+	width:98%;
+	margin:10px auto;
+}
+.zhnei .mizy {
+	width:48%;
+	float:left;
+	margin-right:2%;
+}
+.zhnei .mizy img {
+	width:100%;
+}
+.zhnei .tbqa {
+	width:50%;
+	overflow:hidden;
+	border-bottom:1px solid #ccc;
+	line-height:40px;
+}
+.zhnei .tbqa h2 {
+	width:50%;
+	color:#311000;
+	float:left;
+	font-size:130%;
+	font-family:"微软雅黑";
+}
+.zhnei .tbqa img {
+	width:20%;
+	float:right;
+}
+.zhnei p {
+	text-indent:2em;
+	line-height:35px;
+	font-size:110%;
+	font-family:"微软雅黑";
+}
+-->
+</style>
+</head>
+
+<body>
+    <p id="p_tou">
+        <span class="t_left">当前：{$list}>>{$green.name}</span>
+        <span class="t_right">用户:{$uname}&nbsp;&nbsp;&nbsp;&nbsp;桌号：{$tabNum}</span>
+        <span style="clear:both"></span>
+    </p>
+    <input type="hidden" class='id' value='{$green.id}' />
+    <input type="hidden" class='listId' value='{$green.menutypeid}' />
+    <input type="hidden" class='name' value='{$green.name}' />
+    <input type="hidden" class='price' value='{$green.price}' />
+    <div class="zhnei">
+      <div class="mizy"><img id="dianCaiTu" src="__APP_PATH__{$green.img}" /></div>
+      <div class="tbqa">
+        <h2 id="name">{$green.name}</h2><img id="button" src="__IMG_USER_PATH__/caipin_con_03.gif" />
+        <div style="clear:both"></div>
+      </div>
+      <P>{$green.content}</P>
+    </div>
+  </div>
+</body>
+</html>

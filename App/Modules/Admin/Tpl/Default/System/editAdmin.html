@@ -1,0 +1,150 @@
+<include file="Public:mainHeader" />
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+        <td class="xtgk1"> {$title}操作员信息</td>
+      </tr>
+    </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><form id="myform" name="myform" method="post" action="/index.php?g=Admin&m=System&a=editAdmin">
+		<input name="targetid" type="hidden" id="targetid" value="{$info.id}" />
+      <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
+        <tr>
+          <td align="right" bgcolor="#f5ede6">账户名</td>
+          <td bgcolor="#FFFFFF"><h1><font style="color:red; margin:3px;">*</font>
+            <input type="text" name="adminuser" id="adminuser" value="{$info.adminuser}"  class="input1" />(尽量不要使用中文)
+          </h1></td>
+        </tr>
+        <tr>
+          <td align="right" bgcolor="#F5EDE6">密码</td>
+          <td bgcolor="#FFFFFF"><font style="color:red; margin:3px;">*</font>
+            <input type="password" name="password" id="password" class="input1" />
+			</td>
+        </tr>
+        <tr>
+          <td align="right" bgcolor="#F5EDE6">确认密码</td>
+          <td bgcolor="#FFFFFF"><font style="color:red; margin:3px;">*</font><input type="password" name="repassword" id="repassword" class="input1" /></td>
+        </tr>
+		<tr>
+          <td align="right" bgcolor="#F5EDE6">昵称</td>
+          <td bgcolor="#FFFFFF"><font style="color:red; margin:3px;">*</font><input type="text" name="nickname" id="nickname" class="input1" value="{$info.nickname}" /></td>
+        </tr>
+		<tr>
+          <td align="right" bgcolor="#F5EDE6">权限/状态</td>
+          <td bgcolor="#FFFFFF"><p><font style="color:red; margin:3px;">*</font>
+		  	<label typeid="1" class="clickPermission">
+              <input type="radio" value="1" id="groupid_1" name="groupid" <if condition="$info.groupid eq 1"> checked="checked" </if>>
+              超级管理员</label>
+			<label typeid="2" class="clickPermission">
+              <input type="radio" value="2" id="groupid_2" name="groupid" <if condition="$info.groupid eq 2"> checked="checked" </if>>
+              普通管理员</label>
+			<font style="color:red; margin:3px;">/</font>
+            <label>
+              <input name="roleid" type="radio" id="roleid_1" value="normal" <if condition="$info.roleid eq 1"> checked="checked" </if>/>
+              正常</label>
+            <label>
+              <input type="radio" name="roleid" value="forbidden" id="roleid_0" <if condition="$info.roleid eq 0"> checked="checked" </if>/>
+              禁用</label>
+            <br />
+          </p></td>
+        </tr>	
+		<tr id="clickPermission" <if condition="$info['groupid'] eq '1'"> style="display:none;" </if>>
+          <td align="right" bgcolor="#F5EDE6">分配权限</td>
+          <td bgcolor="#FFFFFF">
+		  <volist name="menuOriginal" id="v">
+		  <if condition="$v['show'] neq 1">
+            <input type="checkbox" id="permission_{$v.id}" class="actionView" name="permission[]" value="{$v.id}"/>{$v.name} >>
+			<span id="function_{$v.id}">
+			<volist name="v.view" id="vv">
+			<if condition="$vv['show'] neq 1">
+			<span style="margin-left:5px;">
+			  <input type="checkbox" id="permission_{$vv.id}" parentid="{$v.id}" class="functionView parentid_{$v.id}" name="permission[]" value="{$vv.id}"/>{$vv.name}
+			  </span>
+			  </if>
+			  </volist>
+		  </span>
+		  <br />
+		  </if>
+		  </volist>	
+		</td>
+        </tr>
+        <tr>
+          <td align="right" bgcolor="#F5EDE6">邮箱</td>
+          <td bgcolor="#FFFFFF"><label for="select">
+            <input type="text" name="email" id="email" class="input1" value="{$info.email}" />
+          </label></td>
+        </tr>
+        <tr>
+          <td align="right" bgcolor="#F5EDE6">手机号</td>
+          <td bgcolor="#FFFFFF"><label for="select">
+            <input type="text" name="phone" id="phone" class="input1" value="{$info.phone}" />
+          </label></td>
+        </tr>
+        <tr>
+          <td align="right" bgcolor="#F5EDE6">座机</td>
+          <td bgcolor="#FFFFFF"><label for="select">
+            <input type="text" name="tel" id="tel" class="input1" value="{$info.tel}" />
+          </label></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" bgcolor="#FFFFFF" ><input type="submit" name="button" id="button" value="提交" class="input10" /></td>
+        </tr>
+      </table>
+    </form></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script>
+	var permissionStr = '{$permission}';
+	if(permissionStr){
+		var permissionArray = permissionStr.split(',');
+		for(var i=0;i<permissionArray.length;i++){
+			$('#permission_'+permissionArray[i]).attr('checked',true);
+		}
+	}
+	//控制类权限	added by Tony
+	$('.actionView').click(function(){
+		var ifChecked = $(this).attr('checked');
+		var parentid = $(this).val();
+		if(ifChecked == 'checked'){
+			$(this).attr('checked',true);
+			$('.parentid_'+parentid).attr('checked',true);
+		}else{
+			$(this).attr('checked',false);
+			$('.parentid_'+parentid).attr('checked',false);
+		}
+	});
+	//控制方法权限	added by Tony
+	$('.functionView').click(function(){
+		var ifChecked = $(this).attr('checked');
+		var parentid = $(this).attr('parentid');
+		if(ifChecked == 'checked'){
+			$(this).attr('checked',true);
+			$('#permission_'+parentid).attr('checked',true);
+		}else{
+			var checkedLenght = $(".parentid_"+parentid+':checked').length;
+			if(checkedLenght < 1){
+				$(this).attr('checked',false);
+				$('#permission_'+parentid).attr('checked',false);
+			}
+		}
+	});
+	
+	$('.clickPermission').click(function(){
+		var type = $(this).attr('typeid');
+		if(type == 1){
+			$('#clickPermission').hide();
+		}else if(type == 2){
+			$('#clickPermission').show();
+		}
+	});
+</script>
+<include file="Public:mainFooter" />

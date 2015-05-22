@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="__JS_PATH__/jquery-1.8.3-all.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            for(q=1;q<=3 ;q++){
+                $('.clickB'+q).bind('click',function(){
+                    var va=$(this).children('a').attr('value');
+                    if(va==3){
+                        alert('您选择的桌正在使用中,请重新选桌');
+                    }else if(va==2){
+                        alert('您选择的桌已被预订,请重新选桌');
+                    } else if(va==4){
+                    alert('您选择的桌正在清理中,请等待');
+                }else{
+
+                        parent.location.href=$(this).children('a').attr('href');
+                    }
+                })
+            }
+
+
+
+
+        })
+
+    </script>
+<style type="text/css">
+<!--
+* {
+	margin:0;
+	padding:0;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+img { border:none;}
+a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+li {
+	list-style:none;
+}
+.lbdi{ width:100%; margin-left:2%;}
+.lbdi ul { width:100%;}
+.lbdi ul li { width:14%; float:left; margin:20px 0 0 2%;}
+.lbdi ul li a{
+	width:100%;
+    border-radius: 6px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 110%;
+}
+.lbdi ul li.ly_color2 a {
+	background:#F48221;
+}
+.lbdi ul li.ly_color4 a {
+    background:#3F3F3F;
+}
+.lbdi ul li.ly_color3 a {
+	background:#EF5972;
+}
+.lbdi ul li.ly_color1 a {
+	background:#3EB7EE;
+}
+.lbdi ul li a p {
+	width:90%;
+	padding:0 5%;
+	line-height:35px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div class="lbdi">
+ 	 <ul>
+		<foreach name='arr' item='v'>
+        <li class="ly_color{$v.status} clickB{$v.status}">
+            <a value="{$v.status}" onclick="return false" href="{:U(GROUP_NAME.'/Index/tabPost',array('tab'=>$v['id']))}" target="_parent" >
+               <p style="text-align:left;">{$v.name}</p>
+                <p style="text-align:center; font-size:150%;">{$v.num}</p>
+                <p style="text-align:right;">{$v.p_num}</p>
+            </a>
+        </li>
+         </foreach>
+	
+	 </ul>
+   
+	</div>
+</body>
+</html>

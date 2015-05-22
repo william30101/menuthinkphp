@@ -1,0 +1,22 @@
+<include file="header" />
+<div id="ly_banner">
+    <a href="javascript:void(0);"><img src="{$houseLogo}" onerror="javascript:this.src='__IMG_MOBILE_PATH__/ly_banner.jpg';" /><h2>菜单分类</h2></a>
+</div>
+
+    <div id="content" style="background:url(__IMG_MOBILE_PATH__/body_bg.jpg);" >
+      <div class="ly_list1">
+         <ul>
+		 <volist name="list" id="v">
+            <li><a href="/index.php?g=User&m=Mobile&a=greensList&id={$v.id}"><img onerror="javascript:this.src='__IMG_MOBILE_PATH__/xtj_04.jpg';" src="{$v.img}"/><h2>{$v.name}</h2></a></li>
+	     </volist>
+            <!--<li><a href="diancan.html"><img src="__IMG_MOBILE_PATH__/xtj_07.jpg" /><h2>宴会大厅</h2></a></li>
+            <li><a href="diancan.html"><img src="__IMG_MOBILE_PATH__/xtj_11.jpg" /><h2>西餐</h2></a></li>
+            <li><a href="diancan.html"><img src="__IMG_MOBILE_PATH__/xtj_13.jpg" /><h2>凉菜</h2></a></li>
+            <li><a href="diancan.html"><img src="__IMG_MOBILE_PATH__/xtj_17.jpg" /><h2>汤类</h2></a></li>
+            <li><a href="diancan.html"><img src="__IMG_MOBILE_PATH__/xtj_20.jpg" /><h2>酒水</h2></a></li>
+            <li><a href="diancan.html"><img src="__IMG_MOBILE_PATH__/xtj_24.jpg" /><h2>面点</h2></a></li>
+            <li><a href="diancan.html"><img src="__IMG_MOBILE_PATH__/xtj_26.jpg" /><h2>其他</h2></a></li>-->
+          </ul>
+      </div>
+    </div>
+<include file="footer" />

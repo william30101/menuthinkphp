@@ -1,0 +1,74 @@
+<include file="Public:mainHeader" />
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+        <td class="xtgk1">操作员列表</td>
+      </tr>
+    </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<form id="mysearchform" name="mysearchform" method="POST" action="/index.php?g=admin&m=System&a=adminList">
+	  <table width="520" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+	    <tr>
+	      <td width="44">名称：</td>
+	      <td width="198"><input type="text" name="nickname" class="xtgk5" value="{$search.nickname}" /></td>
+	      <td width="47">状态：</td>
+	      <td width="101"><select name="roleid">
+		    <option value="">请选择</option>
+	        <option <if condition="$search.roleid eq 'normal'">selected</if> value="normal">正常</option>
+	        <option <if condition="$search.roleid eq 'forbidden'">selected</if> value="forbidden">禁用</option>
+          </select></td>
+	      <td width="130"><input type="image" name="imageField" src="__IMG_ADMIN_PATH__/search.jpg" /></td>
+	      </tr>
+	    </table>
+	  </form>
+	  
+	<form id="myform" name="myform" method="post" action="">
+	<table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
+      <tr>
+        <td align="center" bgcolor="#f5ede6" width="5%"><input type="checkbox" id="check_box" onclick="selectall('ids[]');" class="checkall" /></td>
+        <td align="center" bgcolor="#f5ede6" width="15%"><h1>用户名</h1></td>
+        <td align="center" bgcolor="#f5ede6" width="10%"><h1>状态</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>分配权限</h1></td>
+        <td align="center" bgcolor="#f5ede6" width="15%"><h1>创建日期</h1></td>
+        <td align="center" bgcolor="#f5ede6" width="15%"><h1>操作</h1></td>
+      </tr>
+	  <volist name="list" id="v">
+      <tr>
+        <td align="center"><input type="checkbox" class="checkall" value="{$v.id}" name="ids[]" /></td>
+        <td align="center">{$v.nickname}</td>
+        <td align="center"><if condition="$v.roleid eq 1">正常<else />禁用</if></td>
+        <td align="center">{$v.permissionStr}</td>
+        <td align="center">{$v.createtime|toDate}</td>
+        <td align="center"><a href="/index.php?g=admin&m=System&a=editAdmin&targetid={$v.id}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/index.php?g=admin&m=System&a=delAdmin&ids={$v.id}','你确定要删除吗？');">删除</a></td>
+      </tr>
+	  </volist>
+    </table>
+	</form>
+	<table width="95%" border="0" align="center" cellpadding="5" cellspacing="0">
+	  <tr>
+	    <td width="104"><label>
+	      <label onclick="selectall('ids[]');" for="check_box">全选/取消</label>
+		  </td>
+	    <td width="14"><img src="__IMG_ADMIN_PATH__/del.jpg" width="14" height="14" /></td>
+	    <td width="93"><a href="javascript:void(0);" onclick="myform.action='?g=admin&m=System&a=delAdmin';return confirm_delete()">批量删除</a></td>
+	    <td width="19">&nbsp;</td>
+	    <td width="1112">&nbsp;</td>
+	    </tr>
+	  </table>
+	<div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;">
+	  {$page}
+	  </div>
+    </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<include file="Public:mainFooter" />

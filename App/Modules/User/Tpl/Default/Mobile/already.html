@@ -1,0 +1,149 @@
+<include file="header" />
+<div id="ly_banner"> <a href="javascript:void(0);"><img src="{$houseLogo}" onerror="javascript:this.src='__IMG_MOBILE_PATH__/ly_banner.jpg';" />
+  <h2>已点餐品</h2>
+  </a> </div>
+<div style=" width:100%; position:absolute; padding:20px 0 75px;background:url(__IMG_MOBILE_PATH__/body_bg.jpg);">
+<div align="center" style=" margin-bottom:20px;">
+	<h1 style="color:red">注意：您的桌位是<font color="green">{$tabNum}号</font>,您的临时名字是<font color="green">{$uname}</font></h1>
+</div>
+  <if condition="$list">
+    <div class="yidian">
+      <volist name="list" id="v">
+        <ul>
+          <li>
+            <div class="yd_img"><a href="/index.php?g=User&m=Mobile&a=detail&id={$v.u_id}"><img src="{$v.img}" /></a></div>
+            <div class="yd_jq">
+              <h2>{$v.name}<font style="float:right; font-size:9px">[&nbsp;<if condition="$v['uname'] eq $uname">我<else />{$v.uname}</if><if condition="$v['status'] eq 1">&nbsp;|&nbsp;<font color="red">追加</font></if>&nbsp;]</font></h2>
+              <p>￥<font class="price">{$v.price}</font> x <font class="amount">{$v.amount}</font></p>
+			  <if condition="$v['uname'] eq $uname && $v['check'] lt 1">
+				  <p><a class="modifAmount" data-type="increase" dataid="{$v.id}" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/yd_jia.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" dataid="{$v.id}" class="modifAmount" data-type="subtract"><img src="__IMG_MOBILE_PATH__/yd_jian.png" /></a></p>
+			  </if>
+				</div>
+				<if condition="$v['check'] egt 1">
+					<div class="yd_del"><font color="#008000">已下单</font></div>
+				<else />
+				<if condition="$v['uname'] eq $uname">
+				<div class="yd_del"><a href="javascript:void(0);" class="delAlready" targetid="{$v.id}" ><img src="__IMG_MOBILE_PATH__/yd_del.png" width="28" height="24" />删除</a></div>
+				</if>
+			</if>
+          </li>
+        </ul>
+      </volist>
+    </div>
+    <div class="heji">
+      <h1>数量：<font id="allAmount">{$amount}</font>份&nbsp;&nbsp;&nbsp;总价：￥<font id="allPrice">{$total}</font></h1>
+      </h1>
+    </div>
+		<if condition="$showStatus eq 1">
+		<div class="tjiao"> <a href="javascript:;" onclick="orderSuccee();">
+		  <h1>提交订单</h1>
+		  </a> </div>
+		<else />
+		<div class="tjiao"> <a href="javascript:;" onclick="orderSettle();">
+		  <h1>结&nbsp;账</h1>
+		  </a> </div>
+		</if>
+    <else />
+    <div class="yidian" align="center">
+      <ul>
+        <li>
+          <div style="font-size: 110%;">
+            <h2>您还没有点餐哦，点击下面“菜单”进行点餐吧。^_^</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </if>
+</div>
+<script>
+	//增加和减去菜的数量	added by Tony
+	$('.modifAmount').click(function(){
+		var id = $(this).attr('dataid');
+		var type = $(this).attr('data-type');
+		var price = parseInt($(this).parents('.yd_jq').find('.price').html());
+		var amount = parseInt($(this).parents('.yd_jq').find('.amount').html());
+		var allAmount = parseInt($('#allAmount').html());
+		var allPrice = parseInt($('#allPrice').html());
+		var status = false;
+		if(type == 'increase'){
+			allPrice = (allPrice+price).toFixed(2);
+			amount += 1;
+			allAmount += 1;
+			status = true;
+		}else if(type == 'subtract'){
+			if(amount > 1){
+				allPrice = (allPrice-price).toFixed(2);
+				amount -= 1;
+				allAmount -= 1;
+				status = true;
+			}
+		}
+		if(status){
+			var that = this;
+			$.post("/index.php?g=User&m=Mobile&a=modifAmount",{'id':id,'amount':amount},function(re){
+				if(re.status == 1){
+					$(that).parents('.yd_jq').find('.amount').html(amount);
+					$('#allAmount').html(allAmount)
+					$('#allPrice').html(allPrice);
+				}else{
+					alert('修改失败！');
+				}
+			},'json');
+		}
+	});
+	
+	$('.delAlready').click(function(){
+		if(confirm('你确定要删除吗？')){
+			var targetid = $(this).attr('targetid');
+			if(targetid){
+				window.location.href="/index.php?g=User&m=Mobile&a=delAlready&id="+targetid;
+			}else{
+				alert('删除失败！');
+			}
+		}
+	});
+
+	//点击下单，附有ajax验证	added by Tony
+	function orderSuccee(){
+		$.post("/index.php?g=User&m=Mobile&a=getStatus",'',function(re){
+			if(re.status == 1 && re.count > 1){
+				var count = re.count-1;
+				if(confirm('和您同一张桌位的还有'+count+'位,确认提交订单吗？')){
+					window.location.href="/index.php?g=User&m=Mobile&a=orderSuccee";
+				}
+			}else if(re.status == 1 && re.count ==1){
+				if(confirm('用餐的只有您自己(或者和您同一张桌位的还没有点餐),确认提交订单吗？')){
+					window.location.href="/index.php?g=User&m=Mobile&a=orderSuccee";
+				}
+			}else if(re.status == 2){
+				alert('该桌位已经提交过订单了。');
+				window.location.reload();
+			}else if(re.status == 3){
+				if(confirm('该桌位还没有点餐！请点餐后提交订单。')){
+					window.location.href="/index.php?g=User&m=Mobile&a=classify";
+				}
+			}else if(re.status == 0){
+				if(confirm('提交订单失败,请重新点餐！')){
+					window.location.href="/index.php?g=User&m=Mobile&a=index";
+				}
+			}
+		},'json');
+	}
+	
+	//点击结账
+	function orderSettle(){
+		if(confirm('您确定要结账吗？')){
+			$.post("/index.php?g=User&m=Mobile&a=orderSettle",'',function(re){
+				if(re.status == 1){
+					alert('信息已经发送，请等待...');
+				}else if(re.status == 4){
+					alert('您好，该桌位已经结账，欢迎您下次光临。');
+				}else{
+					alert('抱歉，信息发送失败，请联系工作人员！');
+					window.location.href="/index.php?g=User&m=Mobile&a=index";
+				}
+			},'json');
+		}
+	}
+</script>
+<include file="footer" />

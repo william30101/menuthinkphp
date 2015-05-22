@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" /> 
+<title>{$Img.name}--菜品列表</title>
+<link href="__CSS_USER_PATH__/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__JS_PATH__/jquery-1.8.3-all.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#checkOut').click(function(){
+                    $.post(
+                            'index.php?g=User&m=Index&a=checkOut',
+                            {
+                                'test':'test'
+                            },
+                            function(data){
+                             if(data==1){
+                                    if(confirm('确认要结账么？')){
+                                    $.post(
+                                            'index.php?g=User&m=Index&a=checkOut',
+                                            {},
+                                            function(d){
+                                                if(d==1){
+                                                  alert('请等待管理员，前来结账');
+                                                }else{
+                                                    alert('结账失败，请联系服务人员');
+                                                }
+                                            }
+                                    )
+                                }
+                            }else if(data==3){
+                                alert('您还没有下订单，请先下订单')
+                            }else if(data==4){
+                                alert('您还没有点菜，请点菜');
+                            }else if(data==6){
+                                    alert('您已经点击了结账，请勿重复点击');
+                            } else if(data==7){
+                                    alert('请等待管理员处理菜单');
+                                }
+
+                            }
+                    )
+
+                });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="pad_left">
+        <div class="left_bg"><img src="__IMG_USER_PATH__/left_bg.png" /></div>
+        <div class="ly_logo"><img src="{$Img.logo}" /></div>
+        <div class="left_nav">
+            <ul>
+                <li><a target='iframe' href="{:U(GROUP_NAME.'/Index/myMuenList')}" ><img src="__IMG_USER_PATH__/tb1.png" />我的菜单（<if condition="!isset($num)"><span id="menuNum">0</span></if><span id="menuNum">{$num}</span>份）</a></li>
+                <li><a target='iframe' href="{:U(GROUP_NAME.'/Index/newGreens')}" ><img src="__IMG_USER_PATH__/tb2.png" />新加菜品（10份）</a></li>
+                <li><a  id="checkOut" ><img  src="__IMG_USER_PATH__/tb3.png" />结账</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="pad_right">
+        <div id=con>
+            
+            <ul id=tags>
+            <volist name='list' id='m'>
+                <if condition='$i eq 1'>
+                  <li class=selectTag><a onClick="selectTag('tagContent{$i-1}',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/menuList',array('menuid'=>$m['id']))}">{$m.name}</a></li>
+                  <else />
+                  <li><a onClick="selectTag('tagContent{$i-1}',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/menuList',array('menuid'=>$m['id']))}">{$m.name}</a></li>
+                </if>
+              </volist>
+            </ul>
+            <div id=tagContent>
+                <div class="tagContent selectTag" >
+                    <iframe name='iframe' class="iframe" src="{:U(GROUP_NAME.'/Index/menuList',array('menuid'=>1))}"></iframe>
+                </div>
+
+            </DIV>
+        </div>
+        
+         <SCRIPT type=text/javascript>
+        function selectTag(showContent,selfObj){
+            // 操作标签
+            var tag = document.getElementById("tags").getElementsByTagName("li");
+            var taglength = tag.length;
+            for(i=0; i<taglength; i++){
+                tag[i].className = "";
+            }
+            selfObj.parentNode.className = "selectTag";
+            // 操作内容
+        }
+
+        </SCRIPT>
+    </div>
+    <div id="ly_foot">
+        <ul>
+            <li><a href="{:U(GROUP_NAME.'/Index/menu')}" target="_self"><img src="__IMG_USER_PATH__/tb4.png" />菜单</a></li>
+            <li><a href="{:U(GROUP_NAME.'/Index/hotMenu')}" target='iframe'><img src="__IMG_USER_PATH__/tb5.png" />热门</a></li>
+            <li><a href="{:U(GROUP_NAME.'/Index/tuijian')}" target='iframe'><img src="__IMG_USER_PATH__/tb6.png" />推荐</a></li>
+            <li><a href="{:U(GROUP_NAME.'/Index/myMuenList')}" target='iframe' ><img src="__IMG_USER_PATH__/tb7.png" />已点</a></li>
+            <li><a href="javascript:history.go(-1);"><img id='black' src="__IMG_USER_PATH__/tb8.png" />返回</a></li>
+        </ul>
+    </div>
+</body>
+</html>

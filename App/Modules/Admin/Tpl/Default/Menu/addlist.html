@@ -1,0 +1,112 @@
+﻿<include file="Public:mainHeader" />
+<script src="__JS_PATH__/jquery-1.8.3.js" type="text/javascript"></script>
+<link href="__PUBLIC_PATH__/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC_PATH__/fancybox/source/jquery.fancybox.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#button').click(function(){
+            if($("#typeName").val()==''){
+                $("#typeName").focus();
+                alert('分类的名字不能为空');
+                return false;
+            }
+            if($("#select").val()==0){
+                if(confirm('确认这个分类作为一级分类么？')){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        $('.fancybox').fancybox();
+    });
+
+    function fancyboxClose(){
+        $.fancybox.close();
+    }
+
+    function getImg(imgUrl){
+        if(imgUrl){
+            $('#menuMa').val(imgUrl);
+            $('#menuMaBtn').html('删除素材图片').removeClass().attr('href','javascript:delImg();');
+            $('#menuMaShow').attr('src',imgUrl).show();
+            $('#fileField').hide();
+        }
+        fancyboxClose();
+    }
+    function delImg(){
+        $('#menuMa').val('');
+        $('#menuMaBtn').html('选择素材图片').attr('href','/index.php/Admin/Menu/getMaterial').addClass('fancybox fancybox.iframe');
+        $('#menuMaShow').attr('src','').hide();
+        $('#fileField').show();
+        $('#recover').show();
+    }
+
+    function recover(){
+        var imgUrl = $('#recoverImgUrl').val();
+        getImg(imgUrl);
+        $('#recover').hide();
+    }
+</script>
+
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+    <tr>
+        <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+        <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+                <td class="xtgk1">{$title}</td>
+            </tr>
+        </table></td>
+        <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+    </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+    <tr>
+        <td valign="top" bgcolor="#FFFFFF"><form action="{:U(GROUP_NAME.'/Menu/addTypeChannel')}" method="post" enctype="multipart/form-data" name="form1" id="form1">
+            <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
+                <tr>
+                    <td align="right" bgcolor="#f5ede6">分类的名称</td>
+                    <td bgcolor="#FFFFFF"><h1>
+                        <input type="hidden" value="{$m.id}" name="id"/>
+                        <input type="text" name="name" id="typeName" class="input1" value="{$m.name}"/>
+                    </h1></td>
+                </tr>
+                <tr>
+                    <td align="right" bgcolor="#F5EDE6">所属分类</td>
+                    <td bgcolor="#FFFFFF">
+                        <select name="select" id="select">
+                            <option value="0" >做为一级分类</option>
+                            <foreach name="list" item="v">
+                                <option  value="{$v.id}" <if condition="$v['id'] eq $m['parentid']">selected='selected'</if><b>{$v.name}</b></option>
+                            </foreach>
+                        </select></td>
+                </tr>
+                <tr  height="230">
+                    <td align="right" bgcolor="#F5EDE6">上传图片</td>
+                    <td bgcolor="#FFFFFF">
+                        <input  <if condition="$m['img']"> style=" display:none;" </if> type="file" name="fileField" id="fileField" />
+                        <img id="menuMaShow" src="{$m.img}" <if condition="!$m['img'] && !$imgee"> style=" display:none;" </if> width="348" height="230"/>
+                        <input type="hidden" id="menuMa" name='picname' value="{$m.img}"/>
+                        <input type="hidden" id="recoverImgUrl"  value="{$m.img}"/>
+                        <if condition="$m['img']"><div style="margin:20px 0 0 20px;"><a id="recover" style="display:none" href="javascript:recover();" >还原</a><br/><a id="menuMaBtn" href="javascript:delImg();" >删除素材图片</a></div><else /> <div style="margin:20px 0 0 20px;">
+                            <a class="fancybox fancybox.iframe" id="menuMaBtn" href="/index.php/Admin/Menu/getMaterial" >选择素材图片</a></div>
+                        </if>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" align="center" bgcolor="#FFFFFF" ><input type="submit" id="button" value="提交" class="input10" /></td>
+                </tr>
+            </table>
+        </form></td>
+    </tr>
+</table></td>
+</tr>
+</table>
+<include file="Public:mainFooter" />

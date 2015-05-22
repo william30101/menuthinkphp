@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>菜单列表</title>
+<style type="text/css">
+<!--
+* {
+	margin:0;
+	padding:0;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+img { border:none;}
+a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+#p_tou {
+	width:98%;
+	border-bottom:1px solid #ccc;
+	line-height:30px;
+	margin:5px auto 0;
+	font-size:110%;
+}
+#p_tou span {
+	display:block;
+}
+#p_tou .t_left {
+	float:left;
+}
+#p_tou .t_right {
+	float:right;
+}
+.caipin_list {
+	width:100%;
+}
+.caipin_list  ul {
+	width:100%;
+}
+.caipin_list  ul li {
+	width:28%;
+	float:left;
+	position:relative;
+	list-style:none;
+	display:inline;
+	margin:20px 0 0 4%;
+}
+.caipin_list  ul li img {
+	width:100%;
+}
+.caipin_list  ul li h2 {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 110%;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    width: 100%;
+}
+
+-->
+</style>
+</head>
+
+<body>
+    <p id="p_tou">
+        <span class="t_left">当前：{$listName}>>菜品列表</span>
+        <span class="t_right">用户:{$uname}&nbsp;&nbsp;&nbsp;&nbsp;桌号：{$tabNum}</span>
+        <span style="clear:both"></span>
+    </p>    <div class="caipin_list">
+        <ul>
+        	<foreach name='re' item='v' >
+            <li><a href="{:U(GROUP_NAME.'/Index/greensList',array('id'=>$v['id'],'listName'=>$listName))}"><img src="{$v.img}" /><h2>{$v.name}</h2></a></li>
+         	</foreach>
+        </ul>
+    </div>
+</body>
+</html>

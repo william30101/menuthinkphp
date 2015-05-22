@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 ,user-scalable=no" />
+<title>{$Img.name}-首页</title>
+<link href="__CSS_USER_PATH__/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="pad_left">
+        <div class="left_bg"><img src="__IMG_USER_PATH__/left_bg0.png" /></div>
+        <div class="ly_logo"><img src="{$Img.logo}" /></div>
+        <div class="left_bottom">
+            <img src="__IMG_USER_PATH__/index_13.png" />
+        </div>
+    </div>
+    <div id="pad_right">
+        <div id=con>
+            <ul id=tags>
+              <li class=selectTag><a onClick="selectTag('tagContent0',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/xuanzhuo',array('id'=>1))}">大厅</a></li>
+              <li><a onClick="selectTag('tagContent1',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/xuanzhuo',array('id'=>2))}">包间</a></li>
+             
+            </ul>
+            <div id=tagContent>
+                <div class="tagContent selectTag" >
+                  <iframe src="{:U(GROUP_NAME.'/Index/xuanzhuo',array('id'=>1))}" name='iframe'></iframe>
+                </div>
+                
+                
+                
+                
+                
+                
+            </DIV>
+        </div>
+        
+         <SCRIPT type=text/javascript>
+        function selectTag(showContent,selfObj){
+            // 操作标签
+            var tag = document.getElementById("tags").getElementsByTagName("li");
+            var taglength = tag.length;
+            for(i=0; i<taglength; i++){
+                tag[i].className = "";
+            }
+            selfObj.parentNode.className = "selectTag";
+            // 操作内容
+            for(m=0; m<2; m++){
+                j=document.getElementById("tagContent"+m);
+                j.style.display = "none";
+            }
+            document.getElementById(showContent).style.display = "block";
+        }
+        </SCRIPT>
+    </div>
+    <div id="ly_foot">
+        <ul>
+            <li><a href='<if condition="$tabCookie eq 1">{:U(GROUP_NAME."/Index/menu")} <else/>javascript:alert("请选桌")</if>' target="_self"><img src="__IMG_USER_PATH__/tb4.png" />菜单</a></li>
+            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/hotMenu")}<else/>javascript:alert("请选桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if>  ><img src="__IMG_USER_PATH__/tb5.png" />热门</a></li>
+            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/tuijian")} <else/>javascript:alert("请选桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if> ><img src="__IMG_USER_PATH__/tb6.png" />推荐</a></li>
+            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/myMuenList")}<else/>javascript:alert("请选桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if>  ><img src="__IMG_USER_PATH__/tb7.png" />已点</a></li>
+            <li><a href="javascript:history.go(-1);"><img id='black' src="__IMG_USER_PATH__/tb8.png" />返回</a></li>
+        </ul>
+    </div>
+</body>
+</html>

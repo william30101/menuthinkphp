@@ -1,0 +1,41 @@
+  <div id="ly_foot">
+	<ul>
+		<li><a href="javascript:history.go(-1);"><img src="__IMG_MOBILE_PATH__/b_1.png" width="25" height="25" />返回</a></li>
+		<li><a class="footerNav" data-type="menu" tabid="{$tabId}" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_2.png" width="25" height="25" />菜单</a></li>
+		<li><a href="/index.php?g=User&m=Mobile&a=recommend"><img src="__IMG_MOBILE_PATH__/b_3.png" width="25" height="25" />推荐</a></li>
+		<li><a href="/index.php?g=User&m=Mobile&a=hotMenu"><img src="__IMG_MOBILE_PATH__/b_4.png" width="25" height="25" />热门</a></li>
+        <li><a class="footerNav" data-type="already" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_5.png" width="25" height="25" />已点</a></li>
+	</ul>
+</div>
+<script>
+//点菜按钮触发	added by Tony
+function addMenu(menuId){
+	if(menuId){
+		$.post('index.php/User/Mobile/addMenu/',{'u_id':menuId},function(data){
+			if(data.status==1){
+				alert('点菜成功！');
+			}else{
+				alert('操作失败！');
+			}
+		},'json');
+	}
+}
+//脚部菜单绑定事件	added by Tony
+$('.footerNav').click(function(){
+	var dataType = $(this).attr('data-type');
+	if(dataType == 'menu'){
+		var tabId = $(this).attr('tabid');
+		if(tabId){
+			window.location.href="/index.php?g=User&m=Mobile&a=classify&tabid="+tabId;
+		}else{
+			if(confirm('请您选择桌位')){
+				window.location.href="/index.php?g=User&m=Mobile&a=index";
+			}
+		}
+	}else if(dataType =='already'){
+		window.location.href="/index.php?g=User&m=Mobile&a=already";
+	}
+});
+</script>
+</body>
+</html>

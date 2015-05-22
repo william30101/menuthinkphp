@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="__JS_PATH__/jquery-1.8.3-all.js"></script>
+<title>菜单列表</title>
+    <script type="text/javascript">
+
+
+        $(function(){
+        	for(i=1;i<11;i++){
+        		$('.dianCai'+i).click(function(){
+                var par=$(this).parents('.caipin_list1');
+                var name=par.children('.name').val();
+                var price=par.children('.price').val();
+                var id=par.children('.id').val();
+                var tempId=par.children('.tempId').val();
+                var listId=par.children('.listId').val();
+                //alert(id);
+
+                    var a=$('#menuNum', window.parent.document).text();
+                    a=Number(a);
+                    a+=1;
+                    $('#menuNum', window.parent.document).text(a);
+
+                $.post(
+                	'index.php?g=User&m=Index&a=addGreens',
+                	{
+                		'name':name,
+                		'price':price,
+                		'u_id':id,
+                		'listId':listId,
+                        'tempId':tempId
+                	},
+                	function(data){
+                		if(data==1){
+                            alert('点菜成功');
+
+                        }
+                	}
+                	);
+            	});
+                
+            
+      
+         
+            }    
+        });
+    </script>
+<style type="text/css">
+<!--
+* {
+	margin:0;
+	padding:0;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+img { border:none;}
+a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+#p_tou {
+	width:98%;
+	border-bottom:1px solid #ccc;
+	line-height:30px;
+	margin:5px auto 0;
+	font-size:110%;
+}
+#p_tou span {
+	display:block;
+}
+#p_tou .t_left {
+	float:left;
+}
+#p_tou .t_right {
+	float:right;
+}
+.caipin_list1 {
+	width:98%;
+	margin:0 auto;
+	border-bottom:1px solid #ccc;
+	padding:10px 0;
+}
+.caipin_list1 .ly_left {
+	width:25%;
+	float:left;
+	margin-right:2%;
+    position: relative;
+}
+.caipin_list1 .ly_left a {
+	display:block;
+	width:98%;
+	border:1px solid #ccc;
+	padding:2px 1%;
+}
+.caipin_list1 .ly_left a img {
+	width:100%;
+}
+.ly_left .ly_hot {
+    position:absolute;
+    top:0;
+    right:0;
+}
+.caipin_list1 .ly_center {
+	width:42%;
+	float:left;
+	margin-right:2%;
+}
+.caipin_list1 .ly_center h2 {
+	width:100%;
+	line-height:35px;
+	margin-bottom:10px;
+}
+.caipin_list1 .ly_center h2 a {
+	color:#B71100;
+	font-size:100%;
+	font-weight:normal;
+}
+.caipin_list1 .ly_center span {
+	line-height:25px;
+}
+.caipin_list1 .ly_right {
+	width:25%;
+	float:right;
+	margin-right:2%;
+}
+.caipin_list1 .ly_right h3 {
+	width:100%;
+	color:#FFAF02;
+	font-size:150%;
+	line-height:35px;
+}
+.caipin_list1 .ly_right p {
+	width:100%;
+	border:none;
+	margin-top:10px;
+}
+.caipin_list1 .ly_right p a img {
+	width:35%;
+}
+
+
+-->
+</style>
+</head>
+
+<body>
+    <p id="p_tou">
+        <span class="t_left">当前：{$list}>>菜品列表</span>
+        <span class="t_right">用户:{$uname}&nbsp;&nbsp;&nbsp;&nbsp;桌号：{$tabNum}</span>
+        <span style="clear:both"></span>
+    </p>
+    <volist name="menu" id="v">
+    <div class="caipin_list1">
+    	<input type="hidden" class='id' value='{$v.id}' />
+          <input type="hidden" class='listId' value='{$v.menutypeid}' />
+
+        <input type="hidden" class='tempId' value='{$v.id}' />
+           <input type="hidden" class='name' value='{$v.name}' />
+           <input type="hidden" class='price' value='{$v.price}' />
+        <div class="ly_left"><a href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}"><img src="{$v.img}" /></a>
+            <if condition="$v['recommend'] eq 1"><img src="__IMG_USER_PATH__/hot.png" class="ly_hot" /></if>
+        </div>
+        <div class="ly_center">
+            <h2><a  href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}">{$v.name}</a></h2>
+            <span>{$v.content|csubstr=0,30}</span>
+           
+        </div>
+        
+        <div class="ly_right">
+            <h3 >￥<span >{$v.price}</span>元/{$v.unit}</h3>
+            <p><a href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}"><img src="__IMG_USER_PATH__/btn1.jpg" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<img class='dianCai{$i}' src="__IMG_USER_PATH__/btn2.jpg" /></p>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    </volist>
+    
+</body>
+</html>

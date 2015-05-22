@@ -1,0 +1,84 @@
+<include file="header" />
+<div class="ding">
+  <h1>欢迎来{$configInfo.name}手机点餐系统</h1>
+</div>
+<div id="tou">
+<volist name="actionList" id="v" offset="0" length='2'>
+  <div class="dating" <if condition="$key"> style="float:right; margin-right:30px;"</if>> <a href="/index.php?g=User&m=Mobile&a=index&id={$v.id}">
+    <div <if condition="$v['id'] eq $id"> class="dating_n" <else />class="dating_n1"</if> >
+      <h1>{$v.name}</h1>
+    </div>
+    </a>
+<if condition="$v['id'] eq $id"><div class="dating_sj"></div></if>
+  </div>
+</volist>
+</div>
+<div class="content">
+<volist name="viewList" id="v">
+  <div class="one">
+    <h1>{$v.name}</h1>
+  </div>
+  <div class="mid">
+    <div class="nav">
+      <ul>
+	  <volist name="v['view']" id="vv">
+		<if condition="$vv['status'] eq 4">
+        <li class="checkTab red" dataid="{$vv.id}">
+          <h1 class="c">{$vv.num}号<br />
+            整理中</h1>
+        </li>
+		<elseif condition="$vv['status'] eq 3" />
+        <li class="checkTab b" dataid="{$vv.id}">
+          <h1 class="c">{$vv.num}号<br />
+            正使用</h1>
+        </li>
+		<elseif condition="$vv['status'] eq 2" />
+        <li class="checkTab d" dataid="{$vv.id}">
+          <h1 class="c">{$vv.num}号<br />
+            已预订</h1>
+        </li>
+		<else />
+		<li class="checkTab no" dataid="{$vv.id}">
+          <h1>{$vv.num}号<br />
+          <if condition="$vv['chair']">{$vv.chair}人座<else />空闲中</if></h1>
+        </li>
+		</if>
+	 </volist>
+      </ul>
+    </div>
+  </div>
+</volist>
+</div>
+<script>
+	$('.checkTab').click(function(){
+		var isClass = $(this).hasClass('no');
+		if(isClass){
+			var tabId = $(this).attr('dataid');
+			$.post('/index.php?g=User&m=Mobile&a=tabPost',{'tabid':tabId},function(re){
+				if(re == 2){
+					alert('此桌位已被预订，请选择别的桌位。');
+				}else if(re == 3){
+					alert('此桌位正在使用中，请选择别的桌位。');
+				}else if(re == 4){
+					alert('此桌位正在整理中，请稍等或选择别的桌位。');
+				}else if(re == 1){
+					window.location.href='/index.php?g=User&m=Mobile&a=classify';
+				}else{
+					alert('桌位选择失败！');
+				}
+			});
+		}else{
+			var isClassB = $(this).hasClass('b');
+			var isClassD = $(this).hasClass('d');
+			var isClassRed = $(this).hasClass('red');
+			if(isClassB){
+				alert('此桌位正在使用中，请选择别的桌位。');
+			}else if(isClassD){
+				alert('此桌位已被预订，请选择别的桌位。');
+			}else if(isClassRed){
+				alert('此桌位正在整理中，请稍等或选择别的桌位。');
+			}
+		}
+	});
+</script>
+<include file="footer" /> 

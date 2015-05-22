@@ -1,0 +1,58 @@
+<STYLE type=text/css media=screen>
+ul{ padding:0px; margin:0px;}
+#downmsg_emessage {Z-INDEX: 100; RIGHT: 0px; BACKGROUND: url(__IMG_ADMIN_PATH__/down_msg_bg.gif) no-repeat left top; WIDTH: 225px; BOTTOM: 0px; POSITION: fixed; _position: absolute}
+#donwmsg_head {MARGIN-TOP: 1px; DISPLAY: inline; FONT-SIZE: 12px; FLOAT: left; MARGIN-LEFT: 26px; COLOR: #ffffff}
+#downmsgBar .close {MARGIN-TOP: 6px; DISPLAY: block; FLOAT: right; WIDTH: 11px; MARGIN-RIGHT: 5px; HEIGHT: 11px}
+#downmsgBar {HEIGHT: 25px}
+#donwmsg_content {OVERFLOW: hidden; HEIGHT: 162px}
+#donwmsg_content UL {PADDING-RIGHT: 10px; height:68%; PADDING-LEFT: 10px; FONT-SIZE: 12px; LEFT: 6px; PADDING-BOTTOM: 0px; COLOR: #007cc1; LINE-HEIGHT: 180%; PADDING-TOP: 10px; TOP: 34px}
+#donwmsg_content UL LI {BACKGROUND: url(__IMG_ADMIN_PATH__/down_msg_bg.gif) no-repeat -100px -245px; TEXT-INDENT: 13px}
+#donwmsg_content UL LI A {COLOR: #007cc1}
+#donwmsg_content UL .ll A {	FONT-WEIGHT: bold; COLOR: #a10000}
+#donwmsg_content P {LEFT: 13px; POSITION: absolute; TOP: 157px}
+#donwmsg_content .lb {PADDING-RIGHT: 14px; PADDING-LEFT: 14px; PADDING-BOTTOM: 14px; PADDING-TOP: 14px; TEXT-ALIGN: center}
+#donwmsg_content .lb a{ font-size:13px;}
+.msg-hidden-btn-2 {MARGIN-TOP: 6px; DISPLAY: block; BACKGROUND: url(__IMG_ADMIN_PATH__/down_msg_bg.gif) no-repeat left -250px; FLOAT: right; OVERFLOW: hidden; WIDTH: 11px; MARGIN-RIGHT: 5px; HEIGHT: 11px}
+.msg-hidden-btn-1 {MARGIN-TOP: 6px; DISPLAY: block; BACKGROUND: url(__IMG_ADMIN_PATH__/down_msg_bg.gif) no-repeat -50px -250px; FLOAT: right; OVERFLOW: hidden; WIDTH: 11px; MARGIN-RIGHT: 5px; HEIGHT: 11px}
+.sectionshover .trans {	BORDER-RIGHT: #ffc600 1px solid; BORDER-TOP: #ffc600 1px solid; BORDER-LEFT: #ffc600 1px solid; BORDER-BOTTOM: #ffc600 1px solid; HEIGHT: 24px; BACKGROUND-COLOR: #fff0b6
+}
+.sectionshover .trans LI {CLEAR: none; FLOAT: left; WIDTH: 200px}
+.mm_gg LI {PADDING-LEFT: 15px; BACKGROUND: url(__IMG_ADMIN_PATH__/1254189745035.gif) no-repeat 4px 8px; LINE-HEIGHT: 20px}
+.mm_gg LI A {COLOR: #8f3434}
+.mm_gg LI A:hover {	COLOR: #8f3434}
+.mm_gg LI:visited {COLOR: #8f3434}
+</STYLE>
+<script src="__JS_ADMIN_PATH__/jsc.js" type="text/javascript"></script>
+<script src="__JS_ADMIN_PATH__/lightbox.js" type="text/javascript"></script>
+<DIV id=downmsg_emessage style="DISPLAY: none ">
+    <DIV id=downmsgBar>
+        <DIV id=donwmsg_head>系统提示</DIV>
+        <A class=close href="javascript:closeDiv()"></A>
+        <A class=msg-hidden-btn-1 id=msg_hidden_btn href="javascript:showHideDiv()">&nbsp;</A>
+    </DIV>
+    <DIV id=donwmsg_content>
+          <UL id="settleShow">
+          </UL>
+          <DIV class=lb>请赶往处理!</DIV>
+    </DIV>
+</DIV>
+<script src="__JS_ADMIN_PATH__/down_msg.js" type="text/javascript"></script>
+<SCRIPT type=text/javascript>
+var downmsg = new downMsg("downmsg_emessage","donwmsg_content",{start_delay:2000, speed: 5, movepx:2,cookie:'downMsgcookie',expiresDay:1});
+	window.setInterval(getSettle, 30000);//每隔30秒获取一次
+//自动获取请求表数据	added by Tony
+function getSettle(){
+	$.post('/index.php?g=Admin&m=Login&a=getSettle','',function(html){
+		var htmlLength = html.length;
+		if(htmlLength){
+			$('#settleShow').html(html);
+			var msg_hidden_btn = $('#msg_hidden_btn').hasClass('msg-hidden-btn-1');
+			if(msg_hidden_btn){
+				downmsg.start();
+				setTimeout('closeDiv()',10000);
+			}
+		}
+	});
+}
+</SCRIPT>
+</body></html>

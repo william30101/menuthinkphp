@@ -1,0 +1,125 @@
+{__NOLAYOUT__}
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>铭讯EOS网站后台管理</title>
+<meta content="济南网站建设 济南网站制作 山东网站建设 济南铭讯软件有限公司" name="Keywords">
+<meta content="济南网站制作：铭讯软件专业服务优秀企业，致力于网站建、设网站推广、网络营销一体的全访位网络服务商" name="Description">
+<style type="text/css">
+<--
+body{background:url(__PUBLIC_PATH__/admin/images/login_1.jpg) center top no-repeat;}
+#l_logo{width:543px;height:93px;background:url(__PUBLIC_PATH__/admin/images/login_6.png) 0 0 no-repeat;margin:180px auto 0;}
+#l_zong{background:url(__PUBLIC_PATH__/admin/images/login_2.png) center 50% no-repeat;margin-top:15px;height:335px;}
+#l_zong .kuang{width:463px;margin:0px auto;height:271px;font-size:14px;color:#666;background:url(__PUBLIC_PATH__/admin/images/login_3.png) 0 0 no-repeat;padding-top:64px;}
+#l_zong .kuang a{font-size:12px;color:#39f;}
+.w296{width:296px;height:31px;border:#ccc 1px solid;line-height:31px;}
+.w85{width:85px;height:31px;border:#ccc 1px solid;line-height:31px;}
+#l_bottom{ text-align:center;font-size:12px;color:#999;margin-top:30px;}
+-->;
+</style>
+<link type="text/css" rel="stylesheet" href="__PUBLIC_PATH__/admin/images/css.css">
+<script language="javascript">
+<--
+function SetFocus()
+{
+if (document.Login.UserName.value=="")
+	document.Login.UserName.focus();
+else
+	document.Login.UserName.select();
+}
+function CheckForm()
+{
+	if(document.getElementById('username').value=="")
+	{
+		alert("请输入用户名！");
+		document.getElementById('username').focus();
+		return false;
+	}
+	if(document.getElementById('password').value == "")
+	{
+		alert("请输入密码！");
+		document.getElementById('password').focus();
+		return false;
+	}
+	if (document.getElementById('CheckCode').value==""){
+       alert ("请输入您的验证码！");
+       document.getElementById('CheckCode').focus();
+       return(false);
+    }
+}
+
+function CheckBrowser() 
+{
+}
+//-->;
+</script>
+</head>
+<body>
+<div id="l_logo"></div>
+<div id="l_zong">
+  <div class="kuang">
+    <form onSubmit="return CheckForm();" target="_parent" method="post" action="index.php?g=Admin&m=Login&a=index&dosubmit=1" name="Login">
+      <table width="87%" border="0" align="center" cellspacing="0" cellpadding="10">
+        <tbody>
+          <tr>
+            <td width="23%" align="right">账&#12288;号：</td>
+            <td width="77%"><input type="text" class="w296" id="username" name="username"></td>
+          </tr>
+          <tr>
+            <td align="right">密&#12288;码：</td>
+            <td><input type="password" class="w296" id="password" name="password"></td>
+          </tr>
+          <tr>
+            <td align="right">验证码：</td>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td width="33%"><input type="text" class="w85" id="CheckCode" name="CheckCode"></td>
+                    <td width="34%"><img alt="看不清，换一张" id="imageField" name="imageField" onclick='this.src=this.src+"&"+Math.random()' src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background='> </td>
+                    <td width="33%"><a href="javascript:void(0);" onClick="document.getElementById('imageField').src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&'+Math.random();">换一张</a></td>
+                  </tr>
+                </tbody>
+              </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td align="right"><input type="image" src="__PUBLIC_PATH__/admin/images/login_5.png" name="imageField"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</div>
+<script>
+function SetFocus()
+{
+if (document.Login.UserName.value=="")
+document.Login.UserName.focus();
+else
+document.Login.UserName.select();
+} 
+function CheckForm()
+{
+if(document.Login.UserName.value=="")
+{
+alert("请输入用户名！");
+document.Login.UserName.focus();
+return false;
+}
+if(document.Login.Password.value == "")
+{
+alert("请输入密码！");
+document.Login.Password.focus();
+return false;
+}
+if (document.Login.CheckCode.value==""){
+alert ("请输入您的验证码！");
+document.Login.CheckCode.focus();
+return(false);
+}
+}
+
+</script>
+<div id="l_bottom">Copyright ?2013 铭讯软件 Corporation, All Rights Reserved</div>
+</body>
+</html>

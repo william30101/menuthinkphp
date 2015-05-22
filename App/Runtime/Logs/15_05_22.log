@@ -1,0 +1,2022 @@
+[ 2015-05-22T21:06:29+08:00 ] 127.0.0.1 /dishes/
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000395s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 16 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 36 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 39 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004400s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000156s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000165s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000089s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:06:30+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000258s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: errors /var/www/dishes/App/Runtime/Cache/Admin/6fdf73972c04cc63c3b9c2fa1aeab02e.php 第 39 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004376s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000181s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000094s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:06:37+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000399s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) /var/www/dishes/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2015-05-22T21:09:52+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000255s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004638s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000202s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000154s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000086s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000291s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:09:59+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005083s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000162s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000139s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000244s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:10:02+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000234s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003991s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000173s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000139s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000272s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:10:45+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005015s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000180s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000297s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:10:47+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005768s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000245s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000198s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000118s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000379s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-05-22T21:10:47+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000449s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+
+[ 2015-05-22T21:10:50+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.5936599352862686
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000395s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+
+[ 2015-05-22T21:10:51+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.5936599352862686&0.6861208982300013
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2015-05-22T21:10:51+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.5936599352862686&0.6861208982300013&0.752773392945528
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000250s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+
+[ 2015-05-22T21:10:52+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.48475406924262643
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+
+[ 2015-05-22T21:10:52+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.09113363130018115
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000252s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+
+[ 2015-05-22T21:10:52+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.12592139816842973
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000208s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+
+[ 2015-05-22T21:10:53+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.2820302937179804
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000209s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+
+[ 2015-05-22T21:10:53+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.0030538421124219894
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+
+[ 2015-05-22T21:12:13+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.0030538421124219894&0.10079834167845547
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-05-22T21:12:14+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.1417999598197639
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+
+[ 2015-05-22T21:12:15+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.6804141472093761
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-05-22T21:12:15+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.7350790272466838
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+
+[ 2015-05-22T21:12:15+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.6237767674028873
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+
+[ 2015-05-22T21:14:24+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004863s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000177s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000162s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000276s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:14:25+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010137s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000263s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000219s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000119s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001089s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000392s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2015-05-22T21:14:25+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-05-22T21:14:33+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.48769193538464606
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+
+[ 2015-05-22T21:14:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.48769193538464606&0.05861974903382361
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+
+[ 2015-05-22T21:14:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.48769193538464606&0.05861974903382361&0.8546094167977571
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000212s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2015-05-22T21:14:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.48769193538464606&0.05861974903382361&0.8546094167977571&0.4360745951998979
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+
+[ 2015-05-22T21:14:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.48769193538464606&0.05861974903382361&0.8546094167977571&0.4360745951998979&0.4992078871000558
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000208s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-05-22T21:14:35+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.48769193538464606&0.05861974903382361&0.8546094167977571&0.4360745951998979&0.4992078871000558&0.8139479318633676
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000256s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2015-05-22T21:16:25+08:00 ] 127.0.0.1 /dishes/index.php/admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000455s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000539s ]
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000247s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载模块:Index
+
+[ 2015-05-22T21:18:38+08:00 ] 127.0.0.1 /dishes/index/admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000780s ]
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+ERR: 无法加载模块:Index
+
+[ 2015-05-22T21:18:40+08:00 ] 127.0.0.1 /dishes/index.php/admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000448s ]
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000241s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+ERR: 无法加载模块:Index
+
+[ 2015-05-22T21:21:42+08:00 ] 127.0.0.1 /dishes/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000244s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 16 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 36 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/40bb55b4d9e568d45980b5d34d2da931.php 第 39 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004577s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000171s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000152s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000084s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000276s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:21:43+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000255s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004406s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000203s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000084s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2015-05-22T21:21:43+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000274s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+
+[ 2015-05-22T21:26:05+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000454s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+
+[ 2015-05-22T21:26:37+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000263s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004336s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000202s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000317s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2015-05-22T21:26:37+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+
+[ 2015-05-22T21:26:38+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&&0.3324153982102871
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+
+[ 2015-05-22T21:26:39+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.656077295774594
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+
+[ 2015-05-22T21:26:39+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.9775579129345715
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000327s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+
+[ 2015-05-22T21:26:39+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.4848972265608609
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000209s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+
+[ 2015-05-22T21:26:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.9041419215500355
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000217s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+
+[ 2015-05-22T21:26:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.5797858983278275
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+
+[ 2015-05-22T21:26:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.5550168317276984
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000370s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+
+[ 2015-05-22T21:26:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.9525682837702334
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+
+[ 2015-05-22T21:26:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.8171391854993999
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+
+[ 2015-05-22T21:26:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.27231902978383005
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000210s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+
+[ 2015-05-22T21:26:41+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&0.9443656883668154
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000202s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+
+[ 2015-05-22T21:28:28+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000256s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004420s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000213s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000083s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000283s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2015-05-22T21:28:28+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-22T21:28:29+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004123s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000183s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000145s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000079s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000277s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2015-05-22T21:28:29+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+
+[ 2015-05-22T21:31:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004421s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000206s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000084s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000721s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000281s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2015-05-22T21:31:40+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000365s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+
+[ 2015-05-22T21:31:45+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005087s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000212s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000081s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000277s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:31:48+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000247s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+
+[ 2015-05-22T21:31:57+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000254s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004792s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000176s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000146s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000270s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:32:00+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003893s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000189s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000144s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000086s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2015-05-22T21:32:00+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000471s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+
+[ 2015-05-22T21:32:14+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004840s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000179s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000150s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000081s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000277s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:32:15+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005347s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000181s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000141s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000084s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2015-05-22T21:32:15+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000250s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-05-22T21:33:41+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006794s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000295s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000219s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000123s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001088s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000436s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2015-05-22T21:33:41+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000409s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+
+[ 2015-05-22T21:34:01+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000271s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004515s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000206s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000084s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2015-05-22T21:34:01+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000433s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+
+[ 2015-05-22T21:34:05+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000376s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007189s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000263s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000210s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000118s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000420s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:34:08+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003882s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000190s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000138s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000268s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2015-05-22T21:34:08+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+
+[ 2015-05-22T21:35:31+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000438s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007832s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000288s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001119s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000456s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:35:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003987s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000189s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000137s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000084s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000274s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2015-05-22T21:35:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-05-22T21:36:27+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000256s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004489s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000198s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000151s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000101s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000314s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2015-05-22T21:36:27+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000242s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+
+[ 2015-05-22T21:36:31+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index&dosubmit=1
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CHARSET - assumed 'CHARSET' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 4 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 13 行.
+NOTIC: [8] Use of undefined constant __IMG_ADMIN_PATH__ - assumed '__IMG_ADMIN_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 16 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 20 行.
+NOTIC: [8] Use of undefined constant __JS_PATH__ - assumed '__JS_PATH__' /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 21 行.
+NOTIC: [8] Undefined variable: returnjs /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 38 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 40 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 41 行.
+NOTIC: [8] Undefined variable: dialog /var/www/dishes/App/Runtime/Cache/Admin/004ed678f0533218a57ebee496a1e7a5.php 第 46 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007259s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000251s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000211s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000116s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001026s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000424s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] ob_end_flush(): failed to delete buffer zlib output compression /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 101 行.
+
+[ 2015-05-22T21:36:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=index
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' /var/www/dishes/ThinkPHP/Lib/Core/Action.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005751s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000267s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000205s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000116s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2015-05-22T21:36:34+08:00 ] 127.0.0.1 /dishes/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&
+NOTIC: [8] Use of undefined constant TMPL_PARSE_STRING - assumed 'TMPL_PARSE_STRING' /var/www/dishes/App/Conf/config.php 第 50 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] urldecode() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] addslashes() expects exactly 1 parameter, 2 given /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] array_walk_recursive() expects parameter 2 to be a valid callback, function 'htmlspecialchar' not found or invalid function name /var/www/dishes/ThinkPHP/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+

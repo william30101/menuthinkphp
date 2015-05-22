@@ -1,0 +1,51 @@
+<include file="Public:mainHeader" />
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+          <td class="xtgk1">{$title}</td>
+        </tr>
+      </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
+        <tr>
+          <td align="center" bgcolor="#f5ede6"><h1>时间</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>桌号</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>收入</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>点餐时间</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>结账时间</h1></td>
+          <td align="center" bgcolor="#f5ede6">操作员</td>
+          <td align="center" bgcolor="#f5ede6">操作</td>
+        </tr>
+        <volist name="list" id="v">
+          <tr>
+            <td align="center">{$v.createtime|toDate}</td>
+            <td align="center">{$v.tabNum}</td>
+            <td align="center">{$v.price}元</td>
+            <td align="center">{$v.starttime|toDate}</td>
+            <td align="center">{$v.endtime|toDate}</td>
+            <td align="center">{$v.adminName}</td>
+            <td align="center"><a href="/index.php?g=Admin&m=Stream&a=detail&id={$v.id}&t_id={$v.t_id}">查看详情</a></td>
+          </tr>
+        </volist>
+        <tr>
+          <td colspan="7" align="left" >本{$tit}总收入：<span class="colorf00">{$allPrice}</span>元&nbsp;&nbsp;本页总计：<span class="colorf00">{$nowPagePrice}</span>元</td>
+        </tr>
+      </table>
+	  <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;">
+	  {$page}
+	  </div>
+	  </td>
+      <!--<div class="meneame"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>--></td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+<include file="Public:mainFooter" />

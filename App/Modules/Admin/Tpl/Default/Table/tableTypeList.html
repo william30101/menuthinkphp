@@ -1,0 +1,82 @@
+<include file="Public:mainHeader" />
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+          <td class="xtgk1">桌位列表</td>
+        </tr>
+      </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td bgcolor="#FFFFFF"><form id="mysearchform" name="mysearchform" method="POST" action="/index.php?g=admin&m=Table&a=tableList">
+        <table width="520" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+          <tr>
+            <td width="44"><select name="type">
+                <option 
+                <if condition="$search['type'] eq 'tabname'">selected</if>
+                 value="tabname">名称：
+                </option>
+                <option 
+                <if condition="$search['type'] eq 'num'">selected</if>
+                 value="num">桌号：
+                </option>
+              </select></td>
+            <td width="198"><input type="text" name="typevalue" class="xtgk5" value="{$search.typevalue}" /></td>
+            <td width="57">区域：</td>
+            <td width="101"><select name="floor">
+                <option >请选择</option>
+                <volist name="floorList" id="v">
+                  <option <if condition="$v['id'] eq $search['floor']">selected</if> value="{$v.id}" >{$v.html}{$v.name}</option>
+                </volist>
+              </select></td>
+            <td width="130"><input type="image" name="imageField" src="__IMG_ADMIN_PATH__/search.jpg" /></td>
+          </tr>
+        </table>
+      </form>
+      <form id="myform" name="myform" method="post" action="">
+        <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
+          <tr>
+            <td align="center" bgcolor="#f5ede6"><input type="checkbox" id="check_box" onclick="selectall('ids[]');" class="checkall" /></td>
+            <td align="center" bgcolor="#f5ede6"><h1>桌号</h1></td>
+            <td align="center" bgcolor="#f5ede6"><h1>桌位名称</h1></td>
+            <td align="center" bgcolor="#f5ede6"><h1>所属区域</h1></td>
+            <td align="center" bgcolor="#f5ede6"><h1>创建日期</h1></td>
+            <td align="center" bgcolor="#f5ede6"><h1>操作</h1></td>
+          </tr>
+          <volist name="list" id="v">
+		  	<volist name="v['view']" id="vv">
+            <tr>
+              <td align="center"><input type="checkbox" class="checkall" value="{$vv.id}" name="ids[]" /></td>
+              <td align="center">{$vv.num}</td>
+              <td align="center">{$vv.tabname}</td>
+              <td align="center">{$v.dname}</td>
+              <td align="center">{$vv.createtime|toDate}</td>
+              <td align="center"><a href="/index.php?g=admin&m=Table&a=editTable&targetid={$vv.id}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/index.php?g=admin&m=Table&a=delTable&ids={$vv.id}','你确定要删除吗？');">删除</a></td>
+            </tr>
+            </volist>
+          </volist>
+        </table>
+      </form>
+      <table width="95%" border="0" align="center" cellpadding="5" cellspacing="0">
+        <tr>
+          <td width="104"><label>
+            <label onclick="selectall('ids[]');" for="check_box">全选/取消</label>
+          </td>
+          <td width="14"><img src="__IMG_ADMIN_PATH__/del.jpg" width="14" height="14" /></td>
+          <td width="93"><a href="javascript:void(0);" onclick="myform.action='?g=admin&m=Table&a=delTable';return confirm_delete()">批量删除</a></td>
+          <td width="19">&nbsp;</td>
+          <td width="1112">&nbsp;</td>
+        </tr>
+      </table>
+      <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;"> {$page} </div></td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+<include file="Public:mainFooter" />

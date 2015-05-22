@@ -1,0 +1,83 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>点餐系统</title>
+<meta name="Keywords" content="点餐系统">
+<meta name="Description" content="点餐系统">
+<link href="__CSS_ADMIN_PATH__/css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+function showOneHideOther(n,count)
+{
+	var i;
+	for (i = 1; i <= count; i++)
+	{
+		if (i == n)
+		{
+			eval("document.all.t" + i +".style.display = \"block\"");
+			eval("document.all.b" + i +".blur()");
+		}
+		else
+		{
+			eval("document.all.t" + i +".style.display = \"none\"");
+		}
+	}
+}
+//-->
+</script>
+</head>
+
+<body>
+<table width="100%" height="15" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td></td>
+  </tr>
+</table>
+
+<table width="250" height="100%" border="0" cellpadding="0" cellspacing="0" style="background:#fff7f2; border:#dca581 solid 1px;">
+  <tr>
+    <td width="187" valign="top"><table width="250" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+        <td width="187" height="40" background="__IMG_ADMIN_PATH__/left_bg.png"><table width="230" border="0" align="center" cellpadding="0" cellspacing="0" onClick="showOneHideOther(1,5)" id="b1">
+            <tr>
+              <td width="29"><img src="__IMG_ADMIN_PATH__/left_1.png" /></td>
+              <td width="201" class="hui">快速导航</td>
+            </tr>
+       </table></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+		<table width="230" border="0" align="center" cellpadding="0" cellspacing="0" style="display:block" id="t1">
+		<?php
+			if($nowNode['show'] == 1 && $nowNode['tplshow'] == 1){
+		?>
+		<?php
+			foreach($nowNode['view'] as $childval){
+				if($childval['tplshow'] == 1){
+				$childval['url']=get_node_nav_link($childval).'&menuid='.$childval['id'];
+		?>
+          <tr>
+            <td width="29" height="30" align="center"><!--<img src="__IMG_ADMIN_PATH__/{$nowNode['id']}_{$childval['id']}.png" width="16" height="16">--></td>
+            <td width="131" height="45"><a href="{$childval['url']}" class="font_sy1" target="mainFrame">{$childval['name']}</a></td>
+          </tr>
+		 <tr>
+            <td height="1" colspan="2" bgcolor="#dca581"></td>
+          </tr>
+		<?php } } } ?>	
+       </table>
+		</td>
+      </tr>
+      
+       </table>
+    </td>
+  </tr>
+     
+     
+	  <tr>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+</table>
+  
+  
+
+
+
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>打印</title>
+<style type="text/css">
+body {margin:0px;padding:0px;font-size:12px;}
+h1{font-size:12px;}
+#logo{width:90%;margin:0px auto;}
+</style>
+</head>
+
+<body onload="scrollBy(0,document.body.scrollHeight)">
+<div id="logo" style="display:none"><if condition="$logoInfo['logo']"><img src="{$logoInfo.logo}" width="100%" /></if></div>
+<div align="center"><h3>{$tabNum}号桌位菜单</h3></div>
+<div>
+  <table width="100%" id="mytable" border="0" align="center" >
+      <tr style="font-size:12px;">
+        <td width="20%" align="center">序号</td>
+        <td width="40%" align="center">菜名</td>
+        <td width="40%" align="center">单价/数量</td>
+      </tr>
+	  <volist name="list" id="v">
+      <tr style="font-size:10px;">
+        <td align="center">{$key+1}</td>
+        <td align="center">{$v.name}</td>
+        <td align="center">{$v.price} x {$v.amount}</td>
+      </tr>
+	  </volist>
+         <tr style="font-size:12px;">
+        <td colspan="2" align="right" >总计：</td>
+        <td align="center" class="colorf00 fontweight">{$allPrice}元</td>
+        </tr>
+    </table>
+</div>
+<!-- 引入IE内核需要的js author Tony start-->
+<!--[if IE]>
+<style media="print">
+.noprint{display:none;}
+.pagenext{page-break-after: always;}
+.bgcolor {
+background-color: #fff;
+}
+</style>
+<object id="factory" style="display:none" viewastext classid="clsid:1663ed61-23eb-11d2-b92f-008048fdd814" codebase="/redist/smsx.cab#Version=5,60,0,360"></object>
+<script language="javascript">
+function window.onload() {
+factory.printing.header = "" //页眉
+factory.printing.footer = "" //页脚
+factory.printing.portrait = true //true为纵向打印，flase为横向打印
+factory.printing.leftMargin = 0 //左页边距
+factory.printing.topMargin = 0 //上页边距
+factory.printing.rightMargin = 0 //右页边距
+factory.printing.bottomMargin = 0 //下页边距
+}
+</script>
+<![endif]-->
+<!-- 引入ID内核需要的js author Tony  end -->
+<script>
+window.location.hash; 
+//-----  下面是打印控制语句  ---------- 
+window.onbeforeprint=beforePrint; 
+window.onafterprint=afterPrint; 
+//打印之前隐藏不想打印出来的信息 
+function beforePrint(){ 
+	logo.style.display=''; 
+	printer_btn.style.display='none'; 
+} 
+//打印之后将隐藏掉的信息再显示出来 
+function afterPrint(){ 
+	logo.style.display='none'; 
+	printer_btn.style.display=''; 
+} 
+</script>
+
+<!--[if IE]>
+
+<div align="right" id="printer_btn"><a style="margin-right:15%;color: #FFFFFF;
+background: #DC4E1B; font-size:16px;cursor: pointer;" type="button" id="pri_close" onclick="factory.printing.Print(false);parent.fancyboxClose();">确定打印</a></div>
+
+<!--<![endif]-->
+<!--[if !IE]><!--> 
+<div align="right" id="printer_btn"><a style="margin-right:15%;color: #FFFFFF;
+background: #DC4E1B; font-size:16px;cursor: pointer;" type="button" id="pri_close" onclick="window.print();parent.fancyboxClose();">确定打印</a></div>
+<!--<![endif]-->
+</body>
+</html>

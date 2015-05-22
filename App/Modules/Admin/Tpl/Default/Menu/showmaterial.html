@@ -1,0 +1,45 @@
+<include file="Public:mainHeader" />
+<script src="__JS_PATH__/jquery-1.8.3.js" type="text/javascript"></script>
+<link href="__PUBLIC_PATH__/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC_PATH__/fancybox/source/jquery.fancybox.js" type="text/javascript"></script>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+          <td class="xtgk1">搜索素材库</td>
+        </tr>
+      </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
+  <volist name="list" id="v">
+    <tr>
+      <td colspan="2" align="center"><h1>{$v.name}</h1></td>
+    </tr>
+    <tr>
+      <td ><if condition="$v['imgArray']">
+        <volist name="v['imgArray']" id="vv">
+          <div style="float:left; margin:13px 13px 0 13px;"><img height="84" width="120" onclick="parent.getImg('{$vv}');" src="{$vv}" title="{$v.name}"/>
+            <div align="center">
+              <input type="button" onclick="parent.getImg('{$vv}');" value='选择'/>
+            </div>
+          </div>
+        </volist>
+        <else />
+        <div align="center">
+        <img height="84" width="120" onclick="parent.getImg('{$v.img}');" src="{$v.img}" title="{$v.name}"/>
+        <div>
+        <input type="button" onclick="parent.getImg('{$v.img}');" value='选择'/>
+        <div></div>
+        </if>
+      </td>
+    </tr>
+  </volist>
+  <tr>
+	<td><div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;"> {$page} </div></td>
+  </tr>
+</table>
+<include file="Public:mainFooter" />

@@ -1,0 +1,110 @@
+<include file="header" />
+<style>
+.ly_img .ly_hot {
+ 	border:0;
+	box-shadow:0px 0px;
+	width:20%;	
+    position:absolute;
+    right: -2px;
+    top: 0;
+}
+</style>
+<div id="ly_banner">
+    <a href="javascript:void(0);"><img src="{$nowInfo.img}" /><h2>{$nowInfo.name}</h2></a>
+</div>
+
+<div style=" width:100%; position:absolute; padding:20px 0 75px;">
+    <div id="ly_list">
+        <ul>
+		<if condition="$list">
+		<volist name="list" id="v">
+            <li>
+                <div class="ly_img"><a href="/index.php?g=User&m=Mobile&a=detail&id={$v.id}"><img src="{$v.img}" onerror="this.src='__IMG_MOBILE_PATH__/pic2.jpg'" /></a>
+				<if condition="$v.recommend eq 1"><img src="/Public/User/Default/images/hot.png" class="ly_hot"></if>
+				</div>
+                <div class="ly_btn">
+                    <p>{$v.name}</p>
+                    <p>{$v.price}元/{$v.unit}</p><br />
+
+                    <h2><a href="javascript:void(0);" onclick="addMenu('{$v.id}');"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li>
+		</volist>
+		<else />
+		<div align="center">
+			暂没数据。ˇ_ˇ
+		</div>
+		</if>
+            <!--<li>
+                <div class="ly_img"><a href="diancan-xx.html"><img src="__IMG_MOBILE_PATH__/pic2.jpg" /></a></div>
+                <div class="ly_btn">
+                    <p>辣炒鸡块</p>
+                    <p>15元/份</p><br />
+
+                    <h2><a href="dingdan.html"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li>
+            <li>
+                <div class="ly_img"><a href="diancan-xx.html"><img src="__IMG_MOBILE_PATH__/pic2.jpg" /></a></div>
+                <div class="ly_btn">
+                    <p>辣炒鸡块</p>
+                    <p>15元/份</p><br />
+
+                    <h2><a href="dingdan.html"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li>
+            <li>
+                <div class="ly_img"><a href="diancan-xx.html"><img src="__IMG_MOBILE_PATH__/pic2.jpg" /></a></div>
+                <div class="ly_btn">
+                    <p>辣炒鸡块</p>
+                    <p>15元/份</p><br />
+
+                    <h2><a href="dingdan.html"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li>
+            <li>
+                <div class="ly_img"><a href="diancan-xx.html"><img src="__IMG_MOBILE_PATH__/pic2.jpg" /></a></div>
+                <div class="ly_btn">
+                    <p>辣炒鸡块</p>
+                    <p>15元/份</p><br />
+
+                    <h2><a href="dingdan.html"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li>
+            <li>
+                <div class="ly_img"><a href="diancan-xx.html"><img src="__IMG_MOBILE_PATH__/pic2.jpg" /></a></div>
+                <div class="ly_btn">
+                    <p>辣炒鸡块</p>
+                    <p>15元/份</p><br />
+
+                    <h2><a href="dingdan.html"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li><li>
+                <div class="ly_img"><a href="diancan-xx.html"><img src="__IMG_MOBILE_PATH__/pic2.jpg" /></a></div>
+                <div class="ly_btn">
+                    <p>辣炒鸡块</p>
+                    <p>15元/份</p><br />
+
+                    <h2><a href="dingdan.html"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li><li>
+                <div class="ly_img"><a href="diancan-xx.html"><img src="__IMG_MOBILE_PATH__/pic2.jpg" /></a></div>
+                <div class="ly_btn">
+                    <p>辣炒鸡块</p>
+                    <p>15元/份</p><br />
+
+                    <h2><a href="dingdan.html"><img src="__IMG_MOBILE_PATH__/btn1.png" /></a></h2>
+                </div>
+                <div style="clear:both"></div>
+            </li>-->
+        </ul>
+    </div>
+</div>
+<include file="footer" />

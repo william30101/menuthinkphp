@@ -1,0 +1,45 @@
+
+<include file="Public:mainHeader" /><body>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+        <td class="xtgk1">未结账订单</td>
+      </tr>
+    </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
+      <tr>
+        <td align="center" bgcolor="#f5ede6"><h1>桌号</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>所属区域</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>金额</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>操作员</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>详情</h1></td>
+        </tr>
+	  <volist name="list" id="v">
+          <tr>
+            <td align="center">{$v.tabNum}</td>
+        	<td align="center">{$v.floorName}</td>
+            <td align="center">{$v.allPrice}元</td>
+            <td align="center">{$v.adminName}</td>
+            <td align="center"><a href="/index.php?g=Admin&m=Index&a=tempTabDetail&t_id={$v.t_id}">查看详情</a></td>
+          </tr>
+        </volist>
+      
+    </table>
+	  <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;">
+	  {$page}
+	  </div>
+    </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<include file="Public:mainFooter" />

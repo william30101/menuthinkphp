@@ -1,0 +1,65 @@
+﻿<include file="Public:mainHeader" />
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
+  <tr>
+    <td width="4"><img src="__IMG_ADMIN_PATH__/gk1.png" width="4" height="39" /></td>
+    <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
+        <td class="xtgk1">{$title}桌位</td>
+      </tr>
+    </table></td>
+    <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
+  </tr>
+</table>
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#dca581">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><form action="{:U(GROUP_NAME.'/Table/editTable')}" method="post" enctype="multipart/form-data" name="form1" id="form1">
+	<input type="hidden" name="targetid" id="targetid" value="{$targetid}" />
+      <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
+        <tr>
+          <td align="right" bgcolor="#f5ede6">桌位名称</td>
+          <td bgcolor="#FFFFFF"><h1>
+            <input type="text" name="tabname" id="tabname" value="{$info.tabname}" class="input1" />
+          </h1></td>
+        </tr>
+		<tr>
+          <td align="right" bgcolor="#f5ede6">桌位号码</td>
+          <td bgcolor="#FFFFFF"><h1>
+            <input type="text" name="num" id="num" value="{$info.num}" class="input1" /><font style="margin-left:10px; font-size:14px;" color="red">注意：同一区域下不要有相同号码!</font>
+          </h1></td>
+        </tr>
+		<tr>
+          <td align="right" bgcolor="#f5ede6">椅子数量</td>
+          <td bgcolor="#FFFFFF"><h1>
+            <input type="text" name="chair" id="chair" value="{$info.chair}" class="input1" />
+          </h1></td>
+        </tr>
+		<tr>
+          <td align="right" bgcolor="#f5ede6">状态</td>
+          <td bgcolor="#FFFFFF">
+		  	<input type="radio" value="1" name="status" <if condition="$info['status'] eq 1"> checked="" </if>>空闲中
+			<input type="radio" value="2" name="status" <if condition="$info['status'] eq 2"> checked="" </if>>已预定
+			<input type="radio" value="3" name="status" <if condition="$info['status'] eq 3"> checked="" </if>>使用中
+			<input type="radio" value="4" name="status" <if condition="$info['status'] eq 4"> checked="" </if>>整理中
+          </td>
+        </tr>
+        <tr>
+          <td align="right" bgcolor="#F5EDE6">所属区域</td>
+          <td bgcolor="#FFFFFF"><label for="select"></label>
+            <select name="floor_num" id="floor_num">
+              <option>选择区域</option>
+                <foreach name="floorList" item="v">
+                    <option <if condition="$v['id'] eq $info['floor_num']">selected</if> <if condition="$v['parentid']"> value="{$v.id}" <else />disabled="disabled"</if> ><b>{$v.html}{$v.name}</b></option>
+                </foreach>
+            </select><font style="margin:20px;"><a href="/index.php?g=Admin&m=Table&a=areaList" >管理区域</a></font></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" bgcolor="#FFFFFF" ><input type="submit" name="button" id="button" value="提交" class="input10" /></td>
+        </tr>
+      </table>
+    </form></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<include file="Public:mainFooter" />
