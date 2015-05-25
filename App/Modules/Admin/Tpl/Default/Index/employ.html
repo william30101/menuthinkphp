@@ -5,7 +5,7 @@
     <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
-        <td class="xtgk1">使用桌号列表</td>
+        <td class="xtgk1">使用桌號列表</td>
       </tr>
     </table></td>
     <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
@@ -16,11 +16,11 @@
     <td bgcolor="#FFFFFF">
 	<table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
       <tr>
-        <td align="center" bgcolor="#f5ede6"><h1>桌号</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>所属区域</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>状态</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>操作员</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>打印</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>桌號</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>所属區域</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>狀態</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>操作者</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>列印</h1></td>
         <td align="center" bgcolor="#f5ede6"><h1>操作</h1></td>
       </tr>
 	  <volist name="list" id="v">
@@ -29,16 +29,16 @@
             <td align="center">{$v.floorName}</td>
         	<td align="center">
 			<if condition="$v['check'] eq 2">
-				<font color="#008000">已下单</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="#008000">已下單</font>&nbsp;&nbsp;&nbsp;&nbsp;
 			<elseif condition="$v['check'] eq 1" />
-				<font color="#008000">请求下单</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="#008000">請求下單</font>&nbsp;&nbsp;&nbsp;&nbsp;
 			<else />
-				<font color="red">待下单</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="red">等待下單</font>&nbsp;&nbsp;&nbsp;&nbsp;
 			</if>
 			</td>
             <td align="center">{$v.adminName}</td>
-        	<td align="center"><a href="/index.php?g=Admin&m=Index&a=printer&t_id={$v.t_id}"  class="fancybox fancybox.iframe" >打印预览</a></td>
-        	<td align="center"><a href="/index.php?g=Admin&m=Index&a=tempTabDetail&t_id={$v.t_id}">查看详情</a>&nbsp;&nbsp;&nbsp;&nbsp;<if condition="$v['check'] eq 2"><a href="javascript:void(0);" onclick="confirmurl('/index.php?g=Admin&m=Index&a=settle&t_id={$v.t_id}','您确定结账吗？');">[<font color="#008000">确认结账</font>]</a><else /><a href="javascript:void(0);" onclick="confirmurl('/index.php?g=Admin&m=Index&a=order&t_id={$v.t_id}','您确定下单吗？');">[<font color="red">确认下单</font>]</a></if></td>
+        	<td align="center"><a href="/dishes/index.php?g=Admin&m=Index&a=printer&t_id={$v.t_id}"  class="fancybox fancybox.iframe" >預覽列印</a></td>
+        	<td align="center"><a href="/dishes/index.php?g=Admin&m=Index&a=tempTabDetail&t_id={$v.t_id}">查看詳情</a>&nbsp;&nbsp;&nbsp;&nbsp;<if condition="$v['check'] eq 2"><a href="javascript:void(0);" onclick="confirmurl('/dishes/index.php?g=Admin&m=Index&a=settle&t_id={$v.t_id}','你確定結帳嗎？');">[<font color="#008000">確認結帳</font>]</a><else /><a href="javascript:void(0);" onclick="confirmurl('/dishes/index.php?g=Admin&m=Index&a=order&t_id={$v.t_id}','你確定下單嗎？');">[<font color="red">確定下單</font>]</a></if></td>
           </tr>
         </volist>      
     </table>

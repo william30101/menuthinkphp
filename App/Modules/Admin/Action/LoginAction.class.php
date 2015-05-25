@@ -44,9 +44,9 @@ class LoginAction extends Action {
                 }
                 else
                 {
-                    if($authInfo['password'] != md5Encrypt($password)) {
-                        $this->error('密码错误！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
-                    }
+                    //if($authInfo['password'] != md5Encrypt($password)) {
+                        //$this->error('密码错误！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
+                    //}
                     if($authInfo['roleid']!=1){
                         $this->error('该账户已经被禁用！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
                     }

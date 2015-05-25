@@ -72,7 +72,7 @@ function fetch_ajax(par,id){
 	}
 	if(statusVal!=1){
 		if(confirm('你确定要改变桌位的状态吗？')){
-			$.post('/index.php?g=Admin&m=Table&a=modifStatus',{'id':id,'value':value},function(re){
+			$.post('/dishes/index.php?g=Admin&m=Table&a=modifStatus',{'id':id,'value':value},function(re){
 				if(re == 1){
 					$('.tabStatus'+id).attr('status',0).attr('src',imgUrl+'no.gif');
 					$('#'+par+id).attr ('status',status);

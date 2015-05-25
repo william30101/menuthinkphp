@@ -34,22 +34,22 @@
         $('#button').click(function(){
             if($('#menuName').val()==''){
                 $('#menuName').focus();
-                alert('菜的名不成为空');
+                alert('菜的名稱不能為空');
                 return false;
             }
-            if($('#select').val()=='选择分类'){
-                alert('请选择分类');
+            if($('#select').val()=='選擇分類'){
+                alert('請選擇分類');
                 return false;
             }
             if($('#menuPrice').val()==''){
                 $('#menuPrice').focus();
-                alert('菜的价格不成为空');
+                alert('菜的價格不能為空');
                 return false;
             }
 
             if($('#menuCon').val()==''){
                 $('#menuCon').focus();
-                alert('请写菜的详细做法');
+                alert('請寫菜的詳細做法');
                 return false;
             }
         });
@@ -57,15 +57,15 @@
     $(document).ready(function() {
         $('.fancybox').fancybox();
 	});
-	
-	function fancyboxClose(){	
-		$.fancybox.close(); 
+
+	function fancyboxClose(){
+		$.fancybox.close();
 	}
-	
+
 	function getImg(imgUrl){
 		if(imgUrl){
 			$('#menuMa').val(imgUrl);
-			$('#menuMaBtn').html('删除素材图片').removeClass().attr('href','javascript:delImg();');
+			$('#menuMaBtn').html('删除食材圖片').removeClass().attr('href','javascript:delImg();');
 			$('#menuMaShow').attr('src',imgUrl).show();
 			$('#fileField').hide();
 		}
@@ -73,7 +73,7 @@
 	}
 	function delImg(){
 		$('#menuMa').val('');
-		$('#menuMaBtn').html('选择素材图片').attr('href','/index.php/Admin/Menu/getMaterial').addClass('fancybox fancybox.iframe');
+		$('#menuMaBtn').html('選擇食材圖片').attr('href','/dishes/index.php/Admin/Menu/getMaterial').addClass('fancybox fancybox.iframe');
 		$('#menuMaShow').attr('src','').hide();
 		$('#fileField').show();
 		$('#recover').show();
@@ -104,58 +104,58 @@
 		<input name="targetid" type="hidden" value="{$m.id}" />
       <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
         <tr>
-          <td align="right" bgcolor="#f5ede6">菜品名称</td>
+          <td align="right" bgcolor="#f5ede6">菜品名稱</td>
           <td bgcolor="#FFFFFF"><h1>
               <input type="hidden" value="{$m.id}" name="id"/>
             <input type="text" name="name" id="menuName" class="input1" value="{$m.name}"/>
           </h1></td>
         </tr>
         <tr>
-          <td align="right" bgcolor="#F5EDE6">所属分类</td>
+          <td align="right" bgcolor="#F5EDE6">所属分類</td>
           <td bgcolor="#FFFFFF"><label for="select"></label>
             <select name="select" id="select">
-              <option >选择分类</option>
+              <option >選擇分類</option>
                 <foreach name="list" item="v">
                     <option <if condition="$m['menutypeid'] eq $v['id']">selected</if> <if condition="$v['parentid'] eq 0"> disabled </if> value="{$v.id}"><b>{$v.html}{$v.name}</b></option>
                 </foreach>
             </select></td>
         </tr>
         <tr>
-          <td align="right" bgcolor="#F5EDE6">价格</td>
+          <td align="right" bgcolor="#F5EDE6">價格</td>
           <td bgcolor="#FFFFFF"><input type="text" name="price" id="menuPrice" class="input1" value="{$m.price}" /></td>
         </tr>
           <tr>
-              <td align="right" bgcolor="#F5EDE6">单位(例如：份，盘)</td>
+              <td align="right" bgcolor="#F5EDE6">單位（例如 ： 份 、盤）</td>
               <td bgcolor="#FFFFFF"><input type="text" name="unit" id="textfield2" class="input1" value="{$m.unit}" /></td>
           </tr>
         <tr  height="230">
-          <td align="right" bgcolor="#F5EDE6">上传图片</td>
+          <td align="right" bgcolor="#F5EDE6">上傳圖片</td>
           <td bgcolor="#FFFFFF"><label for="fileField"></label>
             <input  <if condition="$m['img']"> style=" display:none;" </if> type="file" name="fileField" id="fileField" />
-			<img id="menuMaShow" src="{$m.img}" <if condition="!$m['img'] && !$imgee"> style=" display:none;" </if> width="348" height="230"/>
+			<img id="menuMaShow" src="__ROOT__{$m.img}" <if condition="!$m['img'] && !$imgee"> style=" display:none;" </if> width="348" height="230"/>
 			<input type="hidden" id="menuMa" name='picname' value="{$m.img}"/>
 			<input type="hidden" id="recoverImgUrl"  value="{$m.img}"/>
-			 <if condition="$m['img']"><div style="margin:20px 0 0 20px;"><a id="recover" style="display:none" href="javascript:recover();" >还原</a><br/><a id="menuMaBtn" href="javascript:delImg();" >删除素材图片</a></div><else /> <div style="margin:20px 0 0 20px;">
-			<a class="fancybox fancybox.iframe" id="menuMaBtn" href="/index.php/Admin/Menu/getMaterial" >选择素材图片</a></div>
+			 <if condition="$m['img']"><div style="margin:20px 0 0 20px;"><a id="recover" style="display:none" href="javascript:recover();" >還原</a><br/><a id="menuMaBtn" href="javascript:delImg();" >刪除食材圖片</a></div><else /> <div style="margin:20px 0 0 20px;">
+			<a class="fancybox fancybox.iframe" id="menuMaBtn" href="/dishes/index.php/Admin/Menu/getMaterial" >選擇食材圖片</a></div>
 			</if> 
 			</td>
         </tr>
 		<tr>
-          <td align="right" bgcolor="#F5EDE6">是否推荐</td>
+          <td align="right" bgcolor="#F5EDE6">是否推薦</td>
           <td bgcolor="#FFFFFF">
 		  	<input <if condition="$m['recommend'] eq 1"> checked </if> type="radio" name="recommend" value="1" />是
 			<input <if condition="$m['recommend'] eq 0"> checked </if> type="radio" name="recommend" value="0"  />否
           </td>
         </tr>
         <tr>
-          <td align="right" bgcolor="#F5EDE6">详细介绍</td>
+          <td align="right" bgcolor="#F5EDE6">詳細介绍</td>
           <td bgcolor="#FFFFFF">
             <!--<textarea name="content" id="menuCon" class="input2">{$m.content}</textarea>-->
 			<textarea name="content" style="width:700px;height:200px;visibility:hidden;">{$m.content}</textarea>
 			</td>
         </tr>
         <tr>
-          <td colspan="2" align="center" bgcolor="#FFFFFF" ><input type="submit" id="button" value="提交" class="input10" /></td>
+          <td colspan="2" align="center" bgcolor="#FFFFFF" ><input type="submit" id="button" value="送出" class="input10" /></td>
         </tr>
       </table>
     </form></td>

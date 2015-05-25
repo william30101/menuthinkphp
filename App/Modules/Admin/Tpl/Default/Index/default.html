@@ -1,8 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>点餐系统</title>
+<title>點餐系统</title>
+
+<style>
+body{margin:0 auto;}
+
+ header, nav, main, article, footer {
+         display: block;
+       }
+       header, nav, main, article, footer {
+         color: white;
+       }
+       header, footer {
+         text-align: center;
+         width: 100%;
+       }
+       header {
+         font-size: 36px;
+         font-weight: bold;
+       }
+       nav {
+	 float: left;
+         width: 20%;
+       }
+       main {
+	 float: right;
+         width: 80%;
+	 min-height:588px;
+       }
+       footer {
+         font-size: 10px;
+       }
+
+  </style>
+
 <script language="JavaScript">
 	var leftFrameCommonWidth = "140";
 	var leftFrameWidth = "";
@@ -47,23 +80,34 @@
 		else
 			index_frm.rows = "146,*";
 	}
-</script></head>
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <iframe  name="topFrame" width="100%" height="200" frameborder="0" scrolling="no" src="/dishes/index.php?g=Admin&m=Index&a=header"></iframe>
+
+</header>
+<nav>
+  <iframe  name="leftFrame" width="100%" height="500" frameborder="0" scrolling="no" src="/dishes/index.php?g=Admin&m=Index&a=left"></iframe>
+</nav>
+
+<main>
+  <iframe  name="mainFrame" width="100%" height="600" frameborder="0" scrolling="auto" src="/dishes/index.php?g=Admin&m=Index&a=main"></iframe>
+
+</main>
+
+<footer>
+  <iframe  name="bottomFrame" width="100%" height="200" frameborder="0" scrolling="no" src="/dishes/index.php?g=Admin&m=Index&a=bottom"></iframe>
+
+</footer>
+
+</body>
 
 
 
-
-
-<frameset name="index_frm" rows="175,*" cols="*" framespacing="0" frameborder="no" border="0">
-  <frame src="/index.php?g=Admin&m=Index&a=header" name="topFrame" frameborder="yes" scrolling="no" noresize="NORESIZE">
-  <frameset name="main_frm" rows="*" cols="252,10,*" framespacing="0" frameborder="no" border="0">
-  <frame src="/index.php?g=Admin&m=Index&a=left" name="leftFrame" scrolling="no" noresize="">
-  <frame src="/index.php?g=Admin&m=Index&a=mid" name="midFrame" scrolling="no" noresize="">
-  <frameset name="main2_frm" rows="*,0" frameborder="no" border="0" framespacing="0">
-  <frame src="/index.php?g=Admin&m=Index&a=main" name="mainFrame">
-  <frame src="/index.php?g=Admin&m=Index&a=bottom" name="bottomFrame" frameborder="no" scrolling="no">
-  </frameset>
-  </frameset>
-</frameset>
 
 <noframes><body>
 你需要 Internet Explorer 版本 3.0 或更高版本才能查看框架!</body>

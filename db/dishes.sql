@@ -65,14 +65,13 @@ CREATE TABLE `mx_floor` (
 -- ----------------------------
 -- Records of mx_floor
 -- ----------------------------
-INSERT INTO `mx_floor` VALUES ('1', '一楼', '0', '0', '1394697490');
-INSERT INTO `mx_floor` VALUES ('2', '包厢', '1', '1', '0');
-INSERT INTO `mx_floor` VALUES ('3', '大厅', '0,47,1,45', '1', '1394703067');
-INSERT INTO `mx_floor` VALUES ('4', '二楼1111', '1', '0', '1394533637');
-INSERT INTO `mx_floor` VALUES ('5', '大厅', '1', '4', '0');
-INSERT INTO `mx_floor` VALUES ('6', '包厢', '0', '4', '1394078140');
+INSERT INTO `mx_floor` VALUES ('1', '一樓', '0', '0', '1394697490');
+INSERT INTO `mx_floor` VALUES ('2', '包廂', '1', '1', '0');
+INSERT INTO `mx_floor` VALUES ('3', '大廳', '0,47,1,45', '1', '1394703067');
+INSERT INTO `mx_floor` VALUES ('4', '二樓', '1', '0', '1394533637');
+INSERT INTO `mx_floor` VALUES ('5', '大廳', '1', '4', '0');
+INSERT INTO `mx_floor` VALUES ('6', '包廂', '0', '4', '1394078140');
 INSERT INTO `mx_floor` VALUES ('7', 'ces', '0,1', '1', '1394703139');
-INSERT INTO `mx_floor` VALUES ('8', '22', '0', '4', '1394703158');
 
 -- ----------------------------
 -- Table structure for `mx_logs`
@@ -177,10 +176,9 @@ CREATE TABLE `mx_material` (
 -- ----------------------------
 -- Records of mx_material
 -- ----------------------------
-INSERT INTO `mx_material` VALUES ('1', '222', './Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg');
-INSERT INTO `mx_material` VALUES ('2', '红烧肉', './upload/13938953202.jpg');
-INSERT INTO `mx_material` VALUES ('3', '2222', './Public/upload/39314913938961912.jpg');
-INSERT INTO `mx_material` VALUES ('4', '222222', './Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg');
+INSERT INTO `mx_material` VALUES ('1', '客家小炒', './Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg|./Public/upload/39314913938961912.jpg');
+INSERT INTO `mx_material` VALUES ('2', '紅燒肉', './upload/13938953202.jpg');
+INSERT INTO `mx_material` VALUES ('3', '紅燒豆腐', './Public/upload/39314913938961912.jpg');
 
 -- ----------------------------
 -- Table structure for `mx_menu`
@@ -226,82 +224,32 @@ CREATE TABLE `mx_menustype` (
 -- ----------------------------
 -- Records of mx_menustype
 -- ----------------------------
-INSERT INTO `mx_menustype` VALUES ('1', '家常菜谱', null, '/Public/upload/714895-1394606413.jpg', '0', '1394606413', '0');
-INSERT INTO `mx_menustype` VALUES ('2', '中华菜系', null, '/Public/upload/944771-1394606481.jpg', '0', '1394606481', '0');
+INSERT INTO `mx_menustype` VALUES ('1', '家常食谱', null, '/Public/upload/714895-1394606413.jpg', '0', '1394606413', '0');
+INSERT INTO `mx_menustype` VALUES ('2', '中華菜系', null, '/Public/upload/944771-1394606481.jpg', '0', '1394606481', '0');
 INSERT INTO `mx_menustype` VALUES ('3', '川菜', null, '/Public/upload/906875-1394606659.png', '2', '1394606659', '0');
-INSERT INTO `mx_menustype` VALUES ('4', '外国菜谱', null, '/Public/upload/240125-1394606851.jpg', '0', '1394606851', '0');
+INSERT INTO `mx_menustype` VALUES ('4', '外國食谱', null, '/Public/upload/240125-1394606851.jpg', '0', '1394606851', '0');
 INSERT INTO `mx_menustype` VALUES ('5', '各地小吃', null, '/Public/upload/395744-1394606887.jpg', '0', '1394606887', '0');
 INSERT INTO `mx_menustype` VALUES ('6', '烘焙', null, '/Public/upload/281085-1394606913.jpg', '0', '1394606913', '0');
 INSERT INTO `mx_menustype` VALUES ('7', '家常菜', null, '/Public/upload/779386-1394606970.jpg', '1', '1394606970', '0');
 INSERT INTO `mx_menustype` VALUES ('8', '私家菜', null, '/Public/upload/723380-1394606994.jpg', '1', '1394606994', '0');
 INSERT INTO `mx_menustype` VALUES ('9', '凉菜', null, '/Public/upload/739083-1394607016.jpg', '1', '1394607016', '0');
 INSERT INTO `mx_menustype` VALUES ('10', '海鲜', null, '/Public/upload/927320-1394607039.jpg', '1', '1394607039', '0');
-INSERT INTO `mx_menustype` VALUES ('11', '热菜', null, '/Public/upload/104556-1394607066.jpg', '1', '1394607066', '0');
-INSERT INTO `mx_menustype` VALUES ('12', '汤粥', null, '/Public/upload/110748-1394607111.jpg', '1', '1394607111', '0');
+INSERT INTO `mx_menustype` VALUES ('11', '熱菜', null, '/Public/upload/104556-1394607066.jpg', '1', '1394607066', '0');
+INSERT INTO `mx_menustype` VALUES ('12', '湯粥', null, '/Public/upload/110748-1394607111.jpg', '1', '1394607111', '0');
 INSERT INTO `mx_menustype` VALUES ('13', '素食', null, '/Public/upload/118980-1394607134.jpg', '1', '1394607134', '0');
 INSERT INTO `mx_menustype` VALUES ('14', '酱料蘸料', null, '/Public/upload/591035-1394607173.jpg', '1', '1394607173', '0');
-INSERT INTO `mx_menustype` VALUES ('15', '简易菜（微波炉）', null, '/Public/upload/812890-1394607243.jpg', '1', '1394607243', '0');
-INSERT INTO `mx_menustype` VALUES ('16', '火锅底料', null, '/Public/upload/748046-1394607271.jpg', '1', '1394607271', '0');
-INSERT INTO `mx_menustype` VALUES ('17', '甜品点心', null, '/Public/upload/208458-1394607297.jpg', '1', '1394607297', '0');
-INSERT INTO `mx_menustype` VALUES ('18', '糕点主食', null, '/Public/upload/615122-1394607319.jpg', '1', '1394607319', '0');
-INSERT INTO `mx_menustype` VALUES ('19', '干果菜谱', null, '/Public/upload/378039-1394607360.jpg', '1', '1394607360', '0');
+INSERT INTO `mx_menustype` VALUES ('15', '简單菜（微波）', null, '/Public/upload/812890-1394607243.jpg', '1', '1394607243', '0');
+INSERT INTO `mx_menustype` VALUES ('16', '火鍋底料', null, '/Public/upload/748046-1394607271.jpg', '1', '1394607271', '0');
+INSERT INTO `mx_menustype` VALUES ('17', '甜品點心', null, '/Public/upload/208458-1394607297.jpg', '1', '1394607297', '0');
+INSERT INTO `mx_menustype` VALUES ('18', '糕點主食', null, '/Public/upload/615122-1394607319.jpg', '1', '1394607319', '0');
+INSERT INTO `mx_menustype` VALUES ('19', '乾果菜谱', null, '/Public/upload/378039-1394607360.jpg', '1', '1394607360', '0');
 INSERT INTO `mx_menustype` VALUES ('20', '卤酱', null, '/Public/upload/559221-1394607406.jpg', '1', '1394607406', '0');
-INSERT INTO `mx_menustype` VALUES ('21', '时尚饮品', null, '/Public/upload/649172-1394607435.jpg', '1', '1394607435', '0');
+INSERT INTO `mx_menustype` VALUES ('21', '时尚飲品', null, '/Public/upload/649172-1394607435.jpg', '1', '1394607435', '0');
 INSERT INTO `mx_menustype` VALUES ('22', '湘菜', null, '/Public/upload/343149-1394607469.jpg', '2', '1394607469', '0');
 INSERT INTO `mx_menustype` VALUES ('23', '粤菜', null, '/Public/upload/863754-1394607496.jpg', '2', '1394607496', '0');
 INSERT INTO `mx_menustype` VALUES ('24', '湘菜', null, '/Public/upload/151259-1394607568.jpg', '2', '1394607568', '0');
 INSERT INTO `mx_menustype` VALUES ('25', '湘菜', null, '/Public/upload/401068-1394607622.jpg', '2', '1394607622', '0');
 
--- ----------------------------
--- Table structure for `mx_nav`
--- ----------------------------
-DROP TABLE IF EXISTS `mx_nav`;
-CREATE TABLE `mx_nav` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '导航id',
-  `val` varchar(50) COLLATE utf8_unicode_ci NOT NULL COMMENT '导航Action',
-  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL COMMENT '导航名字',
-  `show` tinyint(3) unsigned NOT NULL COMMENT '是否显示,0:需要权限过滤，1:无需过滤,直接显示',
-  `tplshow` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '模版中是否显示，0:不现实，1:默认显示',
-  `parentid` int(10) unsigned NOT NULL COMMENT '父id',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='导航以及权限控制类';
-
--- ----------------------------
--- Records of mx_nav
--- ----------------------------
-INSERT INTO `mx_nav` VALUES ('1', 'Index', '系统首页', '1', '1', '0');
-INSERT INTO `mx_nav` VALUES ('2', 'Menu', '菜谱管理', '0', '1', '0');
-INSERT INTO `mx_nav` VALUES ('3', 'Stream', '流水统计', '0', '1', '0');
-INSERT INTO `mx_nav` VALUES ('4', 'Personal', '个人信息', '1', '1', '0');
-INSERT INTO `mx_nav` VALUES ('5', 'System', '系统设置', '0', '1', '0');
-INSERT INTO `mx_nav` VALUES ('6', 'Table', '餐桌设置', '0', '1', '0');
-INSERT INTO `mx_nav` VALUES ('7', 'tabList', '桌号列表', '1', '1', '1');
-INSERT INTO `mx_nav` VALUES ('8', 'free', '空闲中桌位', '1', '1', '1');
-INSERT INTO `mx_nav` VALUES ('9', 'employ', '使用中桌位', '1', '1', '1');
-INSERT INTO `mx_nav` VALUES ('11', 'invoicing', '已结账订单', '1', '1', '1');
-INSERT INTO `mx_nav` VALUES ('12', 'typeList', '分类列表', '0', '1', '2');
-INSERT INTO `mx_nav` VALUES ('13', 'addType', '添加分类', '0', '1', '2');
-INSERT INTO `mx_nav` VALUES ('14', 'menuList', '菜谱列表', '0', '1', '2');
-INSERT INTO `mx_nav` VALUES ('15', 'editMenu', '添加菜谱', '0', '1', '2');
-INSERT INTO `mx_nav` VALUES ('16', 'hotMenu', '热卖菜', '0', '1', '2');
-INSERT INTO `mx_nav` VALUES ('17', 'material', '素材列表', '0', '1', '2');
-INSERT INTO `mx_nav` VALUES ('18', 'day', '今日流水', '0', '1', '3');
-INSERT INTO `mx_nav` VALUES ('19', 'week', '周流水', '0', '1', '3');
-INSERT INTO `mx_nav` VALUES ('20', 'month', '月流水', '0', '1', '3');
-INSERT INTO `mx_nav` VALUES ('21', 'all', '总流水', '0', '1', '3');
-INSERT INTO `mx_nav` VALUES ('22', 'password', '修改密码', '1', '1', '4');
-INSERT INTO `mx_nav` VALUES ('23', 'info', '修改个人信息', '1', '1', '4');
-INSERT INTO `mx_nav` VALUES ('24', 'adminList', '操作员', '0', '1', '5');
-INSERT INTO `mx_nav` VALUES ('25', 'editAdmin', '添加操作员', '0', '1', '5');
-INSERT INTO `mx_nav` VALUES ('26', 'logs', '日志', '0', '1', '5');
-INSERT INTO `mx_nav` VALUES ('27', 'tableList', '餐桌列表', '0', '1', '6');
-INSERT INTO `mx_nav` VALUES ('28', 'areaList', '区域列表', '0', '1', '6');
-INSERT INTO `mx_nav` VALUES ('29', 'editArea', '添加区域', '0', '1', '6');
-INSERT INTO `mx_nav` VALUES ('30', 'editTable', '添加餐桌', '0', '1', '6');
-INSERT INTO `mx_nav` VALUES ('31', 'reserve', '已预定桌位', '1', '1', '1');
-INSERT INTO `mx_nav` VALUES ('32', 'nowStore', '本店设置', '0', '1', '5');
-INSERT INTO `mx_nav` VALUES ('33', 'addMaterial', '添加素材', '0', '1', '2');
-INSERT INTO `mx_nav` VALUES ('34', 'modifStatus', '更改餐桌状态', '0', '0', '6');
 
 -- ----------------------------
 -- Table structure for `mx_options`

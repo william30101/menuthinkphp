@@ -17,7 +17,7 @@
     <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
-        <td class="xtgk1">热卖菜列表</td>
+        <td class="xtgk1">熱賣菜列表</td>
       </tr>
     </table></td>
     <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
@@ -29,11 +29,11 @@
 	<form id="form1" name="form1" method="post" action="">
 	  <table width="520" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
 	    <tr>
-	      <td width="44">名称 :</td>
+	      <td width="44">名稱 :</td>
 	      <td width="198"><input type="text" name="ss" class="title" /></td>
-	      <td width="47">分类 :</td>
+	      <td width="47">分類 :</td>
 	      <td width="101"><select name="id">
-	        <option value="0">选择分类</option>
+	        <option value="0">選擇分類</option>
               <foreach name="list" item="v">
                   <option value="{$v.id}"><b>{$v.name}</b></option>
               </foreach>
@@ -44,11 +44,11 @@
 	  </form>
 	<table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
       <tr>
-        <td align="center" bgcolor="#f5ede6"><h1>序号</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>名称</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>所属分类</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>价格</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>总计出售</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>序號</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>名稱</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>所属分類</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>價格</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>總計出售</h1></td>
       </tr>
         <if condition="is_array($hot)">
 

@@ -29,11 +29,11 @@
             <form id="form1" name="form1" method="post" action="">
                 <table width="520" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
                     <tr>
-                        <td width="40">名称 :</td>
+                        <td width="40">名稱 :</td>
                         <td width="80"><input type="text" name="ss" class="title" /></td>
-                        <td width="40">分类 :</td>
+                        <td width="40">分類 :</td>
                         <td width="110"><select name="id" >
-                            <option value="0">选择分类</option>
+                            <option value="0">選擇分類</option>
                             <foreach name="list" item="v">
                                 <option value="{$v.id}"><b>{$v.name}</b></option>
                             </foreach>
@@ -46,11 +46,11 @@
             <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
                 <tr>
                     <td align="center" bgcolor="#f5ede6"><input type="checkbox" id="check_box" onclick="selectall('id[]');" class="checkall" /></td>
-                    <td align="center" bgcolor="#f5ede6"><h1>序号</h1></td>
-                    <td align="center" bgcolor="#f5ede6"><h1>名称</h1></td>
-                    <td align="center" bgcolor="#f5ede6"><h1>推荐</h1></td>
-                    <td align="center" bgcolor="#f5ede6"><h1>所属分类</h1></td>
-                    <td align="center" bgcolor="#f5ede6"><h1>价格</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>序號</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>名稱</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>推薦</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>所屬分類</h1></td>
+                    <td align="center" bgcolor="#f5ede6"><h1>價格</h1></td>
                     <td align="center" bgcolor="#f5ede6"><h1>操作</h1></td>
                 </tr>
                     <foreach name="menu" item="a">
@@ -62,14 +62,14 @@
                             <td align="center">{$a.dname}</td>
                             <td align="center">{$a.price}</td>
 
-                            <td align="center"><a href="{:U(GROUP_NAME.'/Menu/editMenu',array('id'=>$a['id']))}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/index.php?g=admin&m=Menu&a=delMenu&id={$a.id}','你确定要删除吗？');">删除</a></td>
+                            <td align="center"><a href="{:U(GROUP_NAME.'/Menu/editMenu',array('id'=>$a['id']))}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/index.php?g=admin&m=Menu&a=delMenu&id={$a.id}','你確定要删除嗎？');">删除</a></td>
                         </tr>
                     </foreach>
             </table>
 			</form>
             <table width="95%" border="0" align="center" cellpadding="5" cellspacing="0">
                 <tr>
-                    <td width="104"><label onclick="selectall('id[]');" for="check_box">全选/取消</label></td>
+                    <td width="104"><label onclick="selectall('id[]');" for="check_box">全選/取消</label></td>
                     <td width="14"><img src="__IMG_ADMIN_PATH__/del.jpg" width="14" height="14" /></td>
                     <td width="93"><a href="javascript:void(0);" onclick="myform.action='?g=admin&m=Menu&a=delMenu';return confirm_delete()">批量删除</a></td>
                     <td width="19">&nbsp;</td>

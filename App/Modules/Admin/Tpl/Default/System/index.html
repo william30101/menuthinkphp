@@ -31,18 +31,18 @@ function CheckForm()
 {
 	if(document.getElementById('username').value=="")
 	{
-		alert("请输入用户名！");
+		alert("請輸入用户名！");
 		document.getElementById('username').focus();
 		return false;
 	}
 	if(document.getElementById('password').value == "")
 	{
-		alert("请输入密码！");
+		alert("請輸入密碼！");
 		document.getElementById('password').focus();
 		return false;
 	}
 	if (document.getElementById('CheckCode').value==""){
-       alert ("请输入您的验证码！");
+       alert ("請輸入你的驗証碼！");
        document.getElementById('CheckCode').focus();
        return(false);
     }
@@ -62,21 +62,21 @@ function CheckBrowser()
       <table width="87%" border="0" align="center" cellspacing="0" cellpadding="10">
         <tbody>
           <tr>
-            <td width="23%" align="right">账&#12288;号：</td>
+            <td width="23%" align="right">帳&#12288;號：</td>
             <td width="77%"><input type="text" class="w296" id="username" name="username"></td>
           </tr>
           <tr>
-            <td align="right">密&#12288;码：</td>
+            <td align="right">密&#12288;碼：</td>
             <td><input type="password" class="w296" id="password" name="password"></td>
           </tr>
           <tr>
-            <td align="right">验证码：</td>
+            <td align="right">驗証碼：</td>
             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tbody>
                   <tr>
                     <td width="33%"><input type="text" class="w85" id="CheckCode" name="CheckCode"></td>
-                    <td width="34%"><img alt="看不清，换一张" id="imageField" name="imageField" onclick='this.src=this.src+"&"+Math.random()' src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background='> </td>
-                    <td width="33%"><a href="javascript:void(0);" onClick="document.getElementById('imageField').src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&'+Math.random();">换一张</a></td>
+                    <td width="34%"><img alt="看不清，換一張" id="imageField" name="imageField" onclick='this.src=this.src+"&"+Math.random()' src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background='> </td>
+                    <td width="33%"><a href="javascript:void(0);" onClick="document.getElementById('imageField').src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&'+Math.random();">換一張</a></td>
                   </tr>
                 </tbody>
               </table></td>
@@ -102,18 +102,18 @@ function CheckForm()
 {
 if(document.Login.UserName.value=="")
 {
-alert("请输入用户名！");
+alert("請輸入用戶名！");
 document.Login.UserName.focus();
 return false;
 }
 if(document.Login.Password.value == "")
 {
-alert("请输入密码！");
+alert("請輸入密碼！");
 document.Login.Password.focus();
 return false;
 }
 if (document.Login.CheckCode.value==""){
-alert ("请输入您的验证码！");
+alert ("請輸入你的驗証碼！");
 document.Login.CheckCode.focus();
 return(false);
 }

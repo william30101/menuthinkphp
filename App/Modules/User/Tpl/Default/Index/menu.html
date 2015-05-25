@@ -10,7 +10,7 @@
         $(function(){
             $('#checkOut').click(function(){
                     $.post(
-                            'index.php?g=User&m=Index&a=checkOut',
+                            'dishes/index.php?g=User&m=Index&a=checkOut',
                             {
                                 'test':'test'
                             },
@@ -18,7 +18,7 @@
                              if(data==1){
                                     if(confirm('确认要结账么？')){
                                     $.post(
-                                            'index.php?g=User&m=Index&a=checkOut',
+                                            'dishes/index.php?g=User&m=Index&a=checkOut',
                                             {},
                                             function(d){
                                                 if(d==1){

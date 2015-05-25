@@ -6,7 +6,7 @@
     <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
           <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
-          <td class="xtgk1">空闲桌号列表</td>
+          <td class="xtgk1">空閒桌號列表</td>
         </tr>
       </table></td>
     <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
@@ -16,10 +16,10 @@
   <tr>
     <td bgcolor="#FFFFFF"><table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
         <tr>
-          <td align="center" bgcolor="#f5ede6"><h1>桌号</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>所属区域</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>操作员</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>状态/操作</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>桌號</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>所屬區域</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>操作者</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>狀態/操作</h1></td>
         </tr>
         <volist name="list" id="v">
           <tr>
@@ -27,8 +27,8 @@
             <td align="center">{$v.floorName}</td>
             <td align="center">{$v.adminName}</td>
             <td align="center">
-            <img class="tabStatus{$v.id}" id="tabStatus_1_{$v.id}" value="1" style="vertical-align:middle;cursor:pointer;" onclick="javascript:fetch_ajax('tabStatus_1_','{$v.id}');" <if condition="$v['status'] eq 1"> src="__IMG_ADMIN_PATH__/yes.gif" status="1" <else /> src="__IMG_ADMIN_PATH__/no.gif" status="0" </if>>空闲中
-            <img class="tabStatus{$v.id}" id="tabStatus_2_{$v.id}" value="2"style="vertical-align:middle;cursor:pointer;" onclick="javascript:fetch_ajax('tabStatus_2_','{$v.id}');" <if condition="$v['status'] eq 2"> src="__IMG_ADMIN_PATH__/yes.gif" status="1" <else /> src="__IMG_ADMIN_PATH__/no.gif" status="0" </if>>已预定
+            <img class="tabStatus{$v.id}" id="tabStatus_1_{$v.id}" value="1" style="vertical-align:middle;cursor:pointer;" onclick="javascript:fetch_ajax('tabStatus_1_','{$v.id}');" <if condition="$v['status'] eq 1"> src="__IMG_ADMIN_PATH__/yes.gif" status="1" <else /> src="__IMG_ADMIN_PATH__/no.gif" status="0" </if>>空閒中
+            <img class="tabStatus{$v.id}" id="tabStatus_2_{$v.id}" value="2"style="vertical-align:middle;cursor:pointer;" onclick="javascript:fetch_ajax('tabStatus_2_','{$v.id}');" <if condition="$v['status'] eq 2"> src="__IMG_ADMIN_PATH__/yes.gif" status="1" <else /> src="__IMG_ADMIN_PATH__/no.gif" status="0" </if>>已預定
             <img class="tabStatus{$v.id}" id="tabStatus_3_{$v.id}" value="3"style="vertical-align:middle;cursor:pointer;" onclick="javascript:fetch_ajax('tabStatus_3_','{$v.id}');" <if condition="$v['status'] eq 3"> src="__IMG_ADMIN_PATH__/yes.gif" status="1" <else /> src="__IMG_ADMIN_PATH__/no.gif" status="0" </if>>使用中
 			<img class="tabStatus{$v.id}" id="tabStatus_4_{$v.id}" value="4"style="vertical-align:middle;cursor:pointer;" onclick="javascript:fetch_ajax('tabStatus_4_','{$v.id}');" <if condition="$v['status'] eq 4"> src="__IMG_ADMIN_PATH__/yes.gif" status="1" <else /> src="__IMG_ADMIN_PATH__/no.gif" status="0" </if>>整理中
             </td>

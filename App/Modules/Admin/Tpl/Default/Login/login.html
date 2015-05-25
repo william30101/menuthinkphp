@@ -1,7 +1,7 @@
 ﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>后台管理登录</title>
+<title>後台管理登錄</title>
 <style type="text/css">
 <!--
 body {margin:0px;padding:0px;
@@ -33,13 +33,13 @@ body {margin:0px;padding:0px;
                   </tr>
                   <tr>
                     <td height="55"><img src="__IMG_ADMIN_PATH__/password.gif" width="28" height="32"></td>
-                    <td height="50">密&nbsp;&nbsp;&nbsp;码：</td>
+                    <td height="50">密&nbsp;&nbsp;&nbsp;碼：</td>
                     <td height="50"><input type="password" id="password" name="password" style="width:190px; height:32px; line-height:34px; background:url(__IMG_ADMIN_PATH__/inputbg.gif) repeat-x; border:solid 1px #d1d1d1; font-size:9pt; "></td>
                   </tr>
 				  <?php if($_SESSION['errors'] > 2){?>
           <tr>
 		  	<td height="55">
-            <td height="50">验证码：</td>
+            <td height="50">驗證碼：</td>
                     <td width="100" height="50"><input type="text" id="CheckCode" name="CheckCode" style="width:80px; height:32px; line-height:34px; background:url(__IMG_ADMIN_PATH__/inputbg.gif) repeat-x; border:solid 1px #d1d1d1; font-size:9pt; font-family:Verdana, Geneva, sans-serif;"><img alt="看不清，换一张" id="imageField" name="imageField" style="margin-left:10px;" onclick='this.src=this.src+"&"+Math.random()' src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&'+Math.random();">
 					<a href="javascript:void(0);" onClick="document.getElementById('imageField').src='__APP_PATH__/index.php?g=Admin&m=Login&a=checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=&'+Math.random();">换一张</a></td>
           </tr>

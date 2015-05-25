@@ -5,7 +5,7 @@
     <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
-        <td class="xtgk1">已结账订单</td>
+        <td class="xtgk1">已結帳訂單</td>
       </tr>
     </table></td>
     <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
@@ -16,12 +16,12 @@
     <td bgcolor="#FFFFFF">
 	<table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
       <tr>
-        <td align="center" bgcolor="#f5ede6"><h1>桌号</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>所属区域</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>金额</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>结账时间</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>操作员</h1></td>
-        <td align="center" bgcolor="#f5ede6"><h1>详情</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>桌號</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>所属區域</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>金額</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>结帳時間</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>操作者</h1></td>
+        <td align="center" bgcolor="#f5ede6"><h1>詳情</h1></td>
         </tr>
 		<volist name="list" id="v">
           <tr>
@@ -30,7 +30,7 @@
             <td align="center">{$v.price}元</td>
             <td align="center">{$v.endtime|toDate}</td>
             <td align="center">{$v.adminName}</td>
-            <td align="center"><a href="/index.php?g=Admin&m=Stream&a=detail&id={$v.id}&t_id={$v.t_id}">查看详情</a></td>
+            <td align="center"><a href="/dishes/index.php?g=Admin&m=Stream&a=detail&id={$v.id}&t_id={$v.t_id}">查看詳情</a></td>
           </tr>
         </volist>
       <tr>

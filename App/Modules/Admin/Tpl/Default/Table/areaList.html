@@ -5,7 +5,7 @@
     <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
           <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
-          <td class="xtgk1">区域列表</td>
+          <td class="xtgk1">區域列表</td>
         </tr>
       </table></td>
     <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
@@ -18,18 +18,18 @@
         <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
           <tr>
             <td align="center" bgcolor="#f5ede6"><input type="checkbox" id="check_box" onclick="selectall('ids[]');" class="checkall" /></td>
-            <td align="center" bgcolor="#f5ede6"><h1>区域名称</h1></td>
-            <td align="center" bgcolor="#f5ede6"><h1>分配操作员</h1></td>
-            <td align="center" bgcolor="#f5ede6"><h1>创建日期</h1></td>
+            <td align="center" bgcolor="#f5ede6"><h1>區域名稱</h1></td>
+            <td align="center" bgcolor="#f5ede6"><h1>分配操作者</h1></td>
+            <td align="center" bgcolor="#f5ede6"><h1>創建日期</h1></td>
             <td align="center" bgcolor="#f5ede6"><h1>操作</h1></td>
           </tr>
           <volist name="list" id="v">
             <tr>
               <td align="center"><input type="checkbox" class="checkall" value="{$v.id}" name="ids[]" /></td>
               <td align="center">{$v.dname}</td>
-              <td align="center"><if condition="$v['adminName']">{$v.adminName}<else /><font color="red">未分配（<a style="color:#0033FF;" href="/index.php?g=admin&m=Table&a=editArea&targetid={$v.id}">点击分配</a>）</font></if></td>
+              <td align="center"><if condition="$v['adminName']">{$v.adminName}<else /><font color="red">未分配（<a style="color:#0033FF;" href="/dishes/index.php?g=admin&m=Table&a=editArea&targetid={$v.id}">點擊分配</a>）</font></if></td>
               <td align="center">{$v.createtime|toDate}</td>
-              <td align="center"><a href="/index.php?g=admin&m=Table&a=editArea&targetid={$v.id}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/index.php?g=admin&m=Table&a=delArea&ids={$v.id}','你确定要删除吗？');">删除</a></td>
+              <td align="center"><a href="/dishes/index.php?g=admin&m=Table&a=editArea&targetid={$v.id}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/dishes/index.php?g=admin&m=Table&a=delArea&ids={$v.id}','你确定要删除吗？');">删除</a></td>
             </tr>
           </volist>
         </table>
@@ -37,7 +37,7 @@
       <table width="95%" border="0" align="center" cellpadding="5" cellspacing="0">
         <tr>
           <td width="104"><label>
-            <label onclick="selectall('ids[]');" for="check_box">全选/取消</label>
+            <label onclick="selectall('ids[]');" for="check_box">全選/取消</label>
           </td>
           <td width="14"><img src="__IMG_ADMIN_PATH__/del.jpg" width="14" height="14" /></td>
           <td width="93"><a href="javascript:void(0);" onclick="myform.action='?g=admin&m=Table&a=delTable';return confirm_delete()">批量删除</a></td>

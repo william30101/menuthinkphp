@@ -17,7 +17,7 @@
 			if(title && img){
 			   window.location.href="index.php?g=Admin&m=Menu&a=editMenu&title="+title+"&img="+img;
 			}else{
-				alert('请选择图片');
+				alert('請選擇圖片');
 			}
 		});
 
@@ -29,7 +29,7 @@
     <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
           <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
-          <td class="xtgk1">素材库列表</td>
+          <td class="xtgk1">食材庫列表</td>
         </tr>
       </table></td>
     <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
@@ -40,17 +40,17 @@
     <td bgcolor="#FFFFFF"><form action="{:U(GROUP_NAME.'/Menu/material')}" method="post">
         <table width="520" border="0" align="center" cellpadding="0" cellspacing="0" class="mart15">
           <tr>
-            <td width="100">请输入菜名：</td>
+            <td width="100">請輸入菜名：</td>
             <td width="198"><input type="text" name="title" class="title" /></td>
-            <td width="130"><input type="submit"  value="搜索" /></td>
+            <td width="130"><input type="submit"  value="搜尋" /></td>
           </tr>
         </table>
       </form>
       <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 color333">
         <tr>
-          <td align="center" bgcolor="#f5ede6"><h1>序号</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>名称</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>图片</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>序號</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>名稱</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>圖片</h1></td>
           <td align="center" bgcolor="#f5ede6"><h1>操作</h1></td>
         </tr>
         <volist name="list" id="a" key="m">
@@ -60,16 +60,16 @@
             <td align="center"><if condition="is_array($a['img'])">
                 <volist name="a.img" id="v">
                   <input type="radio" class="imges" value="1" name="img" title="{$v}" meothd="{$a.name}"/>
-                  [<a href="{$v}"  class="fancybox fancybox.iframe">查看图片{$i}</a>] </volist>
+                  [<a href="{$v}"  class="fancybox fancybox.iframe">查看圖片{$i}</a>] </volist>
                 <else />
                 <input type="radio" name="img" value="1"  class="imges" title="{$a.img}" meothd="{$a.name}"/>
-                <a href="{$a.img}"  class="fancybox fancybox.iframe">查看图片</a> </if>
+                <a href="{$a.img}"  class="fancybox fancybox.iframe">查看圖片</a> </if>
             </td>
             <td><a href="{:U(GROUP_NAME.'/Menu/delMaterial',array('id'=>$a['id']))}">删除</a></td>
           </tr>
         </volist>
         <tr>
-          <td colspan="4" align="center"><input style=" margin-right:10%;" type="button" id='xuanze' value="通过选择添加菜谱"/></td>
+          <td colspan="4" align="center"><input style=" margin-right:10%;" type="button" id='xuanze' value="通過選擇增加食譜"/></td>
         </tr>
       </table>
       <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;"> {$page} </div></td>

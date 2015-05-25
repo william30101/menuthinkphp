@@ -9,7 +9,7 @@
         $(function(){
             function PostMes (data,id){
                 $.post(
-                    'index.php?g=User&m=Index&a=addOrJ',
+                    'dishes/index.php?g=User&m=Index&a=addOrJ',
                         {
                             'amount':data,
                             'id':id
@@ -24,7 +24,7 @@
 
                     var id=$(this).attr('imgee');
                     $.post(
-                            'index.php?g=User&m=Index&a=myMuenList',
+                            'dishes/index.php?g=User&m=Index&a=myMuenList',
                             {
                                 'id':id
                             }
@@ -110,7 +110,7 @@
                 }
                 var tabId=$('#tabId').val();
                 $.post(
-                        'index.php?g=User&m=Index&a=check',
+                        'dishes/index.php?g=User&m=Index&a=check',
                         {
                             'test':'test'
                         },
@@ -120,14 +120,14 @@
 
 
                                 $.post(
-                                        'index.php?g=User&m=Index&a=check',
+                                        'dishes/index.php?g=User&m=Index&a=check',
                                         {
                                             'id':tabId
                                         },
                                         function(da){
                                             if(da==1){
 //                                                alert('下单成功');
-                                                window.location.href="/index.php?g=User&m=Index&a=myMuenList";
+                                                window.location.href="/dishes/index.php?g=User&m=Index&a=myMuenList";
                                             }else if(da==2){
                                                 alert('已提交过订单，请勿重复下单')
                                             }else if(da==3){
@@ -144,14 +144,14 @@
                             }else{
                                 if(confirm('和您同时点菜的'+data+'位客人都点完菜了吗？确认提交订单，取消等其他客人点完菜')){
                                     $.post(
-                                            'index.php?g=User&m=Index&a=check',
+                                            'dishes/index.php?g=User&m=Index&a=check',
                                             {
                                                 'id':tabId
                                             },
                                             function(d){
                                                 if(d==1){
 //                                                    alert('下单成功');
-                                                    window.location.href="/index.php?g=User&m=Index&a=myMuenList";
+                                                    window.location.href="/dishes/index.php?g=User&m=Index&a=myMuenList";
                                                 }else if(d==2){
                                                     alert('已提交过订单，请勿重复下单')
                                                 }else if(d==3){
@@ -171,7 +171,7 @@
             });
             $('#checkOut').click(function(){
                 $.post(
-                        'index.php?g=User&m=Index&a=checkOut',
+                        'dishes/index.php?g=User&m=Index&a=checkOut',
                         {
                             'test':'test'
                         },
@@ -179,7 +179,7 @@
                             if(data==1){
                                 if(confirm('确认要结账么？')){
                                     $.post(
-                                            'index.php?g=User&m=Index&a=checkOut',
+                                            'dishes/index.php?g=User&m=Index&a=checkOut',
                                             {},
                                             function(d){
                                                 if(d==1){

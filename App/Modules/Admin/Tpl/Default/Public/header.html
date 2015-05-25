@@ -17,7 +17,7 @@
 		<ul class="t_r_menu">
 		<!--<li class="n1"><a href="__APP_PATH__/index.php?g=Admin&m=Login&a=logout">重新登陆</a></li>
 		<li class="n2"><a href="__APP_PATH__/index.php?g=Admin&m=Personal&a=password">密码修改</a></li>-->
-		<li class="n3"><a href="javascript:parent.window.location='/index.php?g=Admin&m=Login&a=logout';">退出登录</a></li>
+		<li class="n3"><a href="javascript:parent.window.location='/dishes/index.php?g=Admin&m=Login&a=logout';">登出</a></li>
 		</ul>
 	</td>
   </tr>
@@ -35,7 +35,7 @@
 <tr>
     <td width="1%">&nbsp;</td>
     <td width="2%"><img src="__IMG_ADMIN_PATH__/tips_2.png"></td>
-    <td width="97%">{$adminInfo.nickname}：您好，欢迎光临！您上次的登陆时间是：{$adminInfo.lasttime|toDate}</td>
+    <td width="97%">{$adminInfo.nickname}：你好，歡迎光臨！你上次的登錄時間是：{$adminInfo.lasttime|toDate}</td>
   </tr>
 </table>
 <script>

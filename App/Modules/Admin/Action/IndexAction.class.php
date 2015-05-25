@@ -14,6 +14,7 @@ class IndexAction extends CommAction {
      * 后台右则默认页
      */
     public function main(){
+
         $this->tabList();
     }
     /**
@@ -221,11 +222,18 @@ class IndexAction extends CommAction {
             $tempInfo = $admin_db->where('id='.$v['adminid'])->field('nickname')->find();
             $list[$k]['adminName'] = $tempInfo['nickname'];
         }
-        P($list);die;
+        //P($list);die;
         $this->assign('list',$list);
         $this->display('reserve');
     }
 
+    /**
+     *  新訂單
+     * @author William
+     */
+    public function newOrder(){
+        $this->display('newOrder');
+    }
     /**
      * 未结账桌位
      * @author Tony

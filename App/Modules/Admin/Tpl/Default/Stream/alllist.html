@@ -5,7 +5,7 @@
     <td background="__IMG_ADMIN_PATH__/gk2.png"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
           <td width="23" class="xtgk2"><img src="__IMG_ADMIN_PATH__/gk_1.png" width="16" height="16" /></td>
-          <td class="xtgk1">总流水账目</td>
+          <td class="xtgk1">總流水帳目</td>
         </tr>
       </table></td>
     <td width="5"><img src="__IMG_ADMIN_PATH__/gk3.png" width="5" height="39" /></td>
@@ -31,12 +31,12 @@
       </table>-->
       <table width="95%" id="mytable" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#efddd2" class="mart15 marb15 color333">
         <tr>
-          <td align="center" bgcolor="#f5ede6"><h1>时间</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>桌号</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>時間</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>桌號</h1></td>
           <td align="center" bgcolor="#f5ede6"><h1>收入</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>点餐时间</h1></td>
-          <td align="center" bgcolor="#f5ede6"><h1>结账时间</h1></td>
-          <td align="center" bgcolor="#f5ede6">操作员</td>
+          <td align="center" bgcolor="#f5ede6"><h1>點餐時間</h1></td>
+          <td align="center" bgcolor="#f5ede6"><h1>结帳時間</h1></td>
+          <td align="center" bgcolor="#f5ede6">操作者</td>
           <td align="center" bgcolor="#f5ede6">操作</td>
         </tr>
         <volist name="list" id="v">
@@ -47,11 +47,11 @@
             <td align="center">{$v.starttime|toDate}</td>
             <td align="center">{$v.endtime|toDate}</td>
             <td align="center">{$v.adminName}</td>
-            <td align="center"><a href="/index.php?g=Admin&m=Stream&a=detail&id={$v.id}&t_id={$v.t_id}">查看详情</a></td>
+            <td align="center"><a href="/dishes/index.php?g=Admin&m=Stream&a=detail&id={$v.id}&t_id={$v.t_id}">查看詳情</a></td>
           </tr>
         </volist>
         <tr>
-          <td colspan="7" align="left" >总收入：<span class="colorf00">{$allPrice}</span>元&nbsp;&nbsp;本页总计：<span class="colorf00">{$nowPagePrice}</span>元</td>
+          <td colspan="7" align="left" >總收入：<span class="colorf00">{$allPrice}</span>元&nbsp;&nbsp;本頁總計：<span class="colorf00">{$nowPagePrice}</span>元</td>
         </tr>
       </table>
 	  <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;">
