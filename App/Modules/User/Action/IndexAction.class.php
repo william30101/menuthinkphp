@@ -48,8 +48,27 @@ class IndexAction extends Action{
         }
         $this->display();
     }
+
+
+
     //选桌方法
-    public function xuanzhuo(){
+    public function androidGetData(){                                          
+          $tab_db = D('tab');
+          $admin_db = D('admin');
+          $adminid= '1';
+          $list=$tab_db->where('id=5')->select();;
+
+
+          $this->ajaxReturn($list,'JSON');
+//          $this->ajaxReturn($list);
+//	echo 'list='.$list['num'];
+//	$data['name'] = array("id' => $list[1],$list[2] => $list[3]);
+//	$this->ajaxReturn($data);
+
+
+      }
+
+	public function xuanzhuo(){
         $id=$_GET['id'];
         $floor=M('floor')->select();
         $arr=getChilds($floor,$id);

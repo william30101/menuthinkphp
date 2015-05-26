@@ -10,6 +10,17 @@ class IndexAction extends CommAction {
 
     }
 
+    public function androidGetData(){
+	$tab_db = D('tab');
+        $admin_db = D('admin');
+        $adminid= '1';
+        $list=$tab_db->where('id=5')->select();;
+	//$this->ajaxReturn($list,'JSON');
+	$data['name'] = array($list[0] => $list[1],$list[2] => $list[3]);
+	$this->ajaxReturn($data);
+
+    }
+
     /**
      * 后台右则默认页
      */
