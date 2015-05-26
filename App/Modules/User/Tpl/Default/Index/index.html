@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 ,user-scalable=no" />
-<title>{$Img.name}-首页</title>
+<title>{$Img.name}-首頁</title>
 <link href="__CSS_USER_PATH__/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -18,8 +18,8 @@
     <div id="pad_right">
         <div id=con>
             <ul id=tags>
-              <li class=selectTag><a onClick="selectTag('tagContent0',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/xuanzhuo',array('id'=>1))}">大厅</a></li>
-              <li><a onClick="selectTag('tagContent1',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/xuanzhuo',array('id'=>2))}">包间</a></li>
+              <li class=selectTag><a onClick="selectTag('tagContent0',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/xuanzhuo',array('id'=>1))}">大廳</a></li>
+              <li><a onClick="selectTag('tagContent1',this)" target='iframe' href="{:U(GROUP_NAME.'/Index/xuanzhuo',array('id'=>2))}">包廂</a></li>
              
             </ul>
             <div id=tagContent>
@@ -55,10 +55,10 @@
     </div>
     <div id="ly_foot">
         <ul>
-            <li><a href='<if condition="$tabCookie eq 1">{:U(GROUP_NAME."/Index/menu")} <else/>javascript:alert("请选桌")</if>' target="_self"><img src="__IMG_USER_PATH__/tb4.png" />菜单</a></li>
-            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/hotMenu")}<else/>javascript:alert("请选桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if>  ><img src="__IMG_USER_PATH__/tb5.png" />热门</a></li>
-            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/tuijian")} <else/>javascript:alert("请选桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if> ><img src="__IMG_USER_PATH__/tb6.png" />推荐</a></li>
-            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/myMuenList")}<else/>javascript:alert("请选桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if>  ><img src="__IMG_USER_PATH__/tb7.png" />已点</a></li>
+            <li><a href='<if condition="$tabCookie eq 1">{:U(GROUP_NAME."/Index/menu")} <else/>javascript:alert("請選桌")</if>' target="_self"><img src="__IMG_USER_PATH__/tb4.png" />菜單</a></li>
+            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/hotMenu")}<else/>javascript:alert("請選桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if>  ><img src="__IMG_USER_PATH__/tb5.png" />熱門</a></li>
+            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/tuijian")} <else/>javascript:alert("請選桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if> ><img src="__IMG_USER_PATH__/tb6.png" />推薦</a></li>
+            <li><a href='<if condition="$tabCookie eq 1"> {:U(GROUP_NAME."/Index/myMuenList")}<else/>javascript:alert("請選桌")</if>' <if condition="$tabCookie eq 1"> target='iframe' <else />target='_self' </if>  ><img src="__IMG_USER_PATH__/tb7.png" />已點</a></li>
             <li><a href="javascript:history.go(-1);"><img id='black' src="__IMG_USER_PATH__/tb8.png" />返回</a></li>
         </ul>
     </div>

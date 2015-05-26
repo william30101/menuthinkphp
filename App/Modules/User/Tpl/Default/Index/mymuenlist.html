@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>已点菜单</title>
+<title>已點菜单</title>
     <script type="text/javascript" src="__JS_PATH__/jquery-1.8.3-all.js"></script>
     <script type="text/javascript">
 
@@ -19,7 +19,7 @@
             var num=$('#ly_list').children().length;
             for(i=1;i < num;i++){
                 $(".delete"+i).click(function(){
-                    if(confirm('确认要删除么？')){
+                    if(confirm('確認要刪除嗎？')){
 
 
                     var id=$(this).attr('imgee');
@@ -129,12 +129,12 @@
 //                                                alert('下单成功');
                                                 window.location.href="/dishes/index.php?g=User&m=Index&a=myMuenList";
                                             }else if(da==2){
-                                                alert('已提交过订单，请勿重复下单')
+                                                alert('已送出過訂單，請勿重覆下單')
                                             }else if(da==3){
-                                                alert('你还没有点菜，请先点菜')
+                                                alert('你還沒有點菜，請先點菜')
                                             }
                                             else{
-                                                alert('下单失败，请联系服务员')
+                                                alert('下單失敗，請聯系服務員')
                                             }
                                         }
 
@@ -142,7 +142,7 @@
                                 )
                                 }
                             }else{
-                                if(confirm('和您同时点菜的'+data+'位客人都点完菜了吗？确认提交订单，取消等其他客人点完菜')){
+                                if(confirm('和你同時點藝的'+data+'位客人都點完菜了嗎？確認送出訂單，取消等其他危人點完菜')){
                                     $.post(
                                             'dishes/index.php?g=User&m=Index&a=check',
                                             {
@@ -153,12 +153,12 @@
 //                                                    alert('下单成功');
                                                     window.location.href="/dishes/index.php?g=User&m=Index&a=myMuenList";
                                                 }else if(d==2){
-                                                    alert('已提交过订单，请勿重复下单')
+                                                    alert('已送出過訂單，請勿重覆下單')
                                                 }else if(d==3){
-                                                    alert('你还没有点菜，请先点菜')
+                                                    alert('你還沒有點菜，請先點菜')
                                                 }
                                                 else{
-                                                    alert('下单失败，请联系服务员')
+                                                    alert('下單失敗，請聯系服務員')
                                                 }
                                             }
                                     )
@@ -177,27 +177,27 @@
                         },
                         function(data){
                             if(data==1){
-                                if(confirm('确认要结账么？')){
+                                if(confirm('確認要結帳嗎？')){
                                     $.post(
                                             'dishes/index.php?g=User&m=Index&a=checkOut',
                                             {},
                                             function(d){
                                                 if(d==1){
-                                                    alert('请等待管理员，前来结账');
+                                                    alert('請等待管理員前來結帳');
                                                 }else{
-                                                    alert('结账失败，请联系服务人员');
+                                                    alert('結帳失敗，請聯系服務人員');
                                                 }
                                             }
                                     )
                                 }
                             }else if(data==3){
-                                alert('您还没有下订单，请先下订单')
+                                alert('你還沒有下訂單，請先下訂單')
                             }else if(data==4){
-                                alert('您还没有点菜，请点菜');
+                                alert('你還沒有點菜，請點菜');
                             }else if(data==6){
-                                alert('您已经点击了结账，请勿重复点击');
+                                alert('你已經感擊了結帳，請勿重覆點擊');
                             } else if(data==7){
-                                alert('请等待管理员处理菜单');
+                                alert('請等待管理員處理菜單');
                             }
 
                         }
@@ -322,13 +322,13 @@ a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
     <div id="ly_top"><img src="__IMG_USER_PATH__/tpic.png" /></div>
     <div id="ly_list">
         <ul class="list_top">
-            <li class="ly_xh">序号</li>
+            <li class="ly_xh">序號</li>
             <li class="ly_cm">菜名</li>
-            <li class="ly_dj">单价</li>
-            <li class="ly_zl">种类</li>
+            <li class="ly_dj">單價</li>
+            <li class="ly_zl">種類</li>
             <li class="ly_zl">追加</li>
-            <li class="ly_fs">份数</li>
-            <li class="ly_bz">备注</li>
+            <li class="ly_fs">份數</li>
+            <li class="ly_bz">備註</li>
             <li id='caozuo' class="ly_cz">操作</li>
         </ul>
         <volist name="myList" id="v">
@@ -340,15 +340,15 @@ a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
             <li class="ly_zl">{$v.dname}</li>
             <li class="ly_zl">{$v.addto}</li>
             <li class="ly_fs"><a onclick="return false;" class="shul"><img <if condition="isset($v['addVa'])"> style='display:none'</if> class="jian{$i}" menu="{$v.id}" src="__IMG_USER_PATH__/jian.png" /></a>&nbsp;<span  class="shuliang">{$v.amount}</span>&nbsp;<a onclick="return false;" class="shulj"><img <if condition="isset($v['addVa'])"> style='display:none'</if> class='jia{$i}' menu="{$v.id}" src="__IMG_USER_PATH__/jia.png" /></a></li>
-            <li class="ly_bz">{$v.uname}点的餐</li>
-            <li class="ly_cz"><a onclick="return false;" class="delAl"><img class="delete{$i}" <if condition="isset($v['addVa'])"> style='display:none'</if> src="__IMG_USER_PATH__/del.png" imgee="{$v.id}"/><if condition="isset($v['addVa'])"><span style="color: green">已下单</span></if></a></li>
+            <li class="ly_bz">{$v.uname}點的餐</li>
+            <li class="ly_cz"><a onclick="return false;" class="delAl"><img class="delete{$i}" <if condition="isset($v['addVa'])"> style='display:none'</if> src="__IMG_USER_PATH__/del.png" imgee="{$v.id}"/><if condition="isset($v['addVa'])"><span style="color: green">已下單</span></if></a></li>
         </ul>
         </volist>
     </div>
     <div id="ly_bottom">
-        <div style="float:left;">总计：</div><div style="float:right;">数量：<span id="amountt">{$amout}</span>&nbsp;&nbsp;&nbsp;&nbsp;总价：￥<span id="totalww">{$total}</span></div>
+        <div style="float:left;">總計：</div><div style="float:right;">數量：<span id="amountt">{$amout}</span>&nbsp;&nbsp;&nbsp;&nbsp;總價：＄<span id="totalww">{$total}</span></div>
         <div style="clear:both;"></div>
     </div>
-    <div id="ljxd"><if condition="$addVa eq 1" ><a id="checkOut"  onclick="return false;">结账</a><else /><a id="checkButton"  onclick="return false;">立即下单</a></if></div>
+    <div id="ljxd"><if condition="$addVa eq 1" ><a id="checkOut"  onclick="return false;">结帳</a><else /><a id="checkButton"  onclick="return false;">立即下單</a></if></div>
 </body>
 </html>

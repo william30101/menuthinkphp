@@ -47,7 +47,7 @@
         <td align="center"><if condition="$v.roleid eq 1">正常<else />禁用</if></td>
         <td align="center">{$v.permissionStr}</td>
         <td align="center">{$v.createtime|toDate}</td>
-        <td align="center"><a href="/index.php?g=admin&m=System&a=editAdmin&targetid={$v.id}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/dishes/index.php?g=admin&m=System&a=delAdmin&ids={$v.id}','你確定要删除嗎？');">删除</a></td>
+        <td align="center"><a href="/dishes/index.php?g=admin&m=System&a=editAdmin&targetid={$v.id}">修改</a>&nbsp;&nbsp;<a href="javascript:confirmurl('/dishes/index.php?g=admin&m=System&a=delAdmin&ids={$v.id}','你確定要删除嗎？');">删除</a></td>
       </tr>
 	  </volist>
     </table>

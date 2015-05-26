@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="__JS_PATH__/jquery-1.8.3-all.js"></script>
-<title>菜单列表</title>
+<title>菜單列表</title>
     <script type="text/javascript">
 
 
@@ -34,7 +34,7 @@
                 	},
                 	function(data){
                 		if(data==1){
-                            alert('点菜成功');
+                            alert('點菜成功');
 
                         }
                 	}
@@ -144,8 +144,8 @@ a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
 
 <body>
     <p id="p_tou">
-        <span class="t_left">当前：{$list}>>菜品列表</span>
-        <span class="t_right">用户:{$uname}&nbsp;&nbsp;&nbsp;&nbsp;桌号：{$tabNum}</span>
+        <span class="t_left">當前：{$list}>>菜單列表</span>
+        <span class="t_right">用户:{$uname}&nbsp;&nbsp;&nbsp;&nbsp;桌號：{$tabNum}</span>
         <span style="clear:both"></span>
     </p>
     <volist name="menu" id="v">
@@ -156,7 +156,7 @@ a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
         <input type="hidden" class='tempId' value='{$v.id}' />
            <input type="hidden" class='name' value='{$v.name}' />
            <input type="hidden" class='price' value='{$v.price}' />
-        <div class="ly_left"><a href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}"><img src="{$v.img}" /></a>
+        <div class="ly_left"><a href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}"><img src="__ROOT__{$v.img}" /></a>
             <if condition="$v['recommend'] eq 1"><img src="__IMG_USER_PATH__/hot.png" class="ly_hot" /></if>
         </div>
         <div class="ly_center">
@@ -166,7 +166,7 @@ a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
         </div>
         
         <div class="ly_right">
-            <h3 >￥<span >{$v.price}</span>元/{$v.unit}</h3>
+            <h3 >＄<span >{$v.price}</span>元/{$v.unit}</h3>
             <p><a href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}"><img src="__IMG_USER_PATH__/btn1.jpg" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<img class='dianCai{$i}' src="__IMG_USER_PATH__/btn2.jpg" /></p>
         </div>
         <div style="clear:both"></div>

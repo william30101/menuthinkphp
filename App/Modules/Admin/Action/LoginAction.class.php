@@ -16,7 +16,7 @@ class LoginAction extends Action {
     		}
 		    if($errors > 2) {	//如果为post请求并且错误尝试次数小于4,则无需验证；否则需要对验证码进行验证
 		    	$CheckCode = $this->_post('CheckCode');
-		    /*	if(!$CheckCode) {
+		    	if(!$CheckCode) {
 		    		$this->error('请输入验证码！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
 		    		exit();
 		    	}else{
@@ -26,7 +26,7 @@ class LoginAction extends Action {
 		    			$this->error('验证码错误，请重新输入！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
 		    			exit();
 		    		}
-		    	}*/
+		    	}
 		    }
 		    
                 session('errors',session('errors')+1);
@@ -40,15 +40,15 @@ class LoginAction extends Action {
                 $authInfo = RBAC::authenticate($map,'admin');
                 //使用用户名、密码和状态的方式进行认证
                 if(false === $authInfo) {
-                    $this->error('帐号不存在或已禁用！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
+                    $this->error('帳戶不存在或已禁！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
                 }
                 else
                 {
-                    //if($authInfo['password'] != md5Encrypt($password)) {
-                        //$this->error('密码错误！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
-                    //}
+                    if($authInfo['password'] != md5Encrypt($password)) {
+                        $this->error('密碼錯誤！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
+                    }
                     if($authInfo['roleid']!=1){
-                        $this->error('该账户已经被禁用！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
+                        $this->error('此帳戶已經被禁用！','__APP_PATH__/index.php?g=Admin&m=Login&a=index');
                     }
                     $_SESSION[C('USER_AUTH_KEY')]	=	$authInfo['id'];
                     $logincount = $authInfo['logincount']+1;
@@ -73,7 +73,7 @@ class LoginAction extends Action {
                     //存入日志表	added by Tony
 					logs($authInfo['id']);
                     $this->msg='success!';
-                    $this->success('登陆成功',U('Index/index'));
+                    $this->success('登錄成功',U('Index/index'));
                     exit();
                 }
                 $this->adminuser=$adminuser;
@@ -95,6 +95,8 @@ class LoginAction extends Action {
         $this->Index();
     }
 
+
+
     /**
      * 获取请求表中数据（请求下单，请求结账）
      * @author Tony
@@ -105,11 +107,11 @@ class LoginAction extends Action {
     	$html ='';
     	foreach($list as $k => $v){
     		$html .='<LI>';
-    		$html .='<a href="/index.php?g=Admin&m=Index&a=tempTabDetail&t_id='.$v['t_id'].'">'.$v['num'].'号桌位请求';
+    		$html .='<a href="/index.php?g=Admin&m=Index&a=tempTabDetail&t_id='.$v['t_id'].'">'.$v['num'].'號桌位請求';
     		if($v['type'] == 2){
-    			$html .= '<font color="green">结账</font>';
+    			$html .= '<font color="green">结帳</font>';
     		}else{
-    			$html .= '<font color="red">下单</font></a>';
+    			$html .= '<font color="red">下單</font></a>';
     		}
     		if($v['floorname']){
     			$html .= '('.$v['floorname']."&nbsp;".')';
@@ -127,13 +129,20 @@ class LoginAction extends Action {
      */
     public function checkcode()
     {
+	    //     	print_r($_SESSION);die;
+	    //导入验证码类
 
-//     	print_r($_SESSION);die;
-        //导入验证码类
-        import("ORG.Util.Image");
-        echo Image::buildImageVerify();
+
+
+
+	    import("ORG.Util.Image");
+	    //echo Image::buildImageVerify();
+		Image::buildImageVerify();
     }
-    
+
+
+
+
     /**
      * 默认跳转操作 支持错误导向和正确跳转
      * 调用模板显示 默认为public目录下面的success页面

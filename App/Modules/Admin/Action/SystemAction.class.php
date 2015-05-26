@@ -53,7 +53,7 @@ class SystemAction extends CommAction {
     	$navList = $nav_db->select();
     	foreach($list as $k => $v){
     		if($v['groupid'] == 1){
-    			$list[$k]['permissionStr'] = '<font color="green">超级管理员</font>(无需分配权限)';
+    			$list[$k]['permissionStr'] = '<font color="green">超级管理員</font>(無需分配權限)';
     		}else{
 	    		if($v['permission']){
 	    			if(strpos($v['permission'],',')){
@@ -74,7 +74,7 @@ class SystemAction extends CommAction {
 	    				}
 	    			}
 	    		}else{
-		    		$list[$k]['permissionStr'] = '<font color="red">权限未分配</font>(需要分配权限)';
+		    		$list[$k]['permissionStr'] = '<font color="red">權分未分配</font>(需要分配權限)';
 	    		}
     		}
     	}
@@ -90,7 +90,7 @@ class SystemAction extends CommAction {
     public function editAdmin(){
     	$adminUser = $this->info['adminuser'];
     	if($adminUser != 'admin'){
-    		$this->error('该账户没有权限！',"__APP_PATH__/index.php?g=Admin&m=System&a=adminList");die;
+    		$this->error('該帳戶沒有權限！',"__APP_PATH__/index.php?g=Admin&m=System&a=adminList");die;
     	}
     	$this->assign('priv',$this->priv);
     	$targetid = intval($_REQUEST['targetid']);
@@ -169,7 +169,7 @@ class SystemAction extends CommAction {
 	    	$ids = !empty($_REQUEST['ids'])?$_REQUEST['ids']:'';
 	    	$re = $this->delApi('admin', $ids, "adminuser <> 'admin' and id");
     	}else{
-    		$this->error('该账户没有权限！',"__APP_PATH__/index.php?g=Admin&m=System&a=adminList");
+    		$this->error('該帳戶沒有權限！',"__APP_PATH__/index.php?g=Admin&m=System&a=adminList");
     	}
     }
 
@@ -206,7 +206,7 @@ class SystemAction extends CommAction {
     public function nowStore(){
     	$adminUser = $this->info['adminuser'];
     	if($adminUser != 'admin'){
-    		$this->error('该账户没有权限！');die;
+    		$this->error('此帳戶沒有權限！');die;
     	}
     	$options_db = D('options');
         $fileName = 'now_store';
@@ -242,7 +242,7 @@ class SystemAction extends CommAction {
                 }
                 else
                 {
-                    $this->success('修改配置失败，请检查输入','__APP_PATH__/index.php?g=Admin&m=System&a=nowStore');
+                    $this->success('修改配置失敗，請檢查輸入','__APP_PATH__/index.php?g=Admin&m=System&a=nowStore');
                 }
             }
             else
@@ -254,7 +254,7 @@ class SystemAction extends CommAction {
                 if($re !== false){
                     $this->success('修改配置成功','__APP_PATH__/index.php?g=Admin&m=System&a=nowStore');
                 }else{
-                    $this->success('修改配置失败，请检查输入','__APP_PATH__/index.php?g=Admin&m=System&a=nowStore');
+                    $this->success('修改配置失败，請檢查輸入','__APP_PATH__/index.php?g=Admin&m=System&a=nowStore');
                 }
             }
             exit;
@@ -353,26 +353,26 @@ class SystemAction extends CommAction {
 				if($info['adminuser']){
 					$ifCheck = $this->checkAdminUser($info['adminuser']);
 					if(!$ifCheck){
-						$this->error('此帐户已经存在，请重新输入！',$jumpUrl);die;
+						$this->error('此帳戶已經存在，請重新輸入！',$jumpUrl);die;
 					}
 				}else{
-					$this->error('帐户名不可为空，请输入！',$jumpUrl);die;
+					$this->error('帳戶名稱不可為空，請輸入！',$jumpUrl);die;
 				}
 				if(!$info['password']){
-					$this->error('密码不可为空，请输入！',$jumpUrl);die;
+					$this->error('密碼不可為空，請輸入！',$jumpUrl);die;
 				}
 				if($info['password'] != $info['repassword']){
-					$this->error('两次密码不一致，请重新输入！',$jumpUrl);die;
+					$this->error('兩次密碼不一致，請重新輸入！',$jumpUrl);die;
 				}
 			}
 			if(!$info['nickname']){
-				$this->error('昵称不可为空，请输入！',$jumpUrl);die;
+				$this->error('暱稱不可為空，請輸入！',$jumpUrl);die;
 			}
 			if(!$info['groupid']){
-				$this->error('请选择该帐户的分组！',$jumpUrl);die;
+				$this->error('請選擇該帳戶的分組！',$jumpUrl);die;
 			}
 			if(!$info['roleid']){
-				$this->error('请选择该帐户的状态！',$jumpUrl);die;
+				$this->error('請選擇該帳戶的狀態！',$jumpUrl);die;
 			}
 		}    	
     }

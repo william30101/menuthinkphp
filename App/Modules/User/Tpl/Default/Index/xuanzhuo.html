@@ -10,11 +10,11 @@
                 $('.clickB'+q).bind('click',function(){
                     var va=$(this).children('a').attr('value');
                     if(va==3){
-                        alert('您选择的桌正在使用中,请重新选桌');
+                        alert('你還擇的桌正在使用中,请重新選桌');
                     }else if(va==2){
-                        alert('您选择的桌已被预订,请重新选桌');
+                        alert('你選擇的桌已被預訂,请重新選桌');
                     } else if(va==4){
-                    alert('您选择的桌正在清理中,请等待');
+                    alert('你選擇的桌正在清理中,請等待');
                 }else{
 
                         parent.location.href=$(this).children('a').attr('href');

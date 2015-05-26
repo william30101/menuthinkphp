@@ -1,4 +1,4 @@
-﻿安装及部署：
+安装及部署：
 	1. 上传到 apache，iis，tomcat 服务器，通过域名访问 index.html 例如：http://localhost/index.html
 v2.0 
 	1 多增加js 回调函数参数 picUrl,callbackdata

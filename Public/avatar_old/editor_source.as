@@ -1,4 +1,4 @@
-﻿package 
+package 
 {
     import com.sohu.sns.avatar.*;
     import flash.display.*;
