@@ -77,10 +77,10 @@ class IndexAction extends Action{
         foreach($tab as $k=>$v){
             switch ($v['status']){
                 case 1:
-                    $tab[$k]['name']='空闲';
+                    $tab[$k]['name']='空閒';
                     break;
                 case 2:
-                    $tab[$k]['name']='预定';
+                    $tab[$k]['name']='預定';
                     break;
                 case 3:
                     $tab[$k]['name']='使用';
@@ -99,11 +99,11 @@ class IndexAction extends Action{
         $this->clear($_GET['tab']);
         $tab=M('tab')->where('id='.$_GET['tab'])->find();
         if($tab['status'] == 2 ){
-            $this->error('本座已被预订请重新选桌');
+            $this->error('本座已被預訂請重新選桌');
         }else if($tab['status'] == 3){
-            $this->error('本桌正在使用中，请重新选桌');
+            $this->error('本桌正在使用中，請重新選桌');
         }else if($tab['status'] == 4){
-            $this->error('本桌正在整理中，请等待');
+            $this->error('本桌正在整理中，請等待');
         }else{
             $user_db= M('user');
             $id=$user_db->where(array('t_id'=>$_GET['tab']))->order('num desc')->find();
@@ -243,7 +243,7 @@ class IndexAction extends Action{
 
 
         }else{
-            $this->error('您访问的网页不存在');
+            $this->error('你訪問的網頁不存在');
         }
     }
     //我点的菜单
@@ -299,7 +299,7 @@ class IndexAction extends Action{
     public function tuijian(){
         $this->isCookieId();
         $list=M('menustype')->field('id,name')->where('id='.$_GET['id'])->find();
-        $this->list='推荐菜';
+        $this->list='推薦菜';
         $menuList = M('menu')->where('recommend=1')->select();
         foreach($menuList as $k => $v){
 	        if($v['content']){
@@ -399,7 +399,7 @@ class IndexAction extends Action{
                 }
             }
         }else{
-            $this->error('您访问的页面不存在');
+            $this->error('你訪問題頁面不存在');
         }
 
 
