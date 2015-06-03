@@ -1617,12 +1617,17 @@ function duo($cate,$pid=0,$level=0){
     if (!empty($data)){
         foreach($data as $key=>$val){
             foreach ($val as $ck => $cv) {
-                $data[$key][$ck]=iconv("UTF-8", "GB2312", $cv);
+		if ($ck =='createtime' || $ck =='updatetime')
+			$data[$key][$ck] = toDate($data[$key][$ck]);
+		else
+                	$data[$key][$ck]=iconv("UTF-8", "GB2312", $cv);
             }
             $data[$key]=implode("\t", $data[$key]);
 
+
         }
         echo implode("\n",$data);
+
     }
  }
 
