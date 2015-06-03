@@ -10,7 +10,7 @@
 }
 </style>
 <div id="ly_banner">
-    <a href="javascript:void(0);"><img src="{$nowInfo.img}" /><h2>{$nowInfo.name}</h2></a>
+    <a href="javascript:void(0);"><img src="__ROOT__/{$nowInfo.img}" /><h2>{$nowInfo.name}</h2></a>
 </div>
 
 <div style=" width:100%; position:absolute; padding:20px 0 75px;">
@@ -19,8 +19,8 @@
 		<if condition="$list">
 		<volist name="list" id="v">
             <li>
-                <div class="ly_img"><a href="/index.php?g=User&m=Mobile&a=detail&id={$v.id}"><img src="{$v.img}" onerror="this.src='__IMG_MOBILE_PATH__/pic2.jpg'" /></a>
-				<if condition="$v.recommend eq 1"><img src="/Public/User/Default/images/hot.png" class="ly_hot"></if>
+                <div class="ly_img"><a href="__ROOT__/index.php?g=User&m=Mobile&a=detail&id={$v.id}"><img src="__ROOT__/{$v.img}" onerror="this.src='__IMG_MOBILE_PATH__/pic2.jpg'" /></a>
+				<if condition="$v.recommend eq 1"><img src="__ROOT__/Public/User/Default/images/hot.png" class="ly_hot"></if>
 				</div>
                 <div class="ly_btn">
                     <p>{$v.name}</p>

@@ -26,7 +26,7 @@ class IndexAction extends CommAction {
 	public function getdatatoexport()
 	{
 
-		$tab_db = D('tab')->select();
+		$tab_db = D('stream')->select();
 		exportexcel($tab_db,array('id','tabname','floor_num'),'test');
 	}
 

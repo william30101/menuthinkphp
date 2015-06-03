@@ -8,15 +8,20 @@
 
 
         $(function(){
+
+        $("#send").bind("click",function(){
+           //ajax
+                 alert("send click");
+            });
+
         	for(i=1;i<11;i++){
-        		$('.dianCai'+i).click(function(){
+        		$('#dianCai'+i).click(function(){
                 var par=$(this).parents('.caipin_list1');
                 var name=par.children('.name').val();
                 var price=par.children('.price').val();
                 var id=par.children('.id').val();
                 var tempId=par.children('.tempId').val();
                 var listId=par.children('.listId').val();
-                //alert(id);
 
                     var a=$('#menuNum', window.parent.document).text();
                     a=Number(a);
@@ -24,13 +29,13 @@
                     $('#menuNum', window.parent.document).text(a);
 
                 $.post(
-                	'dishes/index.php?g=User&m=Index&a=addGreens',
+                	'__ROOT__/index.php?g=User&m=Index&a=addGreens',
                 	{
                 		'name':name,
                 		'price':price,
                 		'u_id':id,
                 		'listId':listId,
-                        'tempId':tempId
+                        	'tempId':tempId
                 	},
                 	function(data){
                 		if(data==1){
@@ -39,13 +44,10 @@
                         }
                 	}
                 	);
+
             	});
-                
-            
-      
-         
-            }    
-        });
+            }
+        })
     </script>
 <style type="text/css">
 <!--
@@ -162,16 +164,17 @@ a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
         <div class="ly_center">
             <h2><a  href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}">{$v.name}</a></h2>
             <span>{$v.content|csubstr=0,30}</span>
-           
+
         </div>
-        
+
         <div class="ly_right">
             <h3 >＄<span >{$v.price}</span>元/{$v.unit}</h3>
-            <p><a href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}"><img src="__IMG_USER_PATH__/btn1.jpg" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<img class='dianCai{$i}' src="__IMG_USER_PATH__/btn2.jpg" /></p>
+            <p><a href="{:U(GROUP_NAME.'/Index/green',array('id'=>$v['id'],'list'=>$list))}"><img src="__IMG_USER_PATH__/btn1.jpg" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" src="__IMG_USER_PATH__/btn2.jpg" id="dianCai{$i}"></p>
         </div>
+
         <div style="clear:both"></div>
     </div>
     </volist>
-    
+
 </body>
 </html>

@@ -9,7 +9,7 @@
         $(function(){
             function PostMes (data,id){
                 $.post(
-                    'dishes/index.php?g=User&m=Index&a=addOrJ',
+                    '__ROOT__/index.php?g=User&m=Index&a=addOrJ',
                         {
                             'amount':data,
                             'id':id
@@ -24,7 +24,7 @@
 
                     var id=$(this).attr('imgee');
                     $.post(
-                            'dishes/index.php?g=User&m=Index&a=myMuenList',
+                            '__ROOT__/index.php?g=User&m=Index&a=myMuenList',
                             {
                                 'id':id
                             }
@@ -110,7 +110,7 @@
                 }
                 var tabId=$('#tabId').val();
                 $.post(
-                        'dishes/index.php?g=User&m=Index&a=check',
+                        '__ROOT__/index.php?g=User&m=Index&a=check',
                         {
                             'test':'test'
                         },
@@ -120,7 +120,7 @@
 
 
                                 $.post(
-                                        'dishes/index.php?g=User&m=Index&a=check',
+                                        '__ROOT__/index.php?g=User&m=Index&a=check',
                                         {
                                             'id':tabId
                                         },
@@ -144,7 +144,7 @@
                             }else{
                                 if(confirm('和你同時點藝的'+data+'位客人都點完菜了嗎？確認送出訂單，取消等其他危人點完菜')){
                                     $.post(
-                                            'dishes/index.php?g=User&m=Index&a=check',
+                                            '__ROOT__/index.php?g=User&m=Index&a=check',
                                             {
                                                 'id':tabId
                                             },
@@ -171,7 +171,7 @@
             });
             $('#checkOut').click(function(){
                 $.post(
-                        'dishes/index.php?g=User&m=Index&a=checkOut',
+                        '__ROOT__/index.php?g=User&m=Index&a=checkOut',
                         {
                             'test':'test'
                         },
@@ -179,7 +179,7 @@
                             if(data==1){
                                 if(confirm('確認要結帳嗎？')){
                                     $.post(
-                                            'dishes/index.php?g=User&m=Index&a=checkOut',
+                                            '__ROOT__/index.php?g=User&m=Index&a=checkOut',
                                             {},
                                             function(d){
                                                 if(d==1){

@@ -54,7 +54,7 @@
 		var isClass = $(this).hasClass('no');
 		if(isClass){
 			var tabId = $(this).attr('dataid');
-			$.post('/index.php?g=User&m=Mobile&a=tabPost',{'tabid':tabId},function(re){
+			$.post('__ROOT__/index.php?g=User&m=Mobile&a=tabPost',{'tabid':tabId},function(re){
 				if(re == 2){
 					alert('此桌位已被預訂，請選擇別的桌位');
 				}else if(re == 3){

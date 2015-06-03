@@ -192,6 +192,7 @@ class MobileAction extends Action {
 	 * @author Tony
 	 */
 	public function greensList(){
+		echo 'greenlist';
 		$this->isCookieTabId();
 		$id = $_GET['id'];
 		$menustype_db = D('menustype');

@@ -2,8 +2,8 @@
 	<ul>
 		<li><a href="javascript:history.go(-1);"><img src="__IMG_MOBILE_PATH__/b_1.png" width="25" height="25" />返回</a></li>
 		<li><a class="footerNav" data-type="menu" tabid="{$tabId}" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_2.png" width="25" height="25" />菜单</a></li>
-		<li><a href="/index.php?g=User&m=Mobile&a=recommend"><img src="__IMG_MOBILE_PATH__/b_3.png" width="25" height="25" />推荐</a></li>
-		<li><a href="/index.php?g=User&m=Mobile&a=hotMenu"><img src="__IMG_MOBILE_PATH__/b_4.png" width="25" height="25" />热门</a></li>
+		<li><a href="__ROOT__/index.php?g=User&m=Mobile&a=recommend"><img src="__IMG_MOBILE_PATH__/b_3.png" width="25" height="25" />推荐</a></li>
+		<li><a href="__ROOT__/index.php?g=User&m=Mobile&a=hotMenu"><img src="__IMG_MOBILE_PATH__/b_4.png" width="25" height="25" />热门</a></li>
         <li><a class="footerNav" data-type="already" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_5.png" width="25" height="25" />已点</a></li>
 	</ul>
 </div>
@@ -11,7 +11,7 @@
 //点菜按钮触发	added by Tony
 function addMenu(menuId){
 	if(menuId){
-		$.post('index.php/User/Mobile/addMenu/',{'u_id':menuId},function(data){
+		$.post('__ROOT__/index.php/User/Mobile/addMenu/',{'u_id':menuId},function(data){
 			if(data.status==1){
 				alert('点菜成功！');
 			}else{
@@ -26,14 +26,14 @@ $('.footerNav').click(function(){
 	if(dataType == 'menu'){
 		var tabId = $(this).attr('tabid');
 		if(tabId){
-			window.location.href="/index.php?g=User&m=Mobile&a=classify&tabid="+tabId;
+			window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=classify&tabid="+tabId;
 		}else{
 			if(confirm('请您选择桌位')){
-				window.location.href="/index.php?g=User&m=Mobile&a=index";
+				window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=index";
 			}
 		}
 	}else if(dataType =='already'){
-		window.location.href="/index.php?g=User&m=Mobile&a=already";
+		window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=already";
 	}
 });
 </script>

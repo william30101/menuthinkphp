@@ -11,7 +11,7 @@
       <volist name="list" id="v">
         <ul>
           <li>
-            <div class="yd_img"><a href="/index.php?g=User&m=Mobile&a=detail&id={$v.u_id}"><img src="{$v.img}" /></a></div>
+            <div class="yd_img"><a href="__ROOT__/index.php?g=User&m=Mobile&a=detail&id={$v.u_id}"><img src="{$v.img}" /></a></div>
             <div class="yd_jq">
               <h2>{$v.name}<font style="float:right; font-size:9px">[&nbsp;<if condition="$v['uname'] eq $uname">我<else />{$v.uname}</if><if condition="$v['status'] eq 1">&nbsp;|&nbsp;<font color="red">追加</font></if>&nbsp;]</font></h2>
               <p>￥<font class="price">{$v.price}</font> x <font class="amount">{$v.amount}</font></p>
@@ -80,7 +80,7 @@
 		}
 		if(status){
 			var that = this;
-			$.post("/index.php?g=User&m=Mobile&a=modifAmount",{'id':id,'amount':amount},function(re){
+			$.post("__ROOT__/index.php?g=User&m=Mobile&a=modifAmount",{'id':id,'amount':amount},function(re){
 				if(re.status == 1){
 					$(that).parents('.yd_jq').find('.amount').html(amount);
 					$('#allAmount').html(allAmount)
@@ -96,7 +96,7 @@
 		if(confirm('你确定要删除吗？')){
 			var targetid = $(this).attr('targetid');
 			if(targetid){
-				window.location.href="/index.php?g=User&m=Mobile&a=delAlready&id="+targetid;
+				window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=delAlready&id="+targetid;
 			}else{
 				alert('删除失败！');
 			}
@@ -105,26 +105,26 @@
 
 	//点击下单，附有ajax验证	added by Tony
 	function orderSuccee(){
-		$.post("/index.php?g=User&m=Mobile&a=getStatus",'',function(re){
+		$.post("__ROOT__/index.php?g=User&m=Mobile&a=getStatus",'',function(re){
 			if(re.status == 1 && re.count > 1){
 				var count = re.count-1;
 				if(confirm('和您同一张桌位的还有'+count+'位,确认提交订单吗？')){
-					window.location.href="/index.php?g=User&m=Mobile&a=orderSuccee";
+					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=orderSuccee";
 				}
 			}else if(re.status == 1 && re.count ==1){
 				if(confirm('用餐的只有您自己(或者和您同一张桌位的还没有点餐),确认提交订单吗？')){
-					window.location.href="/index.php?g=User&m=Mobile&a=orderSuccee";
+					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=orderSuccee";
 				}
 			}else if(re.status == 2){
 				alert('该桌位已经提交过订单了。');
 				window.location.reload();
 			}else if(re.status == 3){
 				if(confirm('该桌位还没有点餐！请点餐后提交订单。')){
-					window.location.href="/index.php?g=User&m=Mobile&a=classify";
+					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=classify";
 				}
 			}else if(re.status == 0){
 				if(confirm('提交订单失败,请重新点餐！')){
-					window.location.href="/index.php?g=User&m=Mobile&a=index";
+					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=index";
 				}
 			}
 		},'json');
@@ -133,14 +133,14 @@
 	//点击结账
 	function orderSettle(){
 		if(confirm('您确定要结账吗？')){
-			$.post("/index.php?g=User&m=Mobile&a=orderSettle",'',function(re){
+			$.post("__ROOT__/index.php?g=User&m=Mobile&a=orderSettle",'',function(re){
 				if(re.status == 1){
 					alert('信息已经发送，请等待...');
 				}else if(re.status == 4){
 					alert('您好，该桌位已经结账，欢迎您下次光临。');
 				}else{
 					alert('抱歉，信息发送失败，请联系工作人员！');
-					window.location.href="/index.php?g=User&m=Mobile&a=index";
+					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=index";
 				}
 			},'json');
 		}
