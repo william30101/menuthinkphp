@@ -1,10 +1,10 @@
 <include file="header" />
 <div id="ly_banner"> <a href="javascript:void(0);"><img src="{$houseLogo}" onerror="javascript:this.src='__IMG_MOBILE_PATH__/ly_banner.jpg';" />
-  <h2>已点餐品</h2>
+  <h2>已點餐點</h2>
   </a> </div>
 <div style=" width:100%; position:absolute; padding:20px 0 75px;background:url(__IMG_MOBILE_PATH__/body_bg.jpg);">
 <div align="center" style=" margin-bottom:20px;">
-	<h1 style="color:red">注意：您的桌位是<font color="green">{$tabNum}号</font>,您的临时名字是<font color="green">{$uname}</font></h1>
+	<h1 style="color:red">注意：你的桌位是<font color="green">{$tabNum}號</font>,你的名字是<font color="green">{$uname}</font></h1>
 </div>
   <if condition="$list">
     <div class="yidian">
@@ -31,16 +31,16 @@
       </volist>
     </div>
     <div class="heji">
-      <h1>数量：<font id="allAmount">{$amount}</font>份&nbsp;&nbsp;&nbsp;总价：￥<font id="allPrice">{$total}</font></h1>
+      <h1>數量：<font id="allAmount">{$amount}</font>份&nbsp;&nbsp;&nbsp;總價：$<font id="allPrice">{$total}</font></h1>
       </h1>
     </div>
 		<if condition="$showStatus eq 1">
 		<div class="tjiao"> <a href="javascript:;" onclick="orderSuccee();">
-		  <h1>提交订单</h1>
+		  <h1>送出訂單</h1>
 		  </a> </div>
 		<else />
 		<div class="tjiao"> <a href="javascript:;" onclick="orderSettle();">
-		  <h1>结&nbsp;账</h1>
+		  <h1>结&nbsp;帳</h1>
 		  </a> </div>
 		</if>
     <else />
@@ -48,7 +48,7 @@
       <ul>
         <li>
           <div style="font-size: 110%;">
-            <h2>您还没有点餐哦，点击下面“菜单”进行点餐吧。^_^</h2>
+            <h2>你還没有點餐哦，點擊下面“菜单”進行點餐吧。^_^</h2>
           </div>
         </li>
       </ul>
@@ -86,19 +86,19 @@
 					$('#allAmount').html(allAmount)
 					$('#allPrice').html(allPrice);
 				}else{
-					alert('修改失败！');
+					alert('修改失敗！');
 				}
 			},'json');
 		}
 	});
 	
 	$('.delAlready').click(function(){
-		if(confirm('你确定要删除吗？')){
+		if(confirm('你確定要删除吗？')){
 			var targetid = $(this).attr('targetid');
 			if(targetid){
 				window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=delAlready&id="+targetid;
 			}else{
-				alert('删除失败！');
+				alert('删除失敗！');
 			}
 		}
 	});
@@ -108,22 +108,22 @@
 		$.post("__ROOT__/index.php?g=User&m=Mobile&a=getStatus",'',function(re){
 			if(re.status == 1 && re.count > 1){
 				var count = re.count-1;
-				if(confirm('和您同一张桌位的还有'+count+'位,确认提交订单吗？')){
+				if(confirm('和你同一张桌位的還有'+count+'位,確認送出訂單嗎？')){
 					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=orderSuccee";
 				}
 			}else if(re.status == 1 && re.count ==1){
-				if(confirm('用餐的只有您自己(或者和您同一张桌位的还没有点餐),确认提交订单吗？')){
+				if(confirm('用餐的只有你自己(或者和你同一張桌位的還没有點餐),確認送出訂單嗎？')){
 					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=orderSuccee";
 				}
 			}else if(re.status == 2){
-				alert('该桌位已经提交过订单了。');
+				alert('此桌位已經送出過訂單了。');
 				window.location.reload();
 			}else if(re.status == 3){
-				if(confirm('该桌位还没有点餐！请点餐后提交订单。')){
+				if(confirm('此桌位還没有點餐！請點餐後送出訂單。')){
 					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=classify";
 				}
 			}else if(re.status == 0){
-				if(confirm('提交订单失败,请重新点餐！')){
+				if(confirm('送出訂單失敗,請重新點餐！')){
 					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=index";
 				}
 			}
@@ -132,14 +132,14 @@
 	
 	//点击结账
 	function orderSettle(){
-		if(confirm('您确定要结账吗？')){
+		if(confirm('你確定要结帳嗎？')){
 			$.post("__ROOT__/index.php?g=User&m=Mobile&a=orderSettle",'',function(re){
 				if(re.status == 1){
-					alert('信息已经发送，请等待...');
+					alert('訊息已经女送，請等待...');
 				}else if(re.status == 4){
-					alert('您好，该桌位已经结账，欢迎您下次光临。');
+					alert('你好，此桌位已经结帳，歡迎你下次光顧。');
 				}else{
-					alert('抱歉，信息发送失败，请联系工作人员！');
+					alert('抱歉，訊息發送失敗，請聯系工作人员！');
 					window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=index";
 				}
 			},'json');

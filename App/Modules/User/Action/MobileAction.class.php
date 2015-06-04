@@ -15,12 +15,12 @@ class MobileAction extends Action {
 	
     public function __construct(){
         parent::__construct();
-    	$this->tabId = cookie('tabId');
-    	$this->tabNum = cookie('tabNum');
-    	$this->uid   = cookie('uid');
-    	$this->uname   = cookie('uname');
-    	$this->houseLogo   = cookie('houseLogo');
-    	$this->houseName   = cookie('houseName');
+    	$this->tabId = session('tabId');
+    	$this->tabNum = session('tabNum');
+    	$this->uid   = session('uid');
+    	$this->uname   = session('uname');
+    	$this->houseLogo   = session('houseLogo');
+    	$this->houseName   = session('houseName');
 		if(empty($this->houseLogo) || empty($this->houseName)){
 			$options_db = D('options');
 			$fileName = 'now_store';
@@ -33,9 +33,9 @@ class MobileAction extends Action {
 				$get_config_info=unserialize($options_info['optionvalue']);
 			}
 			$this->houseLogo = $get_config_info['logo'];
-			cookie('houseLogo',$this->houseLogo);
+			session('houseLogo',$this->houseLogo);
 			$this->houseName = $get_config_info['name'];
-			cookie('houseName',$this->houseName);
+			session('houseName',$this->houseName);
 		}
     	$this->assign('houseLogo',$this->houseLogo);
     	$this->assign('houseName',$this->houseName);
@@ -54,10 +54,10 @@ class MobileAction extends Action {
     	}else{
     		$userInfo = D("user")->where('t_id='.$this->tabId.' and num='.$this->uid)->find();
     		if(!$userInfo){
-    			cookie('tabId',null);
-    			cookie('tabNum',null);
-    			cookie('uid',null);
-    			cookie('uname',null);
+    			session('tabId',null);
+    			session('tabNum',null);
+    			session('uid',null);
+    			session('uname',null);
     			$this->redirect(GROUP_NAME.'/Mobile/index');
     		}
     	}
@@ -90,7 +90,7 @@ class MobileAction extends Action {
 				$this->classify();die;
 			}
 		}
-		$title = '手机点菜系统';
+		$title = '手機點菜系统';
 		$this->assign('title',$title);
 		$id = $_REQUEST['id'] ? $_REQUEST['id'] : 0;
 		import('ORG.Configs.Configs');
@@ -144,17 +144,17 @@ class MobileAction extends Action {
 		}else{
 			$this->clear($tabId);
 			$this->tabId = $tabId;
-			cookie('tabId', $this->tabId);
+			session('tabId', $this->tabId);
 			$this->tabNum = $tab['num'];
-			cookie('tabNum', $this->tabNum);
+			session('tabNum', $this->tabNum);
 			$user_db= M('user');
 			$id=$user_db->where(array('t_id'=>$tabId))->order('num desc')->find();
 			$arr['t_id']=$tabId;
 			$arr['num']=$id['num']+=1;
 			$this->uname='用户'.$id['num'];
 			$arr['uname']=$this->uname;
-			cookie('uname', $this->uname);
-			cookie('uid',$id['num']);
+			session('uname', $this->uname);
+			session('uid',$id['num']);
 			$re=$user_db->add($arr);
 			if($re !== false){
 				$adminid=M('floor')->where('id='.$tab['floor_num'])->field('adminid as id')->find();
@@ -279,7 +279,7 @@ class MobileAction extends Action {
 	 */
 	public function already(){
 		$this->isCookieTabId();
-		$title = '已点列表';
+		$title = '已點列表';
 		$this->assign('title',$title);
 		$db=M('temp');
 		$status = M('tab')->where('id='.$this->tabId)->find();
@@ -318,7 +318,12 @@ class MobileAction extends Action {
 	public function delAlready(){
 		$id = $this->_get('id');
 		$temp_db = D('temp');
-		$temp_db->where('id='.$id)->delete();
+		echo 'id='.$id;
+		$result = $temp_db->where('id='.$id)->delete();
+		//$list = $temp_db->where('id='.$id)->select();
+		//foreach($list as $value){
+			//echo 'value='.$value['name'];
+		//}
 		$this->already();//删除成功后掉用列表页
 	}
 	
@@ -497,10 +502,10 @@ class MobileAction extends Action {
 			$tabTempInfo = $tab_db->where('id='.$tabId)->field('num,floor_num,status')->find();
 			if($tabTempInfo['status'] == 4){
 				$status = 4;
-				cookie('tabId',null);
-				cookie('tabNum',null);
-				cookie('uid',null);
-				cookie('uname',null);
+				session('tabId',null);
+				session('tabNum',null);
+				session('uid',null);
+				session('uname',null);
 			}else{
 				$floorName = '';
 				foreach($floorList as $kk => $vv){
@@ -524,10 +529,10 @@ class MobileAction extends Action {
 				$re = $settle_db->add($data);
 				if($re !== false){
 					$status = 1;
-					cookie('tabId',null);
-					cookie('tabNum',null);
-					cookie('uid',null);
-					cookie('uname',null);
+					session('tabId',null);
+					session('tabNum',null);
+					session('uid',null);
+					session('uname',null);
 				}
 			}
 		}

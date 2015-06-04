@@ -44,7 +44,7 @@
                 <a class="added" href="#">+</a></div><font class="amountOriginal" style=" margin-right:20px;">{$v.amount}</font><font>[<a href="javascript:void(0);" dataid="{$v.id}" typeid="1" onclick="amount(this);">修改</a>]</font>
 				</td>
             <td align="center">&nbsp;&nbsp;&nbsp;&nbsp;<if condition="$v['check'] eq 2"><font color="#008000">已下單</font>&nbsp;&nbsp;&nbsp;&nbsp;<elseif condition="$v['check'] eq 1" /><font color="#008000">請求下單</font>&nbsp;&nbsp;&nbsp;&nbsp;<else /><font color="red">待下單</font>&nbsp;&nbsp;&nbsp;&nbsp;</if></font><if condition="$v['status'] eq 1">&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">[追加]</font></if></td>
-            <td align="center"><a href="javascript:confirmurl('/dishes/index.php?g=admin&m=Index&a=delTempTab&id={$v.id}','你確定要删除嗎？');">删除</a></td>
+            <td align="center"><a href="javascript:confirmurl('__ROOT__/index.php?g=Admin&m=Index&a=delTempTab&id={$v.id}','你確定要删除嗎？');">删除</a></td>
             <td align="center"><font class="partPrice">{$v.allPrice}</font>元</td>
           </tr>
         </volist>
@@ -53,7 +53,7 @@
           <td align="center" class="colorf00 fontweight"><font id="allPrice">{$allPrice}</font>元</td>
         </tr>
       </table>
-      <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;"> {$page} </div><if condition="$settleInfo"><div style=" color: #FF6500; font-size: 22px; padding: 3px; text-align:left; margin-left:10%;">{$settleInfo.createtime|time_ago}&nbsp; <eq name="settleInfo['type']" value='1'>(請求下單)</eq><eq name="settleInfo['type']" value='2'>(請求結帳)</eq></div></if><div style=" color: #FF6500; font-size: 14px; margin: 3px 30% 15px; padding: 3px; text-align:right;"><input style="margin-right:50px;" type="button" class="input10" value="確認下單"  onclick="confirmurl('/dishes/index.php?g=Admin&m=Index&a=order&t_id={$v.t_id}','你確定下單嗎？');" /><input type="button" class="input10" value="确认结账"  onclick="confirmurl('/dishes/index.php?g=Admin&m=Index&a=settle&t_id={$v.t_id}','你確定結帳嗎？');" /></div></td>
+      <div style=" color: #FF6500; font-size: 14px; margin: 3px 3px 15px; padding: 3px; text-align: center;"> {$page} </div><if condition="$settleInfo"><div style=" color: #FF6500; font-size: 22px; padding: 3px; text-align:left; margin-left:10%;">{$settleInfo.createtime|time_ago}&nbsp; <eq name="settleInfo['type']" value='1'>(請求下單)</eq><eq name="settleInfo['type']" value='2'>(請求結帳)</eq></div></if><div style=" color: #FF6500; font-size: 14px; margin: 3px 30% 15px; padding: 3px; text-align:right;"><input style="margin-right:50px;" type="button" class="input10" value="確認下單"  onclick="confirmurl('__ROOT__/index.php?g=Admin&m=Index&a=order&t_id={$v.t_id}','你確定下單嗎？');" /><input type="button" class="input10" value="确认结账"  onclick="confirmurl('__ROOT__/index.php?g=Admin&m=Index&a=settle&t_id={$v.t_id}','你確定結帳嗎？');" /></div></td>
   </tr>
 </table>
 </td>

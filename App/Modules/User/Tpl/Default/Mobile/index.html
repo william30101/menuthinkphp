@@ -1,10 +1,10 @@
 <include file="header" />
 <div class="ding">
-  <h1>欢迎来{$configInfo.name}手机点餐系统</h1>
+  <h1>歡迎來{$configInfo.name}手機點餐系統</h1>
 </div>
 <div id="tou">
 <volist name="actionList" id="v" offset="0" length='2'>
-  <div class="dating" <if condition="$key"> style="float:right; margin-right:30px;"</if>> <a href="/index.php?g=User&m=Mobile&a=index&id={$v.id}">
+  <div class="dating" <if condition="$key"> style="float:right; margin-right:30px;"</if>> <a href="__ROOT__/index.php?g=User&m=Mobile&a=index&id={$v.id}">
     <div <if condition="$v['id'] eq $id"> class="dating_n" <else />class="dating_n1"</if> >
       <h1>{$v.name}</h1>
     </div>
@@ -24,17 +24,17 @@
 	  <volist name="v['view']" id="vv">
 		<if condition="$vv['status'] eq 4">
         <li class="checkTab red" dataid="{$vv.id}">
-          <h1 class="c">{$vv.num}号<br />
+          <h1 class="c">{$vv.num}號<br />
             整理中</h1>
         </li>
 		<elseif condition="$vv['status'] eq 3" />
         <li class="checkTab b" dataid="{$vv.id}">
-          <h1 class="c">{$vv.num}号<br />
+          <h1 class="c">{$vv.num}號<br />
             正使用</h1>
         </li>
 		<elseif condition="$vv['status'] eq 2" />
         <li class="checkTab d" dataid="{$vv.id}">
-          <h1 class="c">{$vv.num}号<br />
+          <h1 class="c">{$vv.num}號<br />
             已預訂</h1>
         </li>
 		<else />

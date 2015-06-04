@@ -1,10 +1,10 @@
   <div id="ly_foot">
 	<ul>
 		<li><a href="javascript:history.go(-1);"><img src="__IMG_MOBILE_PATH__/b_1.png" width="25" height="25" />返回</a></li>
-		<li><a class="footerNav" data-type="menu" tabid="{$tabId}" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_2.png" width="25" height="25" />菜单</a></li>
-		<li><a href="__ROOT__/index.php?g=User&m=Mobile&a=recommend"><img src="__IMG_MOBILE_PATH__/b_3.png" width="25" height="25" />推荐</a></li>
-		<li><a href="__ROOT__/index.php?g=User&m=Mobile&a=hotMenu"><img src="__IMG_MOBILE_PATH__/b_4.png" width="25" height="25" />热门</a></li>
-        <li><a class="footerNav" data-type="already" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_5.png" width="25" height="25" />已点</a></li>
+		<li><a class="footerNav" data-type="menu" tabid="{$tabId}" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_2.png" width="25" height="25" />菜單</a></li>
+		<li><a href="__ROOT__/index.php?g=User&m=Mobile&a=recommend"><img src="__IMG_MOBILE_PATH__/b_3.png" width="25" height="25" />推薦</a></li>
+		<li><a href="__ROOT__/index.php?g=User&m=Mobile&a=hotMenu"><img src="__IMG_MOBILE_PATH__/b_4.png" width="25" height="25" />熱門</a></li>
+        <li><a class="footerNav" data-type="already" href="javascript:void(0);"><img src="__IMG_MOBILE_PATH__/b_5.png" width="25" height="25" />已點</a></li>
 	</ul>
 </div>
 <script>
@@ -13,9 +13,9 @@ function addMenu(menuId){
 	if(menuId){
 		$.post('__ROOT__/index.php/User/Mobile/addMenu/',{'u_id':menuId},function(data){
 			if(data.status==1){
-				alert('点菜成功！');
+				alert('點菜成功！');
 			}else{
-				alert('操作失败！');
+				alert('操作失敗！');
 			}
 		},'json');
 	}
@@ -28,7 +28,7 @@ $('.footerNav').click(function(){
 		if(tabId){
 			window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=classify&tabid="+tabId;
 		}else{
-			if(confirm('请您选择桌位')){
+			if(confirm('請你還擇桌位')){
 				window.location.href="__ROOT__/index.php?g=User&m=Mobile&a=index";
 			}
 		}
