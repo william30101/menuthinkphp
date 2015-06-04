@@ -9,11 +9,6 @@
 
         $(function(){
 
-        $("#send").bind("click",function(){
-           //ajax
-                 alert("send click");
-            });
-
         	for(i=1;i<11;i++){
         		$('#dianCai'+i).click(function(){
                 var par=$(this).parents('.caipin_list1');
@@ -147,7 +142,7 @@ a{ text-decoration:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
 <body>
     <p id="p_tou">
         <span class="t_left">當前：{$list}>>菜單列表</span>
-        <span class="t_right">用户:{$uname}&nbsp;&nbsp;&nbsp;&nbsp;桌號：{$tabNum}</span>
+        <span class="t_right">用户:{$uname}  &nbsp;&nbsp;&nbsp;&nbsp;桌號：{$tabNum}</span>
         <span style="clear:both"></span>
     </p>
     <volist name="menu" id="v">

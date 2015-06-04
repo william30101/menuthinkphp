@@ -14,15 +14,15 @@ class IndexAction extends Action{
     protected $uid;//用户的id
     public function __construct(){
         parent::__construct();
-        $this->uid   = cookie('uid');
-        $this->tabId=cookie('tab');
-        $this->tabNum=cookie('tabNum');
-        $this->adminName=cookie('user');
-        $this->uname=cookie('uname');
-        $this->user=cookie('user');
-//        $this->assign('tab',$this->tabId);
-//        $this->assign('tabNum',$this->tabNum);
-//        $this->assign('uname',$this->uname);
+        $this->uid   = session('uid');
+        $this->tabId=session('tab');
+        $this->tabNum=session('tabNum');
+        $this->adminName=session('user');
+        $this->uname=session('uname');
+        $this->user=session('user');
+        $this->assign('tab',$this->tabId);
+        $this->assign('tabNum',$this->tabNum);
+        $this->assign('uname',$this->uname);
     }
 
 
@@ -40,7 +40,7 @@ class IndexAction extends Action{
         }
         else
         {
-            if(cookie('tab')){
+            if(session('tab')){
                 $this->tabCookie=1;
             }
 
@@ -111,7 +111,7 @@ class IndexAction extends Action{
             $arr['num']=$id['num']+=1;
             $c_name='客人'.$id['num'];
             $arr['uname']=$c_name;
-            cookie('uname', $c_name);
+            session('uname', $c_name);
             $re=$user_db->add($arr);
             if($re !== false)
             {
@@ -127,10 +127,10 @@ class IndexAction extends Action{
 //
 //                            $nameArr=getOne($nameArr);
 //                            $name=implode(',',$nameArr);
-                cookie('uid',$arr['num']);
+                session('uid',$arr['num']);
 //                           cookie('admin_id',$adminid['id'],$time,'/');
-                cookie('tabNum',$tab['num']);
-                cookie('tab',$tab['id']);
+                session('tabNum',$tab['num']);
+                session('tab',$tab['id']);
 //                           cookie('user',$name,$time,'/');
                 $this->redirect(GROUP_NAME.'/Index/menu');
             }
@@ -145,7 +145,8 @@ class IndexAction extends Action{
 
     //读取cookie中的值
     public function menu(){
-        //$this->isCookieId();
+
+        $this->isCookieId();
         $this->Img=$this->logoImg();
         $db=M('menustype');
         $num=M('temp')->field('sum(amount) as a')->where('t_id='.$this->tabId)->select();
@@ -180,6 +181,7 @@ class IndexAction extends Action{
         	}
         }
         $this->menu= $list;
+
         $this->display('greenlist');
     }
     //菜的详细列表
@@ -388,7 +390,7 @@ class IndexAction extends Action{
                                 $check_data['floorname']=$val['dname'];
                             }
                         }
-                        $check_data['num']=cookie('tabNum');
+                        $check_data['num']=session('tabNum');
                         $check_data['t_id']=$this->tabId;
                         $check_data['createtime']=time();
                         if($settle_db->add($check_data)) {
@@ -409,12 +411,12 @@ class IndexAction extends Action{
         $time=1800*1000;
         if((time()-$this->time)>$time)
         {
-            $t_id=cookie('tab');
+            $t_id=session('tab');
             M('user')->where(array('t_id'=>$t_id))->delete();
             M('temp')->where(array('t_id'=>$t_id))->delete();
-            cookie('tab',null);
-            cookie('uname',null);
-            cookie('uid',null);
+            session('tab',null);
+            session('uname',null);
+            session('uid',null);
         }
     }
     //热卖菜
@@ -471,8 +473,8 @@ class IndexAction extends Action{
         }else{
             $userInfo = D("user")->where('t_id='.$this->tabId.' and num='.$this->uid)->find();
             if(!$userInfo){
-                cookie('uid',null);
-                cookie('uname',null);
+                session('uid',null);
+                session('uname',null);
                 echo '<script type="text/javascript"> parent.location.href="index.php?g=User&m=Index&a=index"</script>';
             }
         }
@@ -481,7 +483,7 @@ class IndexAction extends Action{
     public function checkOut(){
         $id=$this->tabId;
         $temp_db=M('temp');
-        if(!cookie('tab')){
+        if(!session('tab')){
             echo 6;die;
         }
         if(isset($_POST['test'])){
@@ -501,7 +503,7 @@ class IndexAction extends Action{
         }else{
             $re=M('settle')->where('t_id='.$id)->save(array('type'=>1));
             if($re !== false){
-                cookie(null);
+                session(null);
                 echo 1;
             }else{
                 echo 5;
